@@ -1,0 +1,108 @@
+.hero {
+  width: 100%;
+
+  &__container {
+    max-width: 1284px;
+    padding-left: 0;
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__header-img-box {
+    max-width: 592px;
+    width: 100%;
+    height: 685px;
+    position: relative;
+    left: -75px;
+
+    //&::before {
+    //  content: '';
+    //  position: absolute;
+    //  top: 0;
+    //  left: 0;
+    //  width: 100%;
+    //  height: 100%;
+    //  z-index: 0;
+    //  background: url("../images/img.png") left top 50px no-repeat;
+    //}
+
+
+  }
+
+  picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__header-text-box {
+    margin-top: 150px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-family: 'AKONY', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.4375rem, 0.7708rem + 2.963vw, 3.4375rem);
+      line-height: 1.11226;
+      text-transform: lowercase;
+      color: #fff;
+      transition: 0.3s ease-in-out;
+      margin-bottom: 70px;
+
+      .gradient-text {
+        font-size: clamp(1.4375rem, 0.7708rem + 2.963vw, 3.4375rem);
+        font-weight: 700;
+        background: linear-gradient(90deg, #1fb6ea 59.95%, #e53a24 80.68%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.3s ease-in-out;
+      }
+
+      &:hover {
+        transition: 0.3s ease-in-out;
+
+        .gradient-text {
+          background: linear-gradient(270deg, #1fb6ea 59.95%, #e53a24 80.68%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: clamp(1rem, 0.9375rem + 0.2778vw, 1.1875rem);
+      color: #fff;
+      max-width: 520px;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+    }
+
+    //&::after {
+    //  content: '';
+    //  position: absolute;
+    //  top: 0;
+    //  left: 0;
+    //  width: 100%;
+    //  height: 100%;
+    //  z-index: 0;
+    //  background: url("../images/img_blue.png") left bottom 50px no-repeat;
+    //}
+  }
+
+}
