@@ -1,9 +1,22 @@
 .hero {
+  position: relative;
   width: 100%;
 
   &__container {
     max-width: 1284px;
     padding-left: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -200px;
+      left: -350px;
+      width: 600px;
+      height: 600px;
+      z-index: 5;
+      background: url("../images/orange.png") no-repeat bottom left/cover;
+    }
   }
 
   &__header {
@@ -16,19 +29,6 @@
     height: 685px;
     position: relative;
     left: -75px;
-
-    //&::before {
-    //  content: '';
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
-    //  width: 100%;
-    //  height: 100%;
-    //  z-index: 0;
-    //  background: url("../images/img.png") left top 50px no-repeat;
-    //}
-
-
   }
 
   picture {
@@ -44,7 +44,7 @@
   }
 
   &__header-text-box {
-    margin-top: 150px;
+    margin-top: 110px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -83,6 +83,7 @@
     }
 
     &-description {
+      font-family: "JetBrainsMono-Regular", sans-serif;
       font-weight: 400;
       font-size: clamp(1rem, 0.9375rem + 0.2778vw, 1.1875rem);
       color: #fff;
@@ -92,17 +93,145 @@
       flex-direction: column;
       row-gap: 25px;
     }
-
-    //&::after {
-    //  content: '';
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
-    //  width: 100%;
-    //  height: 100%;
-    //  z-index: 0;
-    //  background: url("../images/img_blue.png") left bottom 50px no-repeat;
-    //}
   }
 
+  &__container_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+
+
+  }
+
+  &__body {
+    width: 100%;
+    height: 412px;
+    display: flex;
+    background-color: #040404;
+    z-index: 10;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-47%);
+    align-items: center;
+    justify-content: space-between;
+    mask-image: url('../images/mask2.svg');
+    mask-size: cover;
+    mask-position: center top;
+    mask-repeat: no-repeat;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 35px;
+      left: 34%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 140px;
+      z-index: 10;
+      background: url("../images/line_circle1.svg") center/contain no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6.5%;
+      left: 36%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 160px;
+      z-index: 10;
+      background: url("../images/line_circle2.svg") center/contain no-repeat;
+    }
+
+    &-left {
+      display: flex;
+      max-width: 412px;
+      width: 100%;
+      flex-direction: column;
+      row-gap: 25px;
+      padding: 0;
+      margin: 0;
+      position: relative;
+
+
+      &-title {
+        padding: 0;
+        margin: 0;
+        font-family: "JetBrainsMono-ExtraBold", sans-serif;
+        font-weight: 800;
+        font-size: 171px;
+        line-height: 0.77;
+        text-transform: lowercase;
+        color: var(--color-1);
+      }
+
+      &-subtitle {
+        max-width: 362px;
+        font-weight: 400;
+        font-size: 19px;
+        color: #fff;
+      }
+    }
+
+    &-right {
+      padding: 110px 43px 28px;
+      margin: 0;
+      display: flex;
+      max-width: 580px;
+      width: 100%;
+      height: 290px;
+      align-items: flex-end;
+      background-color: #111;
+      mask-image: url('../images/kartoteka.svg');
+      mask-size: cover;
+      mask-position: center top;
+      mask-repeat: no-repeat;
+      position: relative;
+      //background: url("../images/kartoteka.png") no-repeat;
+      //background-size: cover;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        right: 15px;
+        width: 536px;
+        height: 261px;
+        background: url('../images/kartoteka_line.svg') center center/cover no-repeat;
+        z-index: 77;
+        pointer-events: none;
+      }
+
+      &-number {
+        font-family: 'JetBrainsMono-Bold', sans-serif;
+        font-weight: 700;
+        font-size: 175px;
+        line-height: 0.8;
+        text-transform: lowercase;
+        color: var(--color-3);
+      }
+
+      &-text {
+        font-weight: 400;
+        font-size: 19px;
+        color: var(--text-color);
+      }
+
+    }
+  }
+}
+
+.circle {
+  width: 600px;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  top: 47%;
+  pointer-events: none;
 }

@@ -10,7 +10,7 @@
   --color-6: #956fa7;
 
   --font-family-lig: "JetBrainsMono-Light", sans-serif;
-  --font-family-reg: "JetBrainsMono-Regular", sans-serif;
+  $font-family-reg: "JetBrainsMono-Regular", sans-serif;
   --font-family-med: "JetBrainsMono-Medium", sans-serif;
   --font-family-bold: "JetBrainsMono-Bold", sans-serif;
   --font-family-exbold: "JetBrainsMono-ExtraBold", sans-serif;
@@ -41,7 +41,7 @@ body {
   background-color: var(--page-bg);
   height: 100vh;
   //font-family: 'TT Norms Pro Light', sans-serif;//
-  font-family: --font-family-reg, sans-serif;
+  font-family: JetBrainsMono-Regular, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   color: var(--text-color);
