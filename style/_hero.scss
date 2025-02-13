@@ -96,14 +96,46 @@
   }
 
   &__container_body {
+    height: 412px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 
+    .vertical-line {
+      position: absolute;
+      width: 10px;
+      height: 170px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: transparent;
+      pointer-events: none;
 
+      &::before {
+        position: absolute;
+        content: "";
+        top: 32px;
+        left: -200px;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 140px;
+        z-index: 10;
+        background: url("../images/line_circle1.svg") center/contain no-repeat;
+      }
 
-
+      &::after {
+        position: absolute;
+        content: "";
+        top: 30px;
+        left: -180px;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 160px;
+        z-index: 10;
+        background: url("../images/line_circle2.svg") center/contain no-repeat;
+      }
+    }
   }
 
   &__body {
@@ -113,39 +145,15 @@
     background-color: #040404;
     z-index: 10;
     position: absolute;
-    top: 100%;
+    //top: 100%;
     transform: translateY(-47%);
     align-items: center;
     justify-content: space-between;
-    mask-image: url('../images/mask2.svg');
-    mask-size: cover;
-    mask-position: center top;
+    mask-image: url("../images/111.png");
     mask-repeat: no-repeat;
-    overflow: hidden;
+    mask-position: 49.1% 0;
+    //mask-size: 50%;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 35px;
-      left: 34%;
-      transform: translateX(-50%);
-      width: 10px;
-      height: 140px;
-      z-index: 10;
-      background: url("../images/line_circle1.svg") center/contain no-repeat;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 6.5%;
-      left: 36%;
-      transform: translateX(-50%);
-      width: 10px;
-      height: 160px;
-      z-index: 10;
-      background: url("../images/line_circle2.svg") center/contain no-repeat;
-    }
 
     &-left {
       display: flex;
@@ -156,6 +164,7 @@
       padding: 0;
       margin: 0;
       position: relative;
+      z-index: 333;
 
 
       &-title {
@@ -167,6 +176,10 @@
         line-height: 0.77;
         text-transform: lowercase;
         color: var(--color-1);
+
+        @media (max-width: 1284px) {
+          font-size: clamp(8rem, 6.9529rem + 4.6537vw, 10.6875rem);
+        }
       }
 
       &-subtitle {
@@ -174,6 +187,11 @@
         font-weight: 400;
         font-size: 19px;
         color: #fff;
+
+        @media (max-width: 1284px) {
+          font-size: clamp(1rem, 0.9269rem + 0.3247vw, 1.1875rem);
+        }
+
       }
     }
 
@@ -213,25 +231,33 @@
         line-height: 0.8;
         text-transform: lowercase;
         color: var(--color-3);
+
+        @media (max-width: 1284px) {
+          font-size: clamp(10.6875rem, 10.5901rem + 0.4329vw, 10.9375rem);
+        }
       }
 
       &-text {
         font-weight: 400;
         font-size: 19px;
         color: var(--text-color);
-      }
 
+        @media (max-width: 1284px) {
+          font-size: clamp(1rem, 0.9269rem + 0.3247vw, 1.1875rem);
+        }
+      }
     }
   }
+
 }
 
 .circle {
-  width: 600px;
+  width: 671px;
   height: auto;
   position: absolute;
   z-index: -1;
-  left: 50%;
+  left: 52%;
   transform: translateX(-50%) rotate(90deg);
-  top: 47%;
+  top: 40%;
   pointer-events: none;
 }
