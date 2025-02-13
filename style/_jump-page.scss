@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: var(--page-bg);
   position: sticky;
   top: 0;
   left: 0;
@@ -58,7 +58,7 @@
       animation: gradient 10s ease infinite;
       width: 50px;
       height: 150px;
-      mask-image: url("../images/arr_mask.png");
+      mask-image: url('../images/arr_mask.png');
       mask-repeat: no-repeat;
       mask-position: 49.1% 0;
     }
@@ -123,3 +123,8 @@
 //.animate-path-3 {
 //  animation-delay: 1.33s; /* Третий путь с задержкой */
 //}
+
+
+.jump-page-two {
+  z-index: 40;
+}

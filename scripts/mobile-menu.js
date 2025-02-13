@@ -41,4 +41,31 @@ document.addEventListener('DOMContentLoaded', () => {
         mouseOwnerNumber.addEventListener('mouseout', mouseoutFank);
     }
 
+    // Функция для проверки позиции элемента
+    function checkElementPosition() {
+        const section = document.querySelector('.redactor-coda');
+        const sectionSticky = document.querySelector('.jump-page-one');
+
+        if (!section && !sectionSticky) return; // Проверка существования элемента
+
+        const rect = section.getBoundingClientRect();
+        const isAtTop = rect.top <= 0;
+
+        if (isAtTop) {
+            console.log('Элемент достиг верха окна!');
+            // Здесь можно добавить свои действия
+            sectionSticky.style.position = `relative`;
+        } else {
+            sectionSticky.style.position = `sticky`;
+        }
+    }
+
+// Запуск проверки при скролле и загрузке страницы
+    window.addEventListener('scroll', function () {
+        requestAnimationFrame(checkElementPosition);
+    });
+
+// Первоначальная проверка при загрузке
+    window.addEventListener('DOMContentLoaded', checkElementPosition);
+
 })
