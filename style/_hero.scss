@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
+  margin-bottom: 130px;
 
   &__container {
     max-width: 1284px;
@@ -252,7 +253,7 @@
 }
 
 .circle {
-  width: 671px;
+  width: 640px;
   height: auto;
   position: absolute;
   z-index: -1;

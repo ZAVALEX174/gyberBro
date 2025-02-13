@@ -404,6 +404,7 @@ h2 {
 .hero {
   position: relative;
   width: 100%;
+  margin-bottom: 130px;
 }
 .hero__container {
   max-width: 1284px;
@@ -627,7 +628,7 @@ h2 {
 }
 
 .circle {
-  width: 671px;
+  width: 640px;
   height: auto;
   position: absolute;
   z-index: -1;
@@ -635,6 +636,62 @@ h2 {
   transform: translateX(-50%) rotate(90deg);
   top: 40%;
   pointer-events: none;
+}
+
+.about-us {
+  width: 100%;
+  background: url("../images/01101.png") center top 70%/cover no-repeat;
+  height: 811px;
+  margin-top: 220px;
+  position: relative;
+  z-index: 20;
+}
+
+.about-us-left {
+  width: 494px; /* 38px * 13 */
+  height: 494px; /* 38px * 13 */
+  display: grid;
+  grid-template-rows: repeat(13, 38px);
+  grid-template-columns: repeat(13, 38px);
+  background: linear-gradient(90deg, rgb(229, 58, 36) 1px, transparent 1px), linear-gradient(rgb(229, 58, 36) 1px, transparent 1px); /* горизонтальные линии */
+  background-size: 38px 38px; /* размер ячеек сетки */
+  transform: translateZ(0); /* для точного рендеринга */
+  border: none;
+  padding: 0;
+}
+
+@keyframes moveRunner {
+  0% {
+    opacity: 1;
+    transform: translateY(304px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(494px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(494px);
+  }
+}
+.runner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Высота одной ячейки */
+  background: var(--color-1); /* Цвет полоски */
+  transform: translateY(-100%); /* Начальное положение */
+  animation: moveRunner 5s infinite linear;
+  transform: translateZ(0);
+}
+.runner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 5px;
+  background-color: var(--color-1);
 }
 
 /*# sourceMappingURL=styles.css.map */
