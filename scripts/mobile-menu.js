@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Функция для проверки позиции элемента
-    function checkElementPosition() {
+    function checkElementPositionOneBox() {
         const section = document.querySelector('.redactor-coda');
-        const sectionSticky = document.querySelector('.jump-page-one');
+        const sectionStickyOne = document.querySelector('.jump-page-one');
 
-        if (!section && !sectionSticky) return; // Проверка существования элемента
+        if (!section && !sectionStickyOne) return; // Проверка существования элемента
 
         const rect = section.getBoundingClientRect();
         const isAtTop = rect.top <= 0;
@@ -54,18 +54,49 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isAtTop) {
             console.log('Элемент достиг верха окна!');
             // Здесь можно добавить свои действия
-            sectionSticky.style.position = `relative`;
+            sectionStickyOne.style.position = `relative`;
         } else {
-            sectionSticky.style.position = `sticky`;
+            sectionStickyOne.style.position = `sticky`;
+        }
+    }
+
+    function checkElementPositionTwoBox() {
+        const section = document.querySelector('.cards');
+        let cardsHeight = section.offsetHeight;
+        console.log(cardsHeight);
+        const sectionElems = document.querySelectorAll('.card-item');
+        const sectionStickyTwo = document.querySelector('.jump-page-two');
+
+        if (!section && !sectionStickyTwo) return; // Проверка существования элемента
+
+        const rect = section.getBoundingClientRect();
+        const isAtTop = rect.top <= 0;
+
+        if (isAtTop) {
+            console.log('Элемент достиг верха окна!');
+            // Здесь можно добавить свои действия
+            sectionStickyTwo.style.position = `relative`;
+
+            sectionElems.forEach((elem) => {
+                elem.style.position = `sticky`;
+            })
+            // sectionElem.style.position = `sticky`;
+        } else {
+            sectionStickyTwo.style.position = `sticky`;
+            sectionElems.forEach((elem) => {
+                elem.style.position = `relative`;
+            })
+
         }
     }
 
 // Запуск проверки при скролле и загрузке страницы
     window.addEventListener('scroll', function () {
-        requestAnimationFrame(checkElementPosition);
+        requestAnimationFrame(checkElementPositionOneBox);
+        requestAnimationFrame(checkElementPositionTwoBox);
     });
 
 // Первоначальная проверка при загрузке
-    window.addEventListener('DOMContentLoaded', checkElementPosition);
+    window.addEventListener('DOMContentLoaded', checkElementPositionOneBox, checkElementPositionTwoBox);
 
 })

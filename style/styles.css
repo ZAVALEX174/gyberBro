@@ -978,4 +978,163 @@ h2 {
   }
 }
 
+.cards {
+  position: relative;
+  width: 100%;
+  padding: 130px 0;
+  z-index: 50;
+}
+.cards__container {
+  max-width: 1255px;
+  width: 100%;
+}
+.cards .card-item {
+  padding-top: 70px;
+  padding-left: 26px;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image-box desc" "training-program training-program";
+  position: relative;
+  top: 30px;
+  left: 0;
+}
+.cards .card-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 670px;
+  height: 901px;
+  background: url("../images/fon_black.png") no-repeat center center/cover;
+  color: #fff;
+  z-index: 10;
+}
+.cards .card-item::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 736px;
+  height: 774px;
+  background: url("../images/setka_card.svg") no-repeat center center/cover;
+  color: #fff;
+  z-index: 10;
+}
+.cards .card-item-image-box {
+  position: relative;
+  z-index: 30;
+  grid-area: image-box;
+  max-width: 496px;
+  width: 100%;
+  height: 646px;
+  padding: 10px 10px 58px 10px;
+}
+.cards .card-item-image-box-img {
+  width: 476px;
+  height: 576px;
+  margin-bottom: 10px;
+}
+.cards .card-item-image-box-text {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 68px 0 29px;
+}
+.cards .card-item-image-box-text::after {
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: 0;
+  width: 276px;
+  height: 184px;
+  border-radius: 100%;
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 1;
+}
+.cards .card-item-image-box-text-circle-box {
+  position: relative;
+  max-width: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .cards .card-item-image-box-text-circle-box {
+    max-width: 67px;
+  }
+}
+.cards .card-item-image-box-text-circle-box span {
+  display: inline-flex;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #2B2A29;
+  opacity: 0.5;
+}
+@media (max-width: 1024px) {
+  .cards .card-item-image-box-text-circle-box span {
+    width: 10px;
+    height: 10px;
+  }
+}
+.cards .card-item-image-box-text-circle-box .circle-active {
+  background-color: var(--color-4);
+  opacity: 1;
+}
+.cards .card-item-image-box-text-name {
+  font-family: "JetBrainsMono-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: lowercase;
+  color: var(--color-4);
+}
+@media (max-width: 1284px) {
+  .cards .card-item-image-box-text-name {
+    font-size: clamp(0.9375rem, 0.7183rem + 0.974vw, 1.5rem);
+  }
+}
+.cards .card01 {
+  background: url("../images/bg_card_01.svg") no-repeat center center/cover;
+}
+.cards .card01 .card-item-image-box {
+  background: url("../images/bg_img_01.svg") no-repeat center center/cover;
+}
+.cards .card01 .card-item-image-box-text::after {
+  background: url("../images/el_card_01.png") no-repeat center center/cover;
+}
+.cards .card02 {
+  background: url("../images/bg_card_02.svg") no-repeat center center/cover;
+}
+.cards .card02 .card-item-image-box {
+  background: url("../images/bg_img_02.svg") no-repeat center center/cover;
+}
+.cards .card02 .card-item-image-box-text::after {
+  background: url("../images/el_card_02.png") no-repeat center center/cover;
+}
+.cards .card03 {
+  background: url("../images/bg_card_03.svg") no-repeat center center/cover;
+}
+.cards .card03 .card-item-image-box {
+  background: url("../images/bg_img_03.svg") no-repeat center center/cover;
+}
+.cards .card03 .card-item-image-box-text::after {
+  background: url("../images/el_card_03.png") no-repeat center center/cover;
+}
+.cards .card04 {
+  background: url("../images/bg_card_04.svg") no-repeat center center/cover;
+}
+.cards .card04 .card-item-image-box {
+  background: url("../images/bg_img_04.svg") no-repeat center center/cover;
+}
+.cards .card04 .card-item-image-box-text::after {
+  background: url("../images/el_card_04.png") no-repeat center center/cover;
+}
+
 /*# sourceMappingURL=styles.css.map */
