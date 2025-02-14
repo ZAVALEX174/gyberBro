@@ -175,6 +175,7 @@ h2 {
   display: inline-flex;
   font-size: 20px;
   text-align: center;
+  justify-content: center;
   color: var(--text-color);
   line-height: 80px;
   height: 80px;
@@ -186,6 +187,7 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.3s linear;
 }
 
 .none {
@@ -989,8 +991,7 @@ h2 {
   width: 100%;
 }
 .cards .card-item {
-  padding-top: 70px;
-  padding-left: 26px;
+  padding-top: 100px;
   width: 100%;
   height: 100vh;
   display: grid;
@@ -1008,6 +1009,7 @@ h2 {
   transform: translate(-50%, -50%);
   width: 670px;
   height: 901px;
+  pointer-events: none;
   background: url("../images/fon_black.png") no-repeat center center/cover;
   color: #fff;
   z-index: 10;
@@ -1021,10 +1023,12 @@ h2 {
   height: 774px;
   background: url("../images/setka_card.svg") no-repeat center center/cover;
   color: #fff;
+  pointer-events: none;
   z-index: 10;
 }
 .cards .card-item-image-box {
   position: relative;
+  margin-left: 26px;
   z-index: 30;
   grid-area: image-box;
   max-width: 496px;
@@ -1100,6 +1104,98 @@ h2 {
     font-size: clamp(0.9375rem, 0.7183rem + 0.974vw, 1.5rem);
   }
 }
+.cards .card-item-text-box {
+  max-width: 506px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 30;
+  padding-top: 100px;
+}
+.cards .card-item-text-box__title {
+  font-family: "AKONY", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-transform: lowercase;
+  color: var(--text-color);
+}
+@media (max-width: 1284px) {
+  .cards .card-item-text-box__title {
+    font-size: clamp(3rem, 2.6104rem + 1.7316vw, 4rem);
+  }
+}
+.cards .card-item-text-box__subtitle {
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: lowercase;
+  color: var(--text-color);
+  margin-bottom: 44px;
+}
+.cards .card-item-text-box__description {
+  font-family: "JetBrainsMono-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #bababa;
+  margin-bottom: 59px;
+}
+.cards .card-item-text-box__btn-oran {
+  max-width: 303px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: var(--color-1);
+  color: var(--color-4);
+  position: relative;
+  z-index: 50;
+}
+.cards .card-item-text-box__btn-oran:hover {
+  background-color: var(--text-color);
+  color: var(--page-bg);
+}
+.cards .card-item-text-box__btn-yel {
+  max-width: 303px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: var(--color-5);
+  color: var(--color-4);
+  position: relative;
+  z-index: 50;
+}
+.cards .card-item-text-box__btn-yel:hover {
+  background-color: var(--text-color);
+  color: var(--page-bg);
+}
+.cards .card-item-text-box__btn-blue {
+  max-width: 303px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: var(--color-3);
+  color: var(--color-4);
+  position: relative;
+  z-index: 50;
+}
+.cards .card-item-text-box__btn-blue:hover {
+  background-color: var(--text-color);
+  color: var(--page-bg);
+}
+.cards .card-item-text-box__btn-feol {
+  max-width: 303px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: var(--color-6);
+  color: var(--color-4);
+  position: relative;
+  z-index: 50;
+}
+.cards .card-item-text-box__btn-feol:hover {
+  background-color: var(--text-color);
+  color: var(--page-bg);
+}
 .cards .card01 {
   background: url("../images/bg_card_01.svg") no-repeat center center/cover;
 }
@@ -1107,6 +1203,7 @@ h2 {
   background: url("../images/bg_img_01.svg") no-repeat center center/cover;
 }
 .cards .card01 .card-item-image-box-text::after {
+  pointer-events: none;
   background: url("../images/el_card_01.png") no-repeat center center/cover;
 }
 .cards .card02 {
@@ -1116,6 +1213,7 @@ h2 {
   background: url("../images/bg_img_02.svg") no-repeat center center/cover;
 }
 .cards .card02 .card-item-image-box-text::after {
+  pointer-events: none;
   background: url("../images/el_card_02.png") no-repeat center center/cover;
 }
 .cards .card03 {
@@ -1125,6 +1223,7 @@ h2 {
   background: url("../images/bg_img_03.svg") no-repeat center center/cover;
 }
 .cards .card03 .card-item-image-box-text::after {
+  pointer-events: none;
   background: url("../images/el_card_03.png") no-repeat center center/cover;
 }
 .cards .card04 {
@@ -1134,6 +1233,7 @@ h2 {
   background: url("../images/bg_img_04.svg") no-repeat center center/cover;
 }
 .cards .card04 .card-item-image-box-text::after {
+  pointer-events: none;
   background: url("../images/el_card_04.png") no-repeat center center/cover;
 }
 
