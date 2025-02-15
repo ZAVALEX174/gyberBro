@@ -983,50 +983,31 @@ h2 {
 .cards {
   position: relative;
   width: 100%;
-  padding: 130px 0;
+  padding: 100px 0 350px;
   z-index: 50;
+  height: 400vh;
 }
 .cards__container {
-  max-width: 1255px;
+  max-width: 1355px;
+  padding-left: 30px;
+  padding-right: 30px;
   width: 100%;
 }
 .cards .card-item {
-  padding-top: 100px;
+  padding-top: 0;
+  padding-left: 26px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "image-box desc" "training-program training-program";
   position: relative;
-  top: 30px;
+  top: 20px;
   left: 0;
-}
-.cards .card-item::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 670px;
-  height: 901px;
-  pointer-events: none;
-  background: url("../images/fon_black.png") no-repeat center center/cover;
-  color: #fff;
-  z-index: 10;
-}
-.cards .card-item::after {
-  content: "";
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 736px;
-  height: 774px;
-  background: url("../images/setka_card.svg") no-repeat center center/cover;
-  color: #fff;
-  pointer-events: none;
-  z-index: 10;
 }
 .cards .card-item-image-box {
+  top: 24px;
+  margin-top: 60px;
   position: relative;
   margin-left: 26px;
   z-index: 30;
@@ -1105,12 +1086,13 @@ h2 {
   }
 }
 .cards .card-item-text-box {
+  grid-area: desc;
   max-width: 506px;
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 30;
-  padding-top: 100px;
+  padding-top: 160px;
 }
 .cards .card-item-text-box__title {
   font-family: "AKONY", sans-serif;
@@ -1196,8 +1178,316 @@ h2 {
   background-color: var(--text-color);
   color: var(--page-bg);
 }
+.cards .card-item-training-program-box {
+  grid-area: training-program;
+  width: 100%;
+  padding: 0 70px 78px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 324px));
+  grid-template-areas: ". prog prog" "c01 c02 c03" "c04 c05 c06";
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.cards .card-item-training-program-box .prog {
+  grid-area: prog;
+  text-align: right;
+  font-family: "JetBrainsMono-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: lowercase;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+.cards .card-item-training-program-box-card01 {
+  grid-area: c01;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.cards .card-item-training-program-box-card01 .card01-span-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cards .card-item-training-program-box-card01 .card01-span-box span {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background: rgba(217, 217, 217, 0.1);
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card01 .card01-span-box .span-box-active__oran {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #E53A24;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card01 .card01-span-box .span-box-active__yelo {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #EFF338;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card01 .card01-span-box .span-box-active__blue {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #1FB6EA;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card01 .card01-span-box .span-box-active__feol {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #956FA7;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card02 {
+  grid-area: c02;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.cards .card-item-training-program-box-card02 .card02-span-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cards .card-item-training-program-box-card02 .card02-span-box span {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background: rgba(217, 217, 217, 0.1);
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card02 .card02-span-box .span-box-active__oran {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #E53A24;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card02 .card02-span-box .span-box-active__yelo {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #EFF338;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card02 .card02-span-box .span-box-active__blue {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #1FB6EA;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card02 .card02-span-box .span-box-active__feol {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #956FA7;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card03 {
+  grid-area: c03;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.cards .card-item-training-program-box-card03 .card03-span-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cards .card-item-training-program-box-card03 .card03-span-box span {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background: rgba(217, 217, 217, 0.1);
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card03 .card03-span-box .span-box-active__oran {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #E53A24;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card03 .card03-span-box .span-box-active__yelo {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #EFF338;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card03 .card03-span-box .span-box-active__blue {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #1FB6EA;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card03 .card03-span-box .span-box-active__feol {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #956FA7;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card04 {
+  grid-area: c04;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.cards .card-item-training-program-box-card04 .card04-span-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cards .card-item-training-program-box-card04 .card04-span-box span {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background: rgba(217, 217, 217, 0.1);
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card04 .card04-span-box .span-box-active__oran {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #E53A24;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card04 .card04-span-box .span-box-active__yelo {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #EFF338;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card04 .card04-span-box .span-box-active__blue {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #1FB6EA;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card04 .card04-span-box .span-box-active__feol {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #956FA7;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card05 {
+  grid-area: c05;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.cards .card-item-training-program-box-card05 .card05-span-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cards .card-item-training-program-box-card05 .card05-span-box span {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background: rgba(217, 217, 217, 0.1);
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card05 .card05-span-box .span-box-active__oran {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #E53A24;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card05 .card05-span-box .span-box-active__yelo {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #EFF338;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card05 .card05-span-box .span-box-active__blue {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #1FB6EA;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card05 .card05-span-box .span-box-active__feol {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #956FA7;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card06 {
+  grid-area: c06;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.cards .card-item-training-program-box-card06 .card06-span-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cards .card-item-training-program-box-card06 .card06-span-box span {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background: rgba(217, 217, 217, 0.1);
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card06 .card06-span-box .span-box-active__oran {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #E53A24;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card06 .card06-span-box .span-box-active__yelo {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #EFF338;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card06 .card06-span-box .span-box-active__blue {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #1FB6EA;
+  margin: 0 2px;
+}
+.cards .card-item-training-program-box-card06 .card06-span-box .span-box-active__feol {
+  display: inline-flex;
+  width: 4px;
+  height: 14px;
+  background-color: #956FA7;
+  margin: 0 2px;
+}
 .cards .card01 {
-  background: url("../images/bg_card_01.svg") no-repeat center center/cover;
+  background: url("../images/1.png") no-repeat top left/cover;
 }
 .cards .card01 .card-item-image-box {
   background: url("../images/bg_img_01.svg") no-repeat center center/cover;
@@ -1207,7 +1497,7 @@ h2 {
   background: url("../images/el_card_01.png") no-repeat center center/cover;
 }
 .cards .card02 {
-  background: url("../images/bg_card_02.svg") no-repeat center center/cover;
+  background: url("../images/2.png") no-repeat top left/cover;
 }
 .cards .card02 .card-item-image-box {
   background: url("../images/bg_img_02.svg") no-repeat center center/cover;
@@ -1217,7 +1507,7 @@ h2 {
   background: url("../images/el_card_02.png") no-repeat center center/cover;
 }
 .cards .card03 {
-  background: url("../images/bg_card_03.svg") no-repeat center center/cover;
+  background: url("../images/3.png") no-repeat top left/cover;
 }
 .cards .card03 .card-item-image-box {
   background: url("../images/bg_img_03.svg") no-repeat center center/cover;
@@ -1227,7 +1517,7 @@ h2 {
   background: url("../images/el_card_03.png") no-repeat center center/cover;
 }
 .cards .card04 {
-  background: url("../images/bg_card_04.svg") no-repeat center center/cover;
+  background: url("../images/4.png") no-repeat top left/cover;
 }
 .cards .card04 .card-item-image-box {
   background: url("../images/bg_img_04.svg") no-repeat center center/cover;

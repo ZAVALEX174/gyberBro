@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let cardsHeight = section.offsetHeight;
         console.log(cardsHeight);
         const sectionElems = document.querySelectorAll('.card-item');
+        console.log(sectionElems);
         const sectionStickyTwo = document.querySelector('.jump-page-two');
 
         if (!section && !sectionStickyTwo) return; // Проверка существования элемента
