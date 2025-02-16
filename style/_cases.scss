@@ -1,0 +1,90 @@
+// Стили для контейнера табов
+.tabs-container {
+  max-width: 800px;
+  position: relative;
+  //margin: 20px auto;
+  font-family: Arial, sans-serif;
+  z-index: 999999;
+}
+
+// Стили для кнопок табов
+.tab-buttons {
+  display: flex;
+  flex-direction: column;
+  max-width: 392px;
+  width: 100%;
+
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  text-align: left;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  flex: 1;
+  font-family: 'JetBrainsMono-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: lowercase;
+  color: var(--color-1);
+  text-shadow: 0 0 8px 0 #fa1b1b;
+  opacity: 0.8;
+  cursor: pointer;
+
+  @media (max-width: 1284px) {
+    font-size: clamp(0.9375rem, 0.8157rem + 0.5411vw, 1.25rem);
+  }
+
+  &:hover {
+    color: var(--color-3);
+    text-shadow: 0 0 5px 0 var(--color-3);
+    opacity: 0.8;
+  }
+
+  &-active {
+    color: var(--color-3);
+    text-shadow: 0 0 5px 0 var(--color-3);
+    opacity: 0.8;
+  }
+}
+
+// Стили для контента табов
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 2px solid #2196F3;
+  border-radius: 0 5px 5px 5px;
+
+  &-active {
+    display: block;
+    animation: fade 0.5s ease;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cases {
+  width: 100%;
+  position: sticky;
+  z-index: 50;
+
+  &__logo {
+    max-width: 360px;
+    height: 53px;
+  }
+}
+
+.col {
+  height: 590px;
+  width: 220px;
+  background: url("../images/colonka_sl.png") no-repeat center/cover;
+}
