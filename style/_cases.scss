@@ -88,3 +88,27 @@
   width: 220px;
   background: url("../images/colonka_sl.png") no-repeat center/cover;
 }
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: none;
+}
+
+.cases-slider-btns-box {
+  max-width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .cases-slider-btn-next, .cases-slider-btn-prev {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #641e39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
