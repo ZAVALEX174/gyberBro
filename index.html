@@ -1,1341 +1,1470 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CyberBro!</title>
-    <link rel="stylesheet" href="style/normalize.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/swiper-bundle.css">
-    <link rel="stylesheet" href="style/styles.css">
-</head>
-<body>
-<div class="wrapper-page">
-    <header class="header">
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/swiper-bundle.css" />
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper-page">
+      <header class="header">
         <div class="container header__container">
-            <div class="logo header__logo">
-                <img src="images/logo.svg" alt="Логотип CyberBro">
-            </div>
-            <div class="header__menu-mobile">
-                <button class="header__menu-mobile-btn_open" id="open-mobile-menu">
-                    [Меню]
-                </button>
-                <button class="header__menu-mobile-btn_close" id="close-mobile-menu">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 1L1 21" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M1 1L21 21" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </div>
-            <nav class="nav header__nav">
-                <ul class="list header__list">
-                    <li class="item header__item"><a href="#" class="link header__link">[О CuberBro]</a></li>
-                    <li class="item header__item"><a href="#" class="link header__link">[LEVEL 1,2,3,4]</a></li>
-                    <li class="item header__item"><a href="#" class="link header__link">[Кейсы]</a></li>
-                    <li class="item header__item"><a href="#" class="link header__link">[Наставник]</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="menu-mobile-box" id="menu-mobile-box">
-        <nav class="nav menu-mobile-box__nav">
-            <ul class="list menu-mobile-box__list">
-                <li class="item menu-mobile-box__item"><a href="#" class="link menu-mobile-box__link">[О CuberBro]</a>
-                </li>
-                <li class="item menu-mobile-box__item"><a href="#" class="link menu-mobile-box__link">[LEVEL
-                    1,2,3,4]</a></li>
-                <li class="item menu-mobile-box__item"><a href="#" class="link menu-mobile-box__link">[Кейсы]</a></li>
-                <li class="item menu-mobile-box__item"><a href="#" class="link menu-mobile-box__link">[Наставник]</a>
-                </li>
+          <div class="logo header__logo">
+            <img src="images/logo.svg" alt="Логотип CyberBro" />
+          </div>
+          <div class="header__menu-mobile">
+            <button class="header__menu-mobile-btn_open" id="open-mobile-menu">
+              [Меню]
+            </button>
+            <button
+              class="header__menu-mobile-btn_close"
+              id="close-mobile-menu">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 1L1 21"
+                  stroke="#FEFEFE"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M1 1L21 21"
+                  stroke="#FEFEFE"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <nav class="nav header__nav">
+            <ul class="list header__list">
+              <li class="item header__item">
+                <a href="#" class="link header__link">[О CuberBro]</a>
+              </li>
+              <li class="item header__item">
+                <a href="#" class="link header__link">[LEVEL 1,2,3,4]</a>
+              </li>
+              <li class="item header__item">
+                <a href="#" class="link header__link">[Кейсы]</a>
+              </li>
+              <li class="item header__item">
+                <a href="#" class="link header__link">[Наставник]</a>
+              </li>
             </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="menu-mobile-box" id="menu-mobile-box">
+        <nav class="nav menu-mobile-box__nav">
+          <ul class="list menu-mobile-box__list">
+            <li class="item menu-mobile-box__item">
+              <a href="#" class="link menu-mobile-box__link">[О CuberBro]</a>
+            </li>
+            <li class="item menu-mobile-box__item">
+              <a href="#" class="link menu-mobile-box__link">[LEVEL 1,2,3,4]</a>
+            </li>
+            <li class="item menu-mobile-box__item">
+              <a href="#" class="link menu-mobile-box__link">[Кейсы]</a>
+            </li>
+            <li class="item menu-mobile-box__item">
+              <a href="#" class="link menu-mobile-box__link">[Наставник]</a>
+            </li>
+          </ul>
         </nav>
         <div class="menu-mobile-box__social">
-            <div class="menu-mobile-box__social-links">
-                <a href="#" class="menu-mobile-box__social-link">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_215_3128)">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20ZM20.7167 14.7649C18.7714 15.574 14.8836 17.2487 9.05315 19.7889C8.10639 20.1654 7.61043 20.5337 7.56528 20.8938C7.48898 21.5025 8.25118 21.7422 9.28911 22.0685C9.4303 22.1129 9.57659 22.1589 9.72656 22.2077C10.7477 22.5396 12.1214 22.928 12.8355 22.9434C13.4832 22.9574 14.2062 22.6903 15.0044 22.1422C20.4519 18.465 23.264 16.6063 23.4405 16.5663C23.5651 16.538 23.7377 16.5025 23.8546 16.6064C23.9715 16.7104 23.9601 16.9072 23.9477 16.96C23.8722 17.2819 20.8802 20.0635 19.3319 21.503C18.8492 21.9517 18.5068 22.27 18.4368 22.3427C18.28 22.5056 18.1202 22.6596 17.9666 22.8077C17.0179 23.7222 16.3065 24.408 18.006 25.528C18.8227 26.0662 19.4763 26.5112 20.1283 26.9552C20.8403 27.4401 21.5505 27.9238 22.4694 28.5261C22.7035 28.6796 22.927 28.839 23.1448 28.9942C23.9735 29.585 24.7179 30.1157 25.6376 30.0311C26.1721 29.9819 26.7241 29.4794 27.0045 27.9806C27.667 24.4386 28.9694 16.7641 29.2704 13.6016C29.2967 13.3245 29.2636 12.97 29.2369 12.8143C29.2103 12.6586 29.1546 12.4368 28.9523 12.2727C28.7127 12.0782 28.3427 12.0372 28.1773 12.0401C27.425 12.0534 26.2709 12.4547 20.7167 14.7649Z"
-                                  fill="#FEFEFE"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_215_3128">
-                                <rect width="40" height="40" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-                <a href="#" class="menu-mobile-box__social-link">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_215_3130)">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M2.81129 2.81177C-0.000488281 5.62355 -0.000488281 10.149 -0.000488281 19.2V20.8C-0.000488281 29.851 -0.000488281 34.3764 2.81129 37.1882C5.62306 40 10.1485 40 19.1995 40H20.7995C29.8505 40 34.3759 40 37.1878 37.1882C39.9995 34.3764 39.9995 29.851 39.9995 20.8V19.2C39.9995 10.149 39.9995 5.62355 37.1878 2.81177C34.3759 0 29.8505 0 20.7995 0H19.1995C10.1485 0 5.62306 0 2.81129 2.81177ZM6.74961 12.1667C6.96628 22.5667 12.1663 28.8167 21.2829 28.8167H21.7997V22.8667C25.1497 23.2001 27.6828 25.6501 28.6995 28.8167H33.4329C32.1329 24.0834 28.7161 21.4667 26.5828 20.4667C28.7161 19.2334 31.7161 16.2334 32.4328 12.1667H28.1327C27.1993 15.4667 24.433 18.4667 21.7997 18.7501V12.1667H17.4995V23.7001C14.8328 23.0334 11.4663 19.8001 11.3163 12.1667H6.74961Z"
-                                  fill="#FEFEFE"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_215_3130">
-                                <rect width="40" height="40" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-            </div>
+          <div class="menu-mobile-box__social-links">
+            <a href="#" class="menu-mobile-box__social-link">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_215_3128)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20ZM20.7167 14.7649C18.7714 15.574 14.8836 17.2487 9.05315 19.7889C8.10639 20.1654 7.61043 20.5337 7.56528 20.8938C7.48898 21.5025 8.25118 21.7422 9.28911 22.0685C9.4303 22.1129 9.57659 22.1589 9.72656 22.2077C10.7477 22.5396 12.1214 22.928 12.8355 22.9434C13.4832 22.9574 14.2062 22.6903 15.0044 22.1422C20.4519 18.465 23.264 16.6063 23.4405 16.5663C23.5651 16.538 23.7377 16.5025 23.8546 16.6064C23.9715 16.7104 23.9601 16.9072 23.9477 16.96C23.8722 17.2819 20.8802 20.0635 19.3319 21.503C18.8492 21.9517 18.5068 22.27 18.4368 22.3427C18.28 22.5056 18.1202 22.6596 17.9666 22.8077C17.0179 23.7222 16.3065 24.408 18.006 25.528C18.8227 26.0662 19.4763 26.5112 20.1283 26.9552C20.8403 27.4401 21.5505 27.9238 22.4694 28.5261C22.7035 28.6796 22.927 28.839 23.1448 28.9942C23.9735 29.585 24.7179 30.1157 25.6376 30.0311C26.1721 29.9819 26.7241 29.4794 27.0045 27.9806C27.667 24.4386 28.9694 16.7641 29.2704 13.6016C29.2967 13.3245 29.2636 12.97 29.2369 12.8143C29.2103 12.6586 29.1546 12.4368 28.9523 12.2727C28.7127 12.0782 28.3427 12.0372 28.1773 12.0401C27.425 12.0534 26.2709 12.4547 20.7167 14.7649Z"
+                    fill="#FEFEFE" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_215_3128">
+                    <rect width="40" height="40" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="menu-mobile-box__social-link">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_215_3130)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.81129 2.81177C-0.000488281 5.62355 -0.000488281 10.149 -0.000488281 19.2V20.8C-0.000488281 29.851 -0.000488281 34.3764 2.81129 37.1882C5.62306 40 10.1485 40 19.1995 40H20.7995C29.8505 40 34.3759 40 37.1878 37.1882C39.9995 34.3764 39.9995 29.851 39.9995 20.8V19.2C39.9995 10.149 39.9995 5.62355 37.1878 2.81177C34.3759 0 29.8505 0 20.7995 0H19.1995C10.1485 0 5.62306 0 2.81129 2.81177ZM6.74961 12.1667C6.96628 22.5667 12.1663 28.8167 21.2829 28.8167H21.7997V22.8667C25.1497 23.2001 27.6828 25.6501 28.6995 28.8167H33.4329C32.1329 24.0834 28.7161 21.4667 26.5828 20.4667C28.7161 19.2334 31.7161 16.2334 32.4328 12.1667H28.1327C27.1993 15.4667 24.433 18.4667 21.7997 18.7501V12.1667H17.4995V23.7001C14.8328 23.0334 11.4663 19.8001 11.3163 12.1667H6.74961Z"
+                    fill="#FEFEFE" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_215_3130">
+                    <rect width="40" height="40" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
 
-            <div class="menu-mobile-box__social-text">
-                <p>Текст Текст ТекстТекст Текст Текст</p>
-                <p>Текст Текст ТекстТекст Текст Текст</p>
-            </div>
+          <div class="menu-mobile-box__social-text">
+            <p>Текст Текст ТекстТекст Текст Текст</p>
+            <p>Текст Текст ТекстТекст Текст Текст</p>
+          </div>
         </div>
 
         <div class="menu-mobile-box__button">
-            <button class="btn menu-mobile-box__button-btn">подобрать LVL</button>
+          <button class="btn menu-mobile-box__button-btn">подобрать LVL</button>
         </div>
-    </div>
-    <main class="main">
+      </div>
+      <main class="main">
         <section class="hero">
-            <div class="container hero__container">
-                <div class="hero__header">
-                    <div class="hero__header-img-box">
-                        <picture>
-                            <!-- Для экранов шириной более 800px -->
-                            <source class="hero-img" srcset="images/chel01.svg" media="(min-width: 800px)"
-                                    type="image/png">
-                            <!-- Для экранов шириной менее 800px -->
-                            <source srcset="images/chel01_mob.png" media="(max-width: 800px)" type="image/png">
-                            <!-- Fallback для браузеров, которые не поддерживают <picture> -->
-                            <img class="hero-img" src="images/chel01.svg" alt="Картинка Человека с пальцем вверх">
-                        </picture>
-
-                    </div>
-                    <div class="hero__header-text-box">
-                        <h1 class="h1 hero__header-text-box-title">Привет,
-                            <span class="gradient-text">я&nbsp;CyberBro!</span>
-                        </h1>
-                        <div class="hero__header-text-box-description">
-                            <p>Я здесь чтобы научить тебя программированию.</p>
-                            <p>Каждый день ученики нашей школы оживляют математику, рождают сотни строк кода и
-                                режиссируют сложные алгоритмы.</p>
-                            <p>Здесь учатся не писать код, здесь учат делать из кода искусство.
-                            </p>
-                        </div>
-                    </div>
+          <div class="container hero__container">
+            <div class="hero__header">
+              <div class="hero__header-img-box">
+                <picture>
+                  <!-- Для экранов шириной более 800px -->
+                  <source
+                    class="hero-img"
+                    srcset="images/chel01.svg"
+                    media="(min-width: 800px)"
+                    type="image/png" />
+                  <!-- Для экранов шириной менее 800px -->
+                  <source
+                    srcset="images/chel01_mob.png"
+                    media="(max-width: 800px)"
+                    type="image/png" />
+                  <!-- Fallback для браузеров, которые не поддерживают <picture> -->
+                  <img
+                    class="hero-img"
+                    src="images/chel01.svg"
+                    alt="Картинка Человека с пальцем вверх" />
+                </picture>
+              </div>
+              <div class="hero__header-text-box">
+                <h1 class="h1 hero__header-text-box-title">
+                  Привет,
+                  <span class="gradient-text">я&nbsp;CyberBro!</span>
+                </h1>
+                <div class="hero__header-text-box-description">
+                  <p>Я здесь чтобы научить тебя программированию.</p>
+                  <p>
+                    Каждый день ученики нашей школы оживляют математику, рождают
+                    сотни строк кода и режиссируют сложные алгоритмы.
+                  </p>
+                  <p>
+                    Здесь учатся не писать код, здесь учат делать из кода
+                    искусство.
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class="circle">
-                <img class="circle-blue none" src="images/goluboy.png">
-                <img class="circle-lightblue" src="images/blue.png">
-            </div>
-            <div class="hero__body">
-                <div class="container hero__container_body">
-                    <div class="vertical-line"></div>
-                    <div class="hero__body-left">
-                        <div class="vertical-line none"></div>
-                        <div class="hero__body-left-title box">
-                            <div class="glitch">
-                                90%
-                            </div>
-                        </div>
-                        <div class="hero__body-left-subtitle">
-                            Учеников, продолжают развиваться в программировании по окончанию обучения
-                        </div>
-                    </div>
-                    <div class="hero__body-right">
-                        <div class="hero__body-right-number">
-                            3
-                        </div>
-                        <div class="hero__body-right-text">
-                            занятия необходимо ученику, чтобы погрузится в тему и начать самостоятельно писать код
-                        </div>
-                    </div>
+          </div>
+          <div class="circle">
+            <img class="circle-blue none" src="images/goluboy.png" />
+            <img class="circle-lightblue" src="images/blue.png" />
+          </div>
+          <div class="hero__body">
+            <div class="container hero__container_body">
+              <div class="vertical-line"></div>
+              <div class="hero__body-left">
+                <div class="vertical-line none"></div>
+                <div class="hero__body-left-title box">
+                  <div class="glitch">90%</div>
                 </div>
+                <div class="hero__body-left-subtitle">
+                  Учеников, продолжают развиваться в программировании по
+                  окончанию обучения
+                </div>
+              </div>
+              <div class="hero__body-right">
+                <div class="hero__body-right-number">3</div>
+                <div class="hero__body-right-text">
+                  занятия необходимо ученику, чтобы погрузится в тему и начать
+                  самостоятельно писать код
+                </div>
+              </div>
             </div>
+          </div>
         </section>
         <section class="about-us">
-            <div class="container about-us__container">
-                <div class="about-us-left">
-                    <div class="runner"></div>
-                    <div class="about-us-left__text">
-                        <p>
-                            Высокие технологии на расстоянии вытянутой руки. Это умение решать стандартные задачи из
-                            разных дисциплин – нестандартно, автоматизируя процессы с помощью алгоритмов, функций,
-                            условий.
-                        </p>
-                    </div>
-                </div>
-                <div class="about-us-right">
-                    <h2 class="about-us-right__title">
-                        <span class="accent">IT</span> <br> ДЛЯ НАС
-                    </h2>
-
-                    <div class="about-us-right__text">
-                        <p>
-                            Виртуальная среда, которую создаёт ученик, с определенного момента начинает сама
-                            подсказывать, как ей нужно развиваться, а юный программист, без сторонних подсказок, следует
-                            логике этого развития.
-                        </p>
-                    </div>
-
-                </div>
+          <div class="container about-us__container">
+            <div class="about-us-left">
+              <div class="runner"></div>
+              <div class="about-us-left__text">
+                <p>
+                  Высокие технологии на расстоянии вытянутой руки. Это умение
+                  решать стандартные задачи из разных дисциплин – нестандартно,
+                  автоматизируя процессы с помощью алгоритмов, функций, условий.
+                </p>
+              </div>
             </div>
+            <div class="about-us-right">
+              <h2 class="about-us-right__title">
+                <span class="accent">IT</span> <br />
+                ДЛЯ НАС
+              </h2>
+
+              <div class="about-us-right__text">
+                <p>
+                  Виртуальная среда, которую создаёт ученик, с определенного
+                  момента начинает сама подсказывать, как ей нужно развиваться,
+                  а юный программист, без сторонних подсказок, следует логике
+                  этого развития.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="jump-page jump-page-one">
-            <div class="container jump-page__container jump-page-one__container">
-                <div class="jump-page-one__text jump-page__text">
-                    <h2 class="jump-page__text-title jump-page-one__text-title">Думаешь <br>
-                        это сложно? </h2>
-                    <span class="jump-page__text-subtitle jump-page-one__text-subtitle">
-                        Попробуй дописать код!
-                    </span>
-                    html
-                    Copy
-                    <a href="#" class="jump-page__text-link jump-page-one__text-link">
-                        <!--                        <svg width="32" height="105" viewBox="0 0 32 105" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                        <!--                            &lt;!&ndash; Первый путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-1" d="M14.9247 27.9056V5.34562H17.0847V27.9056H14.9247ZM14.9247 59.9056V37.3456H17.0847V59.9056H14.9247Z" fill="#FEFEFE"/>-->
-                        <!--                            &lt;!&ndash; Второй путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-2" d="M8.56 76.6103H10.648L14.296 84.0503C14.44 84.3543 14.56 84.6343 14.656 84.8903C14.768 85.1623-->
-                        <!--                             14.84 85.3623 14.872 85.4903C14.904 85.3463 14.968 85.1383 15.064 84.8663C15.176 84.5943 15.304 84.3223 15.448 84.0503L19.12 76.6103H21.28L16.12 86.9303H13.72L8.56 76.6103Z" fill="#FEFEFE"/>-->
-                        <!--                            &lt;!&ndash; Третий путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-3" d="M8.56 91.6103H10.648L14.296 99.0503C14.44 99.3543 14.56 99.6343 14.656 99.8903C14.768 100.162-->
-                        <!--                             14.84 100.362 14.872 100.49C14.904 100.346 14.968 100.138 15.064 99.8663C15.176 99.5943 15.304 99.3223 15.448 99.0503L19.12 91.6103H21.28L16.12 101.93H13.72L8.56 91.6103Z" fill="#FEFEFE"/>-->
-                        <!--                        </svg>-->
-                    </a>
-                </div>
+          <div class="container jump-page__container jump-page-one__container">
+            <div class="jump-page-one__text jump-page__text">
+              <h2 class="jump-page__text-title jump-page-one__text-title">
+                Думаешь <br />
+                это сложно?
+              </h2>
+              <span
+                class="jump-page__text-subtitle jump-page-one__text-subtitle">
+                Попробуй дописать код!
+              </span>
+              html Copy
+              <a href="#" class="jump-page__text-link jump-page-one__text-link">
+                <!--                        <svg width="32" height="105" viewBox="0 0 32 105" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--                            &lt;!&ndash; Первый путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-1" d="M14.9247 27.9056V5.34562H17.0847V27.9056H14.9247ZM14.9247 59.9056V37.3456H17.0847V59.9056H14.9247Z" fill="#FEFEFE"/>-->
+                <!--                            &lt;!&ndash; Второй путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-2" d="M8.56 76.6103H10.648L14.296 84.0503C14.44 84.3543 14.56 84.6343 14.656 84.8903C14.768 85.1623-->
+                <!--                             14.84 85.3623 14.872 85.4903C14.904 85.3463 14.968 85.1383 15.064 84.8663C15.176 84.5943 15.304 84.3223 15.448 84.0503L19.12 76.6103H21.28L16.12 86.9303H13.72L8.56 76.6103Z" fill="#FEFEFE"/>-->
+                <!--                            &lt;!&ndash; Третий путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-3" d="M8.56 91.6103H10.648L14.296 99.0503C14.44 99.3543 14.56 99.6343 14.656 99.8903C14.768 100.162-->
+                <!--                             14.84 100.362 14.872 100.49C14.904 100.346 14.968 100.138 15.064 99.8663C15.176 99.5943 15.304 99.3223 15.448 99.0503L19.12 91.6103H21.28L16.12 101.93H13.72L8.56 91.6103Z" fill="#FEFEFE"/>-->
+                <!--                        </svg>-->
+              </a>
             </div>
+          </div>
         </section>
-        <section data-aos="fade-up" data-aos-delay="150" data-aos-offset="650" data-aos-easing="linear"
-                 data-aos-duration="500" class="redactor-coda">
-            <div class="container redactor-coda__container">
-                <div class="redactor-coda__exercise">Задание - Привет, мир! 👋</div>
-                <div class="redactor-coda__exercise-desc">Напишите программу, которая выводит на экран фразу "Hello,
-                    World!". Это самая первая и простая задача, с которой начинают все новички. Она поможет вам понять,
-                    как
-                    работает вывод информации на экран и как запускать программы на Python.
-                </div>
-                <div class="redactor-coda__images-box">
-                    <picture>
-                        <!-- Для экранов шириной более 800px -->
-                        <source class="redactor-coda-img" srcset="images/sun.webp" media="(min-width: 800px)"
-                                type="image/webp">
-                        <!-- Для экранов шириной менее 800px -->
-                        <source srcset="images/sun@2x.jpg 2x" media="(max-width: 800px)" type="image/jpg">
-                        <!-- Fallback для браузеров, которые не поддерживают <picture> -->
-                        <img class="redactor-coda-img" src="images/sun.jpg" alt="Картинка Человека с пальцем вверх">
-                    </picture>
-                </div>
-                <div class="redactor-coda__clue">
-                    Подсказка: Используйте цикл<span class="redactor-coda__clue-elem"> for.</span>
-                </div>
-                <div class="redactor-coda__window-box">
-                    <div class="redactor-coda__window-box-text">
-                        python [-bBdEhiIOPqRsSuvVWx?] [-c command | -m module-name | script | - ] [args]
-                    </div>
-                    <div class="redactor-coda__window-box-modal">
-                        <button class="redactor-coda__window-box-modal-close-btn">
-                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 1L1 16" stroke="#2B2A29" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                                <path d="M1 1L16 16" stroke="#2B2A29" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <span class="redactor-coda__window-box-modal-text">
-                           Молодец, ты всё сделал правильно! Как видишь робот сделал несколько шагов влево. Так и работает функция if, она позволяет задать действие при условии дополнительных вводных. Это одна из главных функций в программировании.
-                        </span>
-                    </div>
-                </div>
+        <section
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-offset="650"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          class="redactor-coda">
+          <div class="container redactor-coda__container">
+            <div class="redactor-coda__exercise">Задание - Привет, мир! 👋</div>
+            <div class="redactor-coda__exercise-desc">
+              Напишите программу, которая выводит на экран фразу "Hello,
+              World!". Это самая первая и простая задача, с которой начинают все
+              новички. Она поможет вам понять, как работает вывод информации на
+              экран и как запускать программы на Python.
             </div>
+            <div class="redactor-coda__images-box">
+              <picture>
+                <!-- Для экранов шириной более 800px -->
+                <source
+                  class="redactor-coda-img"
+                  srcset="images/sun.webp"
+                  media="(min-width: 800px)"
+                  type="image/webp" />
+                <!-- Для экранов шириной менее 800px -->
+                <source
+                  srcset="images/sun@2x.jpg 2x"
+                  media="(max-width: 800px)"
+                  type="image/jpg" />
+                <!-- Fallback для браузеров, которые не поддерживают <picture> -->
+                <img
+                  class="redactor-coda-img"
+                  src="images/sun.jpg"
+                  alt="Картинка Человека с пальцем вверх" />
+              </picture>
+            </div>
+            <div class="redactor-coda__clue">
+              Подсказка: Используйте цикл<span class="redactor-coda__clue-elem">
+                for.</span
+              >
+            </div>
+            <div class="redactor-coda__window-box">
+              <div class="redactor-coda__window-box-text">
+                python [-bBdEhiIOPqRsSuvVWx?] [-c command | -m module-name |
+                script | - ] [args]
+              </div>
+              <div class="redactor-coda__window-box-modal">
+                <button class="redactor-coda__window-box-modal-close-btn">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16 1L1 16"
+                      stroke="#2B2A29"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M1 1L16 16"
+                      stroke="#2B2A29"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <span class="redactor-coda__window-box-modal-text">
+                  Молодец, ты всё сделал правильно! Как видишь робот сделал
+                  несколько шагов влево. Так и работает функция if, она
+                  позволяет задать действие при условии дополнительных вводных.
+                  Это одна из главных функций в программировании.
+                </span>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="jump-page jump-page-two">
-            <div class="container jump-page__container jump-page-two__container">
-                <div class="jump-page-two__text jump-page__text">
-                    <span class="jump-page__text-subtitle jump-page-two__text-subtitle">
-                            SELECT YOUR LEVEL
-                        </span>
-                    <h2 class="jump-page__text-title jump-page-two__text-title">Обучение
-                    </h2>
-                    html
-                    Copy
-                    <a href="#" class="jump-page__text-link jump-page-two__text-link">
-                        <!--                        <svg width="32" height="105" viewBox="0 0 32 105" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                        <!--                            &lt;!&ndash; Первый путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-1" d="M14.9247 27.9056V5.34562H17.0847V27.9056H14.9247ZM14.9247 59.9056V37.3456H17.0847V59.9056H14.9247Z" fill="#FEFEFE"/>-->
-                        <!--                            &lt;!&ndash; Второй путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-2" d="M8.56 76.6103H10.648L14.296 84.0503C14.44 84.3543 14.56 84.6343 14.656 84.8903C14.768 85.1623-->
-                        <!--                             14.84 85.3623 14.872 85.4903C14.904 85.3463 14.968 85.1383 15.064 84.8663C15.176 84.5943 15.304 84.3223 15.448 84.0503L19.12 76.6103H21.28L16.12 86.9303H13.72L8.56 76.6103Z" fill="#FEFEFE"/>-->
-                        <!--                            &lt;!&ndash; Третий путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-3" d="M8.56 91.6103H10.648L14.296 99.0503C14.44 99.3543 14.56 99.6343 14.656 99.8903C14.768 100.162-->
-                        <!--                             14.84 100.362 14.872 100.49C14.904 100.346 14.968 100.138 15.064 99.8663C15.176 99.5943 15.304 99.3223 15.448 99.0503L19.12 91.6103H21.28L16.12 101.93H13.72L8.56 91.6103Z" fill="#FEFEFE"/>-->
-                        <!--                        </svg>-->
-                    </a>
-                </div>
+          <div class="container jump-page__container jump-page-two__container">
+            <div class="jump-page-two__text jump-page__text">
+              <span
+                class="jump-page__text-subtitle jump-page-two__text-subtitle">
+                SELECT YOUR LEVEL
+              </span>
+              <h2 class="jump-page__text-title jump-page-two__text-title">
+                Обучение
+              </h2>
+              html Copy
+              <a href="#" class="jump-page__text-link jump-page-two__text-link">
+                <!--                        <svg width="32" height="105" viewBox="0 0 32 105" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--                            &lt;!&ndash; Первый путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-1" d="M14.9247 27.9056V5.34562H17.0847V27.9056H14.9247ZM14.9247 59.9056V37.3456H17.0847V59.9056H14.9247Z" fill="#FEFEFE"/>-->
+                <!--                            &lt;!&ndash; Второй путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-2" d="M8.56 76.6103H10.648L14.296 84.0503C14.44 84.3543 14.56 84.6343 14.656 84.8903C14.768 85.1623-->
+                <!--                             14.84 85.3623 14.872 85.4903C14.904 85.3463 14.968 85.1383 15.064 84.8663C15.176 84.5943 15.304 84.3223 15.448 84.0503L19.12 76.6103H21.28L16.12 86.9303H13.72L8.56 76.6103Z" fill="#FEFEFE"/>-->
+                <!--                            &lt;!&ndash; Третий путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-3" d="M8.56 91.6103H10.648L14.296 99.0503C14.44 99.3543 14.56 99.6343 14.656 99.8903C14.768 100.162-->
+                <!--                             14.84 100.362 14.872 100.49C14.904 100.346 14.968 100.138 15.064 99.8663C15.176 99.5943 15.304 99.3223 15.448 99.0503L19.12 91.6103H21.28L16.12 101.93H13.72L8.56 91.6103Z" fill="#FEFEFE"/>-->
+                <!--                        </svg>-->
+              </a>
             </div>
+          </div>
         </section>
         <section class="cards">
-            <div class="container cards__container">
-                <div data-aos="fade-up" data-aos-delay="150" data-aos-offset="650" data-aos-easing="linear"
-                     data-aos-duration="500" class="card-item card01">
-                    <div class="card-item-image-box">
-                        <div class="card-item-image-box-img">
-                            <img src="images/lev01.png" alt="Картинка LVL 1">
-                        </div>
-                        <div class="card-item-image-box-text">
-                            <div class="card-item-image-box-text-circle-box">
-                                <span class="circle-active"></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="card-item-image-box-text-name">
-                                Нейроадепт
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item-text-box">
-                        <h2 class="card-item-text-box__title">
-                            LVL 1
-                        </h2>
-                        <div class="card-item-text-box__subtitle">Нейроадепт</div>
-                        <div class="card-item-text-box__description">
-                            CyberBro – это школа программирования, тут еще
-                            какой-то текст тут еще какой-то текст тут еще
-                            какой-то текст тут еще какой-то текст тут еще
-                            какой-то текст CyberBro – это школа
-                            программирования, тут еще какой-то текст тут еще
-                            какой-то текст тут еще какой-то текст тут
-                            еще какой-то текст тут еще какой-то текст
-                        </div>
-                        <button class="btn card-item-text-box__btn-oran">выбрать LVL</button>
-                    </div>
-                    <div class="card-item-training-program-box">
-                        <div class="prog">......................Программма обучения</div>
-                        <div class="card-item-training-program-box-card01">
-                            <div class="card01-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                            </div>
-                            <div class="card01-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card02">
-                            <div class="card02-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                            </div>
-                            <div class="card02-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card03">
-                            <div class="card03-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                            </div>
-                            <div class="card03-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card04">
-                            <div class="card04-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                            </div>
-                            <div class="card04-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card05">
-                            <div class="card05-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                            </div>
-                            <div class="card05-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card06">
-                            <div class="card06-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                                <span class="span-box-active__oran"></span>
-                            </div>
-                            <div class="card06-text">Циклы (for, while)</div>
-                        </div>
-                    </div>
+          <div class="container cards__container">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-offset="650"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              class="card-item card01">
+              <div class="card-item-image-box">
+                <div class="card-item-image-box-img">
+                  <img src="images/lev01.png" alt="Картинка LVL 1" />
                 </div>
-
-                <div data-aos="fade-up" data-aos-delay="150" data-aos-offset="650" data-aos-easing="linear"
-                     data-aos-duration="500" class="card-item card02">
-                    <div class="card-item-image-box">
-                        <div class="card-item-image-box-img">
-                            <img src="images/lev02.png" alt="Картинка LVL 2">
-                        </div>
-                        <div class="card-item-image-box-text">
-                            <div class="card-item-image-box-text-circle-box">
-                                <span></span>
-                                <span class="circle-active"></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="card-item-image-box-text-name">
-                                Кодоискатель
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item-text-box">
-                        <h2 class="card-item-text-box__title">
-                            LVL 2
-                        </h2>
-                        <div class="card-item-text-box__subtitle">Кодоискатель</div>
-                        <div class="card-item-text-box__description">
-                            CyberBro – это школа программирования, тут еще
-                            какой-то текст тут еще какой-то текст тут еще
-                            какой-то текст тут еще какой-то текст тут еще
-                            какой-то текст CyberBro – это школа
-                            программирования, тут еще какой-то текст тут еще
-                            какой-то текст тут еще какой-то текст тут
-                            еще какой-то текст тут еще какой-то текст
-                        </div>
-                        <button class="btn card-item-text-box__btn-yel">выбрать LVL</button>
-                    </div>
-                    <div class="card-item-training-program-box">
-                        <div class="prog">......................Программма обучения</div>
-                        <div class="card-item-training-program-box-card01">
-                            <div class="card01-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                            </div>
-                            <div class="card01-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card02">
-                            <div class="card02-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                            </div>
-                            <div class="card02-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card03">
-                            <div class="card03-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                            </div>
-                            <div class="card03-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card04">
-                            <div class="card04-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                            </div>
-                            <div class="card04-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card05">
-                            <div class="card05-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                            </div>
-                            <div class="card05-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card06">
-                            <div class="card06-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                                <span class="span-box-active__yelo"></span>
-                            </div>
-                            <div class="card06-text">Циклы (for, while)</div>
-                        </div>
-                    </div>
+                <div class="card-item-image-box-text">
+                  <div class="card-item-image-box-text-circle-box">
+                    <span class="circle-active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="card-item-image-box-text-name">Нейроадепт</div>
                 </div>
-
-                <div data-aos="fade-up" data-aos-delay="150" data-aos-offset="650" data-aos-easing="linear"
-                     data-aos-duration="500" class="card-item card03">
-                    <div class="card-item-image-box">
-                        <div class="card-item-image-box-img">
-                            <img src="images/lev03.png" alt="Картинка LVL 3">
-                        </div>
-                        <div class="card-item-image-box-text">
-                            <div class="card-item-image-box-text-circle-box">
-                                <span></span>
-                                <span></span>
-                                <span class="circle-active"></span>
-                                <span></span>
-                            </div>
-                            <div class="card-item-image-box-text-name">
-                                технотворец
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item-text-box">
-                        <h2 class="card-item-text-box__title">
-                            LVL 3
-                        </h2>
-                        <div class="card-item-text-box__subtitle">технотворец</div>
-                        <div class="card-item-text-box__description">
-                            CyberBro – это школа программирования, тут еще
-                            какой-то текст тут еще какой-то текст тут еще
-                            какой-то текст тут еще какой-то текст тут еще
-                            какой-то текст CyberBro – это школа
-                            программирования, тут еще какой-то текст тут еще
-                            какой-то текст тут еще какой-то текст тут
-                            еще какой-то текст тут еще какой-то текст
-                        </div>
-                        <button class="btn card-item-text-box__btn-blue">выбрать LVL</button>
-                    </div>
-                    <div class="card-item-training-program-box">
-                        <div class="prog">......................Программма обучения</div>
-                        <div class="card-item-training-program-box-card01">
-                            <div class="card01-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                            </div>
-                            <div class="card01-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card02">
-                            <div class="card02-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                            </div>
-                            <div class="card02-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card03">
-                            <div class="card03-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                            </div>
-                            <div class="card03-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card04">
-                            <div class="card04-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                            </div>
-                            <div class="card04-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card05">
-                            <div class="card05-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                            </div>
-                            <div class="card05-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card06">
-                            <div class="card06-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                                <span class="span-box-active__blue"></span>
-                            </div>
-                            <div class="card06-text">Циклы (for, while)</div>
-                        </div>
-                    </div>
+              </div>
+              <div class="card-item-text-box">
+                <h2 class="card-item-text-box__title">LVL 1</h2>
+                <div class="card-item-text-box__subtitle">Нейроадепт</div>
+                <div class="card-item-text-box__description">
+                  CyberBro – это школа программирования, тут еще какой-то текст
+                  тут еще какой-то текст тут еще какой-то текст тут еще какой-то
+                  текст тут еще какой-то текст CyberBro – это школа
+                  программирования, тут еще какой-то текст тут еще какой-то
+                  текст тут еще какой-то текст тут еще какой-то текст тут еще
+                  какой-то текст
                 </div>
-
-                <div data-aos="fade-up" data-aos-delay="150" data-aos-offset="700" data-aos-easing="linear"
-                     data-aos-duration="500" class="card-item card04">
-                    <div class="card-item-image-box">
-                        <div class="card-item-image-box-img">
-                            <img src="images/lev04.png" alt="Картинка LVL 4">
-                        </div>
-                        <div class="card-item-image-box-text">
-                            <div class="card-item-image-box-text-circle-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="circle-active"></span>
-                            </div>
-                            <div class="card-item-image-box-text-name">
-                                Кибермудрец
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item-text-box">
-                        <h2 class="card-item-text-box__title">
-                            LVL 4
-                        </h2>
-                        <div class="card-item-text-box__subtitle">Кибермудрец</div>
-                        <div class="card-item-text-box__description">
-                            CyberBro – это школа программирования, тут еще
-                            какой-то текст тут еще какой-то текст тут еще
-                            какой-то текст тут еще какой-то текст тут еще
-                            какой-то текст CyberBro – это школа
-                            программирования, тут еще какой-то текст тут еще
-                            какой-то текст тут еще какой-то текст тут
-                            еще какой-то текст тут еще какой-то текст
-                        </div>
-                        <button class="btn card-item-text-box__btn-feol">выбрать LVL</button>
-                    </div>
-                    <div class="card-item-training-program-box">
-                        <div class="prog">......................Программма обучения</div>
-                        <div class="card-item-training-program-box-card01">
-                            <div class="card01-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                            </div>
-                            <div class="card01-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card02">
-                            <div class="card02-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                            </div>
-                            <div class="card02-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card03">
-                            <div class="card03-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                            </div>
-                            <div class="card03-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card04">
-                            <div class="card04-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                            </div>
-                            <div class="card04-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card05">
-                            <div class="card05-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                            </div>
-                            <div class="card05-text">Циклы (for, while)</div>
-                        </div>
-                        <div class="card-item-training-program-box-card06">
-                            <div class="card06-span-box">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                                <span class="span-box-active__feol"></span>
-                            </div>
-                            <div class="card06-text">Циклы (for, while)</div>
-                        </div>
-                    </div>
+                <button class="btn card-item-text-box__btn-oran">
+                  выбрать LVL
+                </button>
+              </div>
+              <div class="card-item-training-program-box">
+                <div class="prog">
+                  ......................Программма обучения
                 </div>
+                <div class="card-item-training-program-box-card01">
+                  <div class="card01-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                  </div>
+                  <div class="card01-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card02">
+                  <div class="card02-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                  </div>
+                  <div class="card02-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card03">
+                  <div class="card03-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                  </div>
+                  <div class="card03-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card04">
+                  <div class="card04-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                  </div>
+                  <div class="card04-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card05">
+                  <div class="card05-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                  </div>
+                  <div class="card05-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card06">
+                  <div class="card06-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                    <span class="span-box-active__oran"></span>
+                  </div>
+                  <div class="card06-text">Циклы (for, while)</div>
+                </div>
+              </div>
             </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-offset="650"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              class="card-item card02">
+              <div class="card-item-image-box">
+                <div class="card-item-image-box-img">
+                  <img src="images/lev02.png" alt="Картинка LVL 2" />
+                </div>
+                <div class="card-item-image-box-text">
+                  <div class="card-item-image-box-text-circle-box">
+                    <span></span>
+                    <span class="circle-active"></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="card-item-image-box-text-name">Кодоискатель</div>
+                </div>
+              </div>
+              <div class="card-item-text-box">
+                <h2 class="card-item-text-box__title">LVL 2</h2>
+                <div class="card-item-text-box__subtitle">Кодоискатель</div>
+                <div class="card-item-text-box__description">
+                  CyberBro – это школа программирования, тут еще какой-то текст
+                  тут еще какой-то текст тут еще какой-то текст тут еще какой-то
+                  текст тут еще какой-то текст CyberBro – это школа
+                  программирования, тут еще какой-то текст тут еще какой-то
+                  текст тут еще какой-то текст тут еще какой-то текст тут еще
+                  какой-то текст
+                </div>
+                <button class="btn card-item-text-box__btn-yel">
+                  выбрать LVL
+                </button>
+              </div>
+              <div class="card-item-training-program-box">
+                <div class="prog">
+                  ......................Программма обучения
+                </div>
+                <div class="card-item-training-program-box-card01">
+                  <div class="card01-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                  </div>
+                  <div class="card01-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card02">
+                  <div class="card02-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                  </div>
+                  <div class="card02-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card03">
+                  <div class="card03-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                  </div>
+                  <div class="card03-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card04">
+                  <div class="card04-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                  </div>
+                  <div class="card04-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card05">
+                  <div class="card05-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                  </div>
+                  <div class="card05-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card06">
+                  <div class="card06-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                    <span class="span-box-active__yelo"></span>
+                  </div>
+                  <div class="card06-text">Циклы (for, while)</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-offset="650"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              class="card-item card03">
+              <div class="card-item-image-box">
+                <div class="card-item-image-box-img">
+                  <img src="images/lev03.png" alt="Картинка LVL 3" />
+                </div>
+                <div class="card-item-image-box-text">
+                  <div class="card-item-image-box-text-circle-box">
+                    <span></span>
+                    <span></span>
+                    <span class="circle-active"></span>
+                    <span></span>
+                  </div>
+                  <div class="card-item-image-box-text-name">технотворец</div>
+                </div>
+              </div>
+              <div class="card-item-text-box">
+                <h2 class="card-item-text-box__title">LVL 3</h2>
+                <div class="card-item-text-box__subtitle">технотворец</div>
+                <div class="card-item-text-box__description">
+                  CyberBro – это школа программирования, тут еще какой-то текст
+                  тут еще какой-то текст тут еще какой-то текст тут еще какой-то
+                  текст тут еще какой-то текст CyberBro – это школа
+                  программирования, тут еще какой-то текст тут еще какой-то
+                  текст тут еще какой-то текст тут еще какой-то текст тут еще
+                  какой-то текст
+                </div>
+                <button class="btn card-item-text-box__btn-blue">
+                  выбрать LVL
+                </button>
+              </div>
+              <div class="card-item-training-program-box">
+                <div class="prog">
+                  ......................Программма обучения
+                </div>
+                <div class="card-item-training-program-box-card01">
+                  <div class="card01-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                  </div>
+                  <div class="card01-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card02">
+                  <div class="card02-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                  </div>
+                  <div class="card02-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card03">
+                  <div class="card03-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                  </div>
+                  <div class="card03-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card04">
+                  <div class="card04-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                  </div>
+                  <div class="card04-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card05">
+                  <div class="card05-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                  </div>
+                  <div class="card05-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card06">
+                  <div class="card06-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                    <span class="span-box-active__blue"></span>
+                  </div>
+                  <div class="card06-text">Циклы (for, while)</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-offset="700"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              class="card-item card04">
+              <div class="card-item-image-box">
+                <div class="card-item-image-box-img">
+                  <img src="images/lev04.png" alt="Картинка LVL 4" />
+                </div>
+                <div class="card-item-image-box-text">
+                  <div class="card-item-image-box-text-circle-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="circle-active"></span>
+                  </div>
+                  <div class="card-item-image-box-text-name">Кибермудрец</div>
+                </div>
+              </div>
+              <div class="card-item-text-box">
+                <h2 class="card-item-text-box__title">LVL 4</h2>
+                <div class="card-item-text-box__subtitle">Кибермудрец</div>
+                <div class="card-item-text-box__description">
+                  CyberBro – это школа программирования, тут еще какой-то текст
+                  тут еще какой-то текст тут еще какой-то текст тут еще какой-то
+                  текст тут еще какой-то текст CyberBro – это школа
+                  программирования, тут еще какой-то текст тут еще какой-то
+                  текст тут еще какой-то текст тут еще какой-то текст тут еще
+                  какой-то текст
+                </div>
+                <button class="btn card-item-text-box__btn-feol">
+                  выбрать LVL
+                </button>
+              </div>
+              <div class="card-item-training-program-box">
+                <div class="prog">
+                  ......................Программма обучения
+                </div>
+                <div class="card-item-training-program-box-card01">
+                  <div class="card01-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                  </div>
+                  <div class="card01-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card02">
+                  <div class="card02-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                  </div>
+                  <div class="card02-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card03">
+                  <div class="card03-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                  </div>
+                  <div class="card03-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card04">
+                  <div class="card04-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                  </div>
+                  <div class="card04-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card05">
+                  <div class="card05-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                  </div>
+                  <div class="card05-text">Циклы (for, while)</div>
+                </div>
+                <div class="card-item-training-program-box-card06">
+                  <div class="card06-span-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                    <span class="span-box-active__feol"></span>
+                  </div>
+                  <div class="card06-text">Циклы (for, while)</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="jump-page jump-page-three">
-            <div class="container jump-page__container jump-page-three__container">
-                <div class="jump-page-three__text jump-page__text">
-                    <span class="jump-page__text-subtitle jump-page-three__text-subtitle">
-                            рещенные задачи
-                        </span>
-                    <h2 class="jump-page__text-title jump-page-three__text-title">Кейсы
-
-                    </h2>
-                    html
-                    Copy
-                    <a href="#" class="jump-page__text-link jump-page-three__text-link">
-                        <!--                        <svg width="32" height="105" viewBox="0 0 32 105" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                        <!--                            &lt;!&ndash; Первый путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-1" d="M14.9247 27.9056V5.34562H17.0847V27.9056H14.9247ZM14.9247 59.9056V37.3456H17.0847V59.9056H14.9247Z" fill="#FEFEFE"/>-->
-                        <!--                            &lt;!&ndash; Второй путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-2" d="M8.56 76.6103H10.648L14.296 84.0503C14.44 84.3543 14.56 84.6343 14.656 84.8903C14.768 85.1623-->
-                        <!--                             14.84 85.3623 14.872 85.4903C14.904 85.3463 14.968 85.1383 15.064 84.8663C15.176 84.5943 15.304 84.3223 15.448 84.0503L19.12 76.6103H21.28L16.12 86.9303H13.72L8.56 76.6103Z" fill="#FEFEFE"/>-->
-                        <!--                            &lt;!&ndash; Третий путь &ndash;&gt;-->
-                        <!--                            <path class="animate-path animate-path-3" d="M8.56 91.6103H10.648L14.296 99.0503C14.44 99.3543 14.56 99.6343 14.656 99.8903C14.768 100.162-->
-                        <!--                             14.84 100.362 14.872 100.49C14.904 100.346 14.968 100.138 15.064 99.8663C15.176 99.5943 15.304 99.3223 15.448 99.0503L19.12 91.6103H21.28L16.12 101.93H13.72L8.56 91.6103Z" fill="#FEFEFE"/>-->
-                        <!--                        </svg>-->
-                    </a>
-                </div>
+          <div
+            class="container jump-page__container jump-page-three__container">
+            <div class="jump-page-three__text jump-page__text">
+              <span
+                class="jump-page__text-subtitle jump-page-three__text-subtitle">
+                рещенные задачи
+              </span>
+              <h2 class="jump-page__text-title jump-page-three__text-title">
+                Кейсы
+              </h2>
+              html Copy
+              <a
+                href="#"
+                class="jump-page__text-link jump-page-three__text-link">
+                <!--                        <svg width="32" height="105" viewBox="0 0 32 105" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                <!--                            &lt;!&ndash; Первый путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-1" d="M14.9247 27.9056V5.34562H17.0847V27.9056H14.9247ZM14.9247 59.9056V37.3456H17.0847V59.9056H14.9247Z" fill="#FEFEFE"/>-->
+                <!--                            &lt;!&ndash; Второй путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-2" d="M8.56 76.6103H10.648L14.296 84.0503C14.44 84.3543 14.56 84.6343 14.656 84.8903C14.768 85.1623-->
+                <!--                             14.84 85.3623 14.872 85.4903C14.904 85.3463 14.968 85.1383 15.064 84.8663C15.176 84.5943 15.304 84.3223 15.448 84.0503L19.12 76.6103H21.28L16.12 86.9303H13.72L8.56 76.6103Z" fill="#FEFEFE"/>-->
+                <!--                            &lt;!&ndash; Третий путь &ndash;&gt;-->
+                <!--                            <path class="animate-path animate-path-3" d="M8.56 91.6103H10.648L14.296 99.0503C14.44 99.3543 14.56 99.6343 14.656 99.8903C14.768 100.162-->
+                <!--                             14.84 100.362 14.872 100.49C14.904 100.346 14.968 100.138 15.064 99.8663C15.176 99.5943 15.304 99.3223 15.448 99.0503L19.12 91.6103H21.28L16.12 101.93H13.72L8.56 91.6103Z" fill="#FEFEFE"/>-->
+                <!--                        </svg>-->
+              </a>
             </div>
+          </div>
         </section>
         <section class="cases">
-            <div class="cases__logo">
-                <a href="#">
-                    <img src="images/logo.svg" alt="Логотип">
-                </a>
+          <div class="cases__logo">
+            <a href="#">
+              <img src="images/logo.svg" alt="Логотип" />
+            </a>
+          </div>
+          <div class="tabs-container">
+            <div class="tab-buttons">
+              <button class="tab-btn" data-tab="tab1">игра в прятки</button>
+              <button class="tab-btn" data-tab="tab2">
+                натуральный апельсин
+              </button>
+              <button class="tab-btn" data-tab="tab3">стаблизация</button>
+              <button class="tab-btn" data-tab="tab4">новый уровень</button>
+              <button class="tab-btn" data-tab="tab5">апгрейд</button>
             </div>
-            <div class="tabs-container">
-                <div class="tab-buttons">
-                    <button class="tab-btn" data-tab="tab1">игра в прятки</button>
-                    <button class="tab-btn" data-tab="tab2">натуральный апельсин</button>
-                    <button class="tab-btn" data-tab="tab3">стаблизация</button>
-                    <button class="tab-btn" data-tab="tab4">новый уровень</button>
-                    <button class="tab-btn" data-tab="tab5">апгрейд</button>
 
-                </div>
+            <div id="tab1" class="tab-content">
+              <!--                    <h2>игра в прятки</h2>-->
+              <!--                    <p>Содержимое первого таба</p>-->
+              <!--                    <div class="col">-->
 
-                <div id="tab1" class="tab-content">
-                    <!--                    <h2>игра в прятки</h2>-->
-                    <!--                    <p>Содержимое первого таба</p>-->
-                    <!--                    <div class="col">-->
-
-                    <!--                    </div>-->
-                    <div class="fl-cont">
-                        <!--                        <button class="triger_active">Click</button>-->
-                        <div class="double-slider">
-                            <div class="swiper mySwiper2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                            <div thumbsSlider="" class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg"/>
-                                    </div>
-                                </div>
-                                <div class="swiper-scrollbar"></div>
-                            </div>
-                        </div>
-
+              <!--                    </div>-->
+              <div class="fl-cont">
+                <!--                        <button class="triger_active">Click</button>-->
+                <div class="double-slider">
+                  <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                      </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                  <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                      </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                  </div>
                 </div>
-
-                <div id="tab2" class="tab-content">
-                    <h2>Контент 2</h2>
-                    <p>Содержимое второго таба</p>
-                </div>
-
-                <div id="tab3" class="tab-content">
-                    <h2>Контент 3</h2>
-                    <p>Содержимое третьего таба</p>
-                </div>
-
-                <div id="tab4" class="tab-content">
-                    <h2>Контент 4</h2>
-                    <p>Содержимое четвертого таба</p>
-                </div>
-
-                <div id="tab5" class="tab-content">
-                    <h2>Контент 5</h2>
-                    <p>Содержимое пятого таба</p>
-                </div>
+              </div>
             </div>
-        </section>
-    </main>
 
-</div>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<script src="scripts/swiper-bundle.js"></script>
-<script src="scripts/mobile-menu.js"></script>
-<script src="scripts/slider-cases.js"></script>
-</body>
+            <div id="tab2" class="tab-content">
+              <h2>Контент 2</h2>
+              <p>Содержимое второго таба</p>
+            </div>
+
+            <div id="tab3" class="tab-content">
+              <h2>Контент 3</h2>
+              <p>Содержимое третьего таба</p>
+            </div>
+
+            <div id="tab4" class="tab-content">
+              <h2>Контент 4</h2>
+              <p>Содержимое четвертого таба</p>
+            </div>
+
+            <div id="tab5" class="tab-content">
+              <h2>Контент 5</h2>
+              <p>Содержимое пятого таба</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="scripts/swiper-bundle.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+    <script src="scripts/slider-cases.js"></script>
+  </body>
 </html>
