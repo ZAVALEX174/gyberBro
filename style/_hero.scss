@@ -16,7 +16,7 @@
       width: 600px;
       height: 600px;
       z-index: 5;
-      background: url("../images/orange.png") no-repeat bottom left/cover;
+      background: url('../images/orange.png') no-repeat bottom left/cover;
     }
   }
 
@@ -88,7 +88,7 @@
     }
 
     &-description {
-      font-family: "JetBrainsMono-Regular", sans-serif;
+      font-family: 'JetBrainsMono-Regular', sans-serif;
       font-weight: 400;
       font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
       color: #fff;
@@ -119,26 +119,26 @@
 
       &::before {
         position: absolute;
-        content: "";
+        content: '';
         top: 32px;
         left: -200px;
         transform: translateX(-50%);
         width: 10px;
         height: 140px;
         z-index: 10;
-        background: url("../images/line_circle1.svg") center/contain no-repeat;
+        background: url('../images/line_circle1.svg') center/contain no-repeat;
       }
 
       &::after {
         position: absolute;
-        content: "";
+        content: '';
         top: 30px;
         left: -180px;
         transform: translateX(-50%);
         width: 10px;
         height: 160px;
         z-index: 10;
-        background: url("../images/line_circle2.svg") center/contain no-repeat;
+        background: url('../images/line_circle2.svg') center/contain no-repeat;
       }
     }
   }
@@ -156,11 +156,10 @@
     margin-top: -70px;
     align-items: center;
     justify-content: space-between;
-    mask-image: url("../images/111.png");
+    mask-image: url('../images/111.png');
     mask-repeat: no-repeat;
     mask-position: 49.1% 0;
     //mask-size: 50%;
-
 
     &-left {
       display: flex;
@@ -183,7 +182,7 @@
           position: relative;
           padding: 0;
           margin: 0;
-          font-family: "JetBrainsMono-ExtraBold", sans-serif;
+          font-family: 'JetBrainsMono-ExtraBold', sans-serif;
           font-weight: 800;
           font-size: 171px;
           line-height: 0.77;
@@ -196,7 +195,7 @@
 
           &::before,
           &::after {
-            content: "90%";
+            content: '90%';
             color: var(--color-1);
             position: absolute;
             top: 0;
@@ -224,7 +223,7 @@
         $steps: 20;
         @for $i from 0 through $steps {
           #{percentage($i*(1/$steps))} {
-            clip: rect(random(150)+px, 350px, random(150)+px, 30px)
+            clip: rect(random(150) + px, 350px, random(150) + px, 30px);
           }
         }
       }
@@ -232,7 +231,7 @@
         $steps: 20;
         @for $i from 0 through $steps {
           #{percentage($i*(1/$steps))} {
-            clip: rect(random(150)+px, 350px, random(150)+px, 30px)
+            clip: rect(random(150) + px, 350px, random(150) + px, 30px);
           }
         }
       }
@@ -240,11 +239,11 @@
       &-subtitle {
         max-width: 362px;
         font-weight: 400;
-        font-size: 19px;
+        font-size: 17px;
         color: #fff;
 
         @media (max-width: 1284px) {
-          font-size: clamp(1rem, 0.9269rem + 0.3247vw, 1.1875rem);
+          font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
         }
       }
     }
@@ -268,12 +267,13 @@
 
       &::after {
         position: absolute;
-        content: "";
+        content: '';
         top: 15px;
         right: 15px;
         width: 536px;
         height: 261px;
-        background: url('../images/kartoteka_line.svg') center center/cover no-repeat;
+        background: url('../images/kartoteka_line.svg') center center/cover
+          no-repeat;
         z-index: 77;
         pointer-events: none;
       }
@@ -293,11 +293,11 @@
 
       &-text {
         font-weight: 400;
-        font-size: 19px;
+        font-size: 17px;
         color: var(--text-color);
 
         @media (max-width: 1284px) {
-          font-size: clamp(1rem, 0.9269rem + 0.3247vw, 1.1875rem);
+          font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
         }
       }
     }
