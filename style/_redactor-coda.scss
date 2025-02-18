@@ -1,20 +1,31 @@
 .redactor-coda {
   width: 100%;
-  //height: 1500px;
   background-color: var(--page-bg);
   position: relative;
   z-index: 40;
 
   &__container {
-    max-width: 1255px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    max-width: 1284px;
+    padding-left: 0;
+  }
+
+  &-bg {
+    width: 100%;
     display: grid;
-    grid-template-columns: 397px 1fr;
+    grid-template-columns: 367px 1fr;
     grid-template-areas:
    'exercise exercise'
   'exercise-desc exercise-desc'
    'images-box clue'
   'images-box window-box';
     gap: 20px 24px;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 134px 75px 62px 45px;
+    background: url("../images/redactor_bg.svg") no-repeat center right/cover;
   }
 
   &__exercise {
@@ -23,18 +34,25 @@
     margin: 0;
     font-family: 'JetBrainsMono-Bold', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--text-color);
 
     @media (max-width: 1284px) {
-      font-size: clamp(1.1875rem, 1.0657rem + 0.5411vw, 1.5rem);
+      font-size: clamp(1.0625rem, 0.9894rem + 0.3247vw, 1.25rem);
+    }
+
+    @media (max-width: 1024px) {
+      font-family: JetBrainsMono-ExtraLight, sans-serif;
+      font-weight: 200;
     }
   }
 
   &__exercise-desc {
     width: 100%;
+    height: 150px;
+    overflow-x: auto;
     grid-area: exercise-desc;
-    padding: 10px 20px 68px;
+    padding: 10px 20px 10px;
     margin: 0;
     font-family: 'JetBrainsMono-Regular', sans-serif;
     font-weight: 400;
@@ -47,12 +65,16 @@
     @media (max-width: 1284px) {
       font-size: clamp(1rem, 0.9513rem + 0.2165vw, 1.125rem);
     }
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
   }
 
   &__images-box {
     grid-area: images-box;
-    width: 393px;
-    height: 520px;
+    width: 367px;
+    height: 414px;
   }
 
   &__clue {
@@ -61,17 +83,16 @@
     margin: 0;
     padding: 10px 20px;
     grid-area: clue;
-    font-family: 'JetBrainsMono-Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-transform: lowercase;
+    font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
     color: var(--text-color);
     backdrop-filter: blur(140px);
-    background: var(--color-4);
+    background: rgba(208, 208, 208, 0.2);
     height: auto;
 
     @media (max-width: 1284px) {
-      font-size: clamp(1rem, 0.9513rem + 0.2165vw, 1.125rem);
+      font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
     }
 
     &-elem {
@@ -84,19 +105,25 @@
       width: 62px;
       height: 24px;
       background: rgba(255, 255, 255, 0.3);
-      font-family: 'JetBrainsMono-Regular', sans-serif;
-      font-weight: 400;
-      font-size: 18px;
+      font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+      font-weight: 200;
+      font-size: 17px;
       text-transform: lowercase;
       color: #000;
+
+      @media (max-width: 1284px) {
+        font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
+      }
     }
   }
 
   &__window-box {
+    margin-top: -10px;
     grid-area: window-box;
     max-width: 808px;
     width: 100%;
-    height: 450px;
+    height: 360px;
+    overflow-y: auto;
     display: flex;
     padding: 10px 20px;
     flex-direction: column;
@@ -107,14 +134,14 @@
     &-text {
       padding: 0;
       margin: 0;
-      font-family: 'JetBrainsMono-Regular', sans-serif;
-      font-weight: 400;
-      font-size: 18px;
+      font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+      font-weight: 200;
+      font-size: 17px;
       text-transform: lowercase;
       color: rgba(255, 255, 255, 0.8);
 
       @media (max-width: 1284px) {
-        font-size: clamp(1rem, 0.9513rem + 0.2165vw, 1.125rem);
+        font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
       }
     }
 
@@ -143,14 +170,14 @@
         display: inline-flex;
         padding: 0;
         margin: 0;
-        font-family: 'JetBrainsMono-Regular', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
+        font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+        font-weight: 200;
+        font-size: 17px;
         text-transform: lowercase;
         color: #000;
 
         @media (max-width: 1284px) {
-          font-size: clamp(1rem, 0.9513rem + 0.2165vw, 1.125rem);
+          font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
         }
       }
     }
