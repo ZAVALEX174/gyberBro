@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (circleBlue && circleLightBlue && mouseOwnerNumber) {
 
         const mouseoverFank = () => {
-            circleBlue.classList.remove('none');
-            circleLightBlue.classList.add('none');
+            circleBlue.classList.remove('circle-active');
+            circleLightBlue.classList.add('circle-active');
         }
 
         const mouseoutFank = () => {
-            circleBlue.classList.add('none');
-            circleLightBlue.classList.remove('none');
+            circleBlue.classList.add('circle-active');
+            circleLightBlue.classList.remove('circle-active');
         }
 
         mouseOwnerNumber.addEventListener('mouseover', mouseoverFank);
