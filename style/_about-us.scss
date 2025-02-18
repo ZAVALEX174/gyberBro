@@ -1,6 +1,6 @@
 .about-us {
   width: 100%;
-  background: url("../images/01101.png") center bottom/100% 70% no-repeat;
+  background: url("../images/01101.svg") center bottom/200% 30% no-repeat;
   //временно
   height: auto;
   //margin-top: 220px;
@@ -47,7 +47,7 @@
       margin: 0;
       padding: 0;
       max-width: 416px;
-      padding-left: 35px;
+      padding-left: 41px;
       padding-top: 65px;
       padding-right: 22px;
       grid-column: 1 / 13;
@@ -56,13 +56,13 @@
       p {
         margin: 0;
         padding: 0;
-        font-family: 'JetBrainsMono-Regular', sans-serif;
-        font-weight: 400;
-        font-size: 20px;
+        font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+        font-weight: 200;
+        font-size: 17px;
         color: #fff;
 
         @media (max-width: 1284px) {
-          font-size: clamp(1rem, 0.9026rem + 0.4329vw, 1.25rem);
+          font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
         }
       }
     }
@@ -92,14 +92,14 @@
     }
 
     &__text {
-      font-family: 'JetBrainsMono-Regular', sans-serif;
-      font-weight: 400;
-      font-size: 20px;
+      font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+      font-weight: 200;
+      font-size: 17px;
       color: #fff;
       margin-bottom: 300px;
 
       @media (max-width: 1284px) {
-        font-size: clamp(1rem, 0.9026rem + 0.4329vw, 1.25rem);
+        font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
       }
     }
   }
@@ -110,15 +110,42 @@
     opacity: 1;
     transform: translateY(304px);
   }
-  80% {
+  3% {
+    opacity: 1;
+    transform: translateY(304px);
+  }
+  48% {
     opacity: 1;
     transform: translateY(494px);
   }
-  100% {
-    opacity: 0;
+  53% {
+    opacity: 1;
     transform: translateY(494px);
   }
+  97% {
+    opacity: 1;
+    transform: translateY(304px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(304px);
+  }
 }
+
+//@keyframes moveRunner {
+//  0% {
+//    opacity: 1;
+//    transform: translateY(304px);
+//  }
+//  80% {
+//    opacity: 1;
+//    transform: translateY(494px);
+//  }
+//  100% {
+//    opacity: 1;
+//    transform: translateY(494px);
+//  }
+//}
 
 .runner {
   position: absolute;
@@ -127,7 +154,7 @@
   height: 2px; /* Высота одной ячейки */
   background: var(--color-1); /* Цвет полоски */
   transform: translateY(-100%); /* Начальное положение */
-  animation: moveRunner 5s infinite linear;
+  animation: moveRunner 6s linear infinite;
   transform: translateZ(0);
 
   &::before {

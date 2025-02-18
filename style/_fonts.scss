@@ -1,5 +1,14 @@
 /* Подключение шрифта */
 //JetBrainsMono
+
+@font-face {
+  font-family: 'JetBrainsMono-ExtraLight';
+  src: url('../fonts/JetBrainsMono-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: 'JetBrainsMono-Light';
   src: url('../fonts/JetBrainsMono-Light.woff2') format('woff2');

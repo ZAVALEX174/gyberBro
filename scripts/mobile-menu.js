@@ -100,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // Первоначальная проверка при загрузке
     window.addEventListener('DOMContentLoaded', checkElementPositionOneBox, checkElementPositionTwoBox);
 
-
     // табы
     // Получаем все элементы табов
     const tabButtons = document.querySelectorAll('.tab-btn');

@@ -152,12 +152,13 @@
     }
 
     &-description {
-      font-family: 'JetBrainsMono-Regular', sans-serif;
-      font-weight: 400;
+      font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+      font-weight: 200;
       font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
       color: #fff;
-      max-width: 520px;
+      max-width: 450px;
       margin-left: auto;
+      margin-right: 100px;
       display: flex;
       flex-direction: column;
       row-gap: 25px;
@@ -270,6 +271,11 @@
         height: 130px;
         z-index: 10;
         background: url('../images/line_circle1.svg') center/contain no-repeat;
+
+        @media (max-width: 424px) {
+          left: -70px;
+          height: 110px;
+        }
       }
 
       &::before {
@@ -282,6 +288,11 @@
         height: 140px;
         z-index: 10;
         background: url('../images/line_circle2.svg') center/contain no-repeat;
+
+        @media (max-width: 424px) {
+          left: -55px;
+          height: 120px;
+        }
       }
 
       @media (max-width: 1024px) {
@@ -297,7 +308,7 @@
       max-width: 412px;
       width: 100%;
       flex-direction: column;
-      row-gap: 25px;
+      row-gap: 20px;
       padding: 0;
       margin: 0;
       position: relative;
@@ -314,7 +325,7 @@
       }
 
       @media (max-width: 424px) {
-        max-width: 95%;
+        max-width: 97%;
         margin-left: auto;
         background-color: #040404;
         padding: 34px;
@@ -387,7 +398,8 @@
 
       &-subtitle {
         max-width: 362px;
-        font-weight: 400;
+        font-family: JetBrainsMono-ExtraLight, sans-serif;
+        font-weight: 200;
         font-size: 17px;
         color: #fff;
 
@@ -411,6 +423,7 @@
       mask-position: center top;
       mask-repeat: no-repeat;
       position: relative;
+      column-gap: 20px;
 
       //background: url("../images/kartoteka.png") no-repeat;
       //background-size: cover;
@@ -432,6 +445,8 @@
         }
 
         @media (max-width: 425px) {
+          max-width: 97%;
+          height: 270px;
           clip-path: polygon(0.00% 10%, 58% 10%, 68% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
         }
       }
@@ -455,6 +470,8 @@
         }
 
         @media (max-width: 425px) {
+          bottom: 13px;
+          top: 13px;
           clip-path: polygon(0.00% 10%, 60% 10%, 70% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
         }
       }
@@ -482,6 +499,11 @@
           background: url('../images/kartoteka_mob.svg') center right/cover no-repeat;
           z-index: 77;
           pointer-events: none;
+
+          @media (max-width: 425px) {
+            height: 226px;
+            width: 310px;
+          }
         }
       }
 
@@ -499,7 +521,8 @@
       }
 
       &-text {
-        font-weight: 400;
+        font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+        font-weight: 200;
         font-size: 17px;
         color: var(--text-color);
 
