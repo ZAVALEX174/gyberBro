@@ -794,132 +794,132 @@ h2 {
 }
 @keyframes glitch-before {
   0% {
-    clip: rect(129px, 350px, 29px, 30px);
+    clip: rect(82px, 350px, 97px, 30px);
   }
   5% {
-    clip: rect(99px, 350px, 50px, 30px);
+    clip: rect(17px, 350px, 89px, 30px);
   }
   10% {
-    clip: rect(135px, 350px, 48px, 30px);
+    clip: rect(16px, 350px, 70px, 30px);
   }
   15% {
-    clip: rect(36px, 350px, 32px, 30px);
+    clip: rect(47px, 350px, 128px, 30px);
   }
   20% {
-    clip: rect(50px, 350px, 54px, 30px);
+    clip: rect(6px, 350px, 81px, 30px);
   }
   25% {
-    clip: rect(29px, 350px, 119px, 30px);
+    clip: rect(102px, 350px, 83px, 30px);
   }
   30% {
-    clip: rect(99px, 350px, 15px, 30px);
+    clip: rect(51px, 350px, 29px, 30px);
   }
   35% {
-    clip: rect(133px, 350px, 143px, 30px);
+    clip: rect(142px, 350px, 69px, 30px);
   }
   40% {
-    clip: rect(4px, 350px, 38px, 30px);
+    clip: rect(37px, 350px, 87px, 30px);
   }
   45% {
-    clip: rect(119px, 350px, 23px, 30px);
+    clip: rect(97px, 350px, 38px, 30px);
   }
   50% {
-    clip: rect(98px, 350px, 94px, 30px);
+    clip: rect(34px, 350px, 87px, 30px);
   }
   55% {
-    clip: rect(13px, 350px, 40px, 30px);
+    clip: rect(104px, 350px, 10px, 30px);
   }
   60% {
-    clip: rect(11px, 350px, 52px, 30px);
+    clip: rect(147px, 350px, 30px, 30px);
   }
   65% {
-    clip: rect(50px, 350px, 89px, 30px);
+    clip: rect(102px, 350px, 53px, 30px);
   }
   70% {
-    clip: rect(15px, 350px, 134px, 30px);
+    clip: rect(15px, 350px, 116px, 30px);
   }
   75% {
-    clip: rect(40px, 350px, 104px, 30px);
+    clip: rect(90px, 350px, 122px, 30px);
   }
   80% {
-    clip: rect(94px, 350px, 4px, 30px);
+    clip: rect(30px, 350px, 148px, 30px);
   }
   85% {
-    clip: rect(25px, 350px, 86px, 30px);
+    clip: rect(121px, 350px, 83px, 30px);
   }
   90% {
-    clip: rect(8px, 350px, 8px, 30px);
+    clip: rect(47px, 350px, 19px, 30px);
   }
   95% {
-    clip: rect(122px, 350px, 64px, 30px);
+    clip: rect(106px, 350px, 119px, 30px);
   }
   100% {
-    clip: rect(77px, 350px, 64px, 30px);
+    clip: rect(30px, 350px, 55px, 30px);
   }
 }
 @keyframes glitch-after {
   0% {
-    clip: rect(150px, 350px, 93px, 30px);
+    clip: rect(141px, 350px, 51px, 30px);
   }
   5% {
-    clip: rect(114px, 350px, 49px, 30px);
+    clip: rect(85px, 350px, 2px, 30px);
   }
   10% {
-    clip: rect(103px, 350px, 16px, 30px);
+    clip: rect(3px, 350px, 89px, 30px);
   }
   15% {
-    clip: rect(147px, 350px, 6px, 30px);
+    clip: rect(15px, 350px, 150px, 30px);
   }
   20% {
-    clip: rect(121px, 350px, 74px, 30px);
+    clip: rect(35px, 350px, 76px, 30px);
   }
   25% {
-    clip: rect(77px, 350px, 83px, 30px);
+    clip: rect(50px, 350px, 70px, 30px);
   }
   30% {
-    clip: rect(7px, 350px, 43px, 30px);
+    clip: rect(12px, 350px, 144px, 30px);
   }
   35% {
-    clip: rect(24px, 350px, 87px, 30px);
+    clip: rect(112px, 350px, 143px, 30px);
   }
   40% {
-    clip: rect(99px, 350px, 18px, 30px);
+    clip: rect(110px, 350px, 113px, 30px);
   }
   45% {
-    clip: rect(115px, 350px, 77px, 30px);
+    clip: rect(119px, 350px, 71px, 30px);
   }
   50% {
-    clip: rect(22px, 350px, 110px, 30px);
+    clip: rect(131px, 350px, 82px, 30px);
   }
   55% {
-    clip: rect(109px, 350px, 81px, 30px);
+    clip: rect(96px, 350px, 110px, 30px);
   }
   60% {
-    clip: rect(73px, 350px, 109px, 30px);
+    clip: rect(137px, 350px, 122px, 30px);
   }
   65% {
-    clip: rect(138px, 350px, 21px, 30px);
+    clip: rect(24px, 350px, 91px, 30px);
   }
   70% {
-    clip: rect(91px, 350px, 96px, 30px);
+    clip: rect(93px, 350px, 57px, 30px);
   }
   75% {
-    clip: rect(30px, 350px, 137px, 30px);
+    clip: rect(58px, 350px, 49px, 30px);
   }
   80% {
-    clip: rect(29px, 350px, 125px, 30px);
+    clip: rect(136px, 350px, 6px, 30px);
   }
   85% {
-    clip: rect(142px, 350px, 84px, 30px);
+    clip: rect(48px, 350px, 22px, 30px);
   }
   90% {
-    clip: rect(99px, 350px, 39px, 30px);
+    clip: rect(64px, 350px, 23px, 30px);
   }
   95% {
-    clip: rect(136px, 350px, 38px, 30px);
+    clip: rect(2px, 350px, 3px, 30px);
   }
   100% {
-    clip: rect(35px, 350px, 54px, 30px);
+    clip: rect(7px, 350px, 141px, 30px);
   }
 }
 .hero__body-left-subtitle {
@@ -1418,6 +1418,12 @@ h2 {
   max-width: 1284px;
   padding-left: 0;
 }
+@media (max-width: 1024px) {
+  .redactor-coda__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .redactor-coda-bg {
   width: 100%;
   display: grid;
@@ -1428,6 +1434,15 @@ h2 {
   margin-right: auto;
   padding: 134px 75px 62px 45px;
   background: url("../images/redactor_bg.svg") no-repeat center right/cover;
+}
+@media (max-width: 1024px) {
+  .redactor-coda-bg {
+    background: transparent;
+    padding: 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .redactor-coda__exercise {
   grid-area: exercise;
@@ -1447,6 +1462,7 @@ h2 {
   .redactor-coda__exercise {
     font-family: JetBrainsMono-ExtraLight, sans-serif;
     font-weight: 200;
+    order: 2;
   }
 }
 .redactor-coda__exercise-desc {
@@ -1456,10 +1472,9 @@ h2 {
   grid-area: exercise-desc;
   padding: 10px 20px 10px;
   margin: 0;
-  font-family: "JetBrainsMono-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: lowercase;
+  font-family: "JetBrainsMono-ExtraLight", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(140px);
   background: rgba(208, 208, 208, 0.2);
@@ -1469,13 +1484,34 @@ h2 {
     font-size: clamp(1rem, 0.9513rem + 0.2165vw, 1.125rem);
   }
 }
-.redactor-coda__exercise-desc:first-letter {
-  text-transform: uppercase;
+@media (max-width: 1024px) {
+  .redactor-coda__exercise-desc {
+    order: 3;
+  }
+}
+@media (max-width: 424px) {
+  .redactor-coda__exercise-desc {
+    margin-top: -10px;
+    height: 250px;
+  }
 }
 .redactor-coda__images-box {
   grid-area: images-box;
   width: 367px;
   height: 414px;
+}
+@media (max-width: 1024px) {
+  .redactor-coda__images-box {
+    margin-right: auto;
+    margin-left: auto;
+    order: 1;
+  }
+}
+@media (max-width: 1024px) {
+  .redactor-coda__images-box {
+    width: 330px;
+    height: 262px;
+  }
 }
 .redactor-coda__clue {
   display: flex;
@@ -1494,6 +1530,11 @@ h2 {
 @media (max-width: 1284px) {
   .redactor-coda__clue {
     font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
+  }
+}
+@media (max-width: 1024px) {
+  .redactor-coda__clue {
+    order: 4;
   }
 }
 .redactor-coda__clue-elem {
@@ -1530,6 +1571,20 @@ h2 {
   justify-content: space-between;
   backdrop-filter: blur(140px);
   background: #000;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .redactor-coda__window-box {
+    max-width: 100%;
+    order: 5;
+    margin-top: 0;
+  }
+}
+@media (max-width: 424px) {
+  .redactor-coda__window-box {
+    margin-top: -10px;
+    height: 306px;
+  }
 }
 .redactor-coda__window-box-text {
   padding: 0;
@@ -1549,13 +1604,25 @@ h2 {
   border-radius: 10px;
   padding: 17px 20px;
   max-width: 756px;
-  width: 100%;
-  height: 155px;
+  width: 95%;
   backdrop-filter: blur(140px);
   background: var(--color-3);
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 424px) {
+  .redactor-coda__window-box-modal {
+    bottom: 0;
+    max-width: 425px;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 .redactor-coda__window-box-modal-close-btn {
   margin-left: auto;
@@ -1572,13 +1639,16 @@ h2 {
   font-family: "JetBrainsMono-ExtraLight", sans-serif;
   font-weight: 200;
   font-size: 17px;
-  text-transform: lowercase;
   color: #000;
 }
 @media (max-width: 1284px) {
   .redactor-coda__window-box-modal-text {
     font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
   }
+}
+.redactor-coda__window-box-modal_error {
+  display: none;
+  background-color: var(--color-3);
 }
 
 .cards {
