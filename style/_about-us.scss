@@ -10,21 +10,18 @@
   padding-bottom: 100px;
   margin-bottom: 130px;
 
-  //&-left {
-  //  width: 515px;
-  //  height: 465px;
-  //  //box-shadow: 1px 1px 3px #333333;
-  //  background-color: transparent;
-  //  background-image: linear-gradient(rgba(229, 58, 36, 0.32) 1.5px, transparent 1.5px),
-  //  linear-gradient(90deg, rgba(229, 58, 36, 0.32) 1.5px, transparent 1.5px);
-  //  background-size: 38px 38px,
-  //  38px 38px;
-  //  background-position: -14px -14px,
-  //  1px 1px;
-  //}
+  @media (max-width: 1024px) {
+    margin-bottom: 0;
+    padding-bottom: 130px;
+  }
 
   &__container {
     display: flex;
+    column-gap: 20px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   &-left {
@@ -39,8 +36,25 @@
     transform: translateZ(0); /* для точного рендеринга */
     background-position: 2px -21px;
     border: none;
-    //padding: 67px 55px 100px 35px;
     padding: 0;
+
+    @media (max-width: 1024px) {
+      order: 2;
+      margin: 0 auto 35px;
+    }
+
+    @media (max-width: 768px) {
+      width: 326px;
+      height: 290px;
+
+      grid-template-rows: repeat(13, 25px);
+      grid-template-columns: repeat(13, 25px);
+      background: linear-gradient(90deg, rgba(229, 58, 36, 0.35) 1px, transparent 1px), /* вертикальные линии */
+      linear-gradient(rgba(229, 58, 36, 0.35) 1px, transparent 1px); /* горизонтальные линии */
+      background-size: 25px 25px; /* размер ячеек сетки */
+      transform: translateZ(0); /* для точного рендеринга */
+      background-position: 0 -16px;
+    }
 
     &__text {
       //width: 100%;
@@ -53,6 +67,11 @@
       grid-column: 1 / 13;
       grid-row: 1 / 13;
 
+      @media (max-width: 768px) {
+        padding: 42px 27px;
+        max-width: 325px;
+      }
+
       p {
         margin: 0;
         padding: 0;
@@ -64,6 +83,10 @@
         @media (max-width: 1284px) {
           font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
         }
+
+        @media (max-width: 768px) {
+          display: flex;
+        }
       }
     }
   }
@@ -72,11 +95,14 @@
     //для мобилки display:content
     display: flex;
     flex-direction: column;
-    //border: 1px solid greenyellow;
     max-width: 507px;
     width: 100%;
     padding-top: 53px;
     margin-left: auto;
+
+    @media (max-width: 1024px) {
+      display: contents;
+    }
 
     &__title {
       font-family: 'AKONY', sans-serif;
@@ -85,6 +111,12 @@
       text-transform: lowercase;
       color: var(--text-color);
       margin-bottom: 178px;
+
+      @media (max-width: 1024px) {
+        order: 1;
+        text-align: end;
+        margin-bottom: 50px;
+      }
 
       .accent {
         color: var(--color-3);
@@ -100,6 +132,12 @@
 
       @media (max-width: 1284px) {
         font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
+      }
+
+      @media (max-width: 1024px) {
+        order: 3;
+        padding: 0 42px;
+        margin-bottom: 177px;
       }
     }
   }
@@ -132,20 +170,35 @@
   }
 }
 
-//@keyframes moveRunner {
-//  0% {
-//    opacity: 1;
-//    transform: translateY(304px);
-//  }
-//  80% {
-//    opacity: 1;
-//    transform: translateY(494px);
-//  }
-//  100% {
-//    opacity: 1;
-//    transform: translateY(494px);
-//  }
-//}
+@media (max-width: 768px) {
+  @keyframes moveRunner {
+    0% {
+      opacity: 1;
+      transform: translateY(235px);
+    }
+    3% {
+      opacity: 1;
+      transform: translateY(235px);
+    }
+    48% {
+      opacity: 1;
+      transform: translateY(290px);
+    }
+    53% {
+      opacity: 1;
+      transform: translateY(290px);
+    }
+    97% {
+      opacity: 1;
+      transform: translateY(235px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(235px);
+    }
+  }
+}
+
 
 .runner {
   position: absolute;
@@ -157,13 +210,18 @@
   animation: moveRunner 6s linear infinite;
   transform: translateZ(0);
 
+  @media (max-width: 768px) {
+    width: 102%;
+    left: -4px;
+  }
+
   &::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 25px;
-    height: 5px;
+    width: 18px;
+    height: 3px;
     background-color: var(--color-1);
   }
 

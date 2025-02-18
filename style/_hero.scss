@@ -5,6 +5,22 @@
   //margin-bottom: 130px;
   overflow: hidden;
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1163px;
+    height: 740px;
+    top: 190px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    background: url("../images/hero_container_bg.svg") no-repeat;
+
+    @media (max-width: 1024px) {
+      content: none;
+    }
+  }
+
   &__container {
     max-width: 1284px;
     padding-left: 0;
@@ -546,7 +562,7 @@
   width: 640px;
   height: auto;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   left: 52%;
   transform: translateX(-50%) rotate(90deg);
   top: 29%;
@@ -566,7 +582,7 @@
   width: 640px;
   height: auto;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   left: 52%;
   transform: translateX(-50%) rotate(90deg);
   top: 29%;
