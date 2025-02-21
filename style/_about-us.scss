@@ -3,7 +3,6 @@
   background: url("../images/01101.svg") center bottom/200% 30% no-repeat;
   //временно
   height: auto;
-  //margin-top: 220px;
   position: relative;
   z-index: 20;
   padding-top: 130px;
@@ -46,7 +45,6 @@
     @media (max-width: 768px) {
       width: 326px;
       height: 290px;
-
       grid-template-rows: repeat(13, 25px);
       grid-template-columns: repeat(13, 25px);
       background: linear-gradient(90deg, rgba(229, 58, 36, 0.35) 1px, transparent 1px), /* вертикальные линии */
@@ -198,7 +196,6 @@
     }
   }
 }
-
 
 .runner {
   position: absolute;

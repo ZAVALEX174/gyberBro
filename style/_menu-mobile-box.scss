@@ -1,5 +1,4 @@
 .menu-mobile-box {
-  //background-color: brown;
   position: fixed;
   display: flex;
   left: -100%;
@@ -15,11 +14,6 @@
   &__nav {
     width: 100%;
   }
-
-  //
-  //&__list {
-  //
-  //}
 
   &__item {
     width: 100%;
@@ -70,10 +64,6 @@
       text-transform: capitalize;
       color: #2b2a29;
       transition: 0.2s linear;
-
-      //&:hover {
-      //  background-color: var(--color-2);
-      //}
     }
   }
 

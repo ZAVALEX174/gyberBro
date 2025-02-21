@@ -71,7 +71,6 @@
     font-family: 'JetBrainsMono-ExtraLight', sans-serif;
     font-weight: 200;
     font-size: 17px;
-    //text-transform: lowercase;
     color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(140px);
     background: rgba(208, 208, 208, 0.2);
@@ -196,7 +195,6 @@
       padding: 17px 20px;
       max-width: 756px;
       width: 95%;
-      //height: 155px;
       backdrop-filter: blur(140px);
       background: var(--color-3);
       display: flex;
@@ -231,7 +229,6 @@
         font-family: 'JetBrainsMono-ExtraLight', sans-serif;
         font-weight: 200;
         font-size: 17px;
-        //text-transform: lowercase;
         color: #000;
 
         @media (max-width: 1284px) {

@@ -105,28 +105,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
 
-    if (tabButtons && tabContents) {
-
-        // Активируем первый таб при загрузке
-        tabButtons[0].classList.add('tab-btn-active');
-        tabContents[0].classList.add('tab-content-active');
-        // Добавляем обработчик событий для каждой кнопки
-        tabButtons.forEach(button => {
-
-            button.addEventListener('click', () => {
-                // Удаляем активный класс у всех кнопок и контента
-                tabButtons.forEach(btn => btn.classList.remove('tab-btn-active'));
-                tabContents.forEach(content => content.classList.remove('tab-content-active'));
-
-                // Добавляем активный класс к выбранной кнопке
-                button.classList.add('tab-btn-active');
-
-                // Показываем соответствующий контент
-                const targetTab = document.getElementById(button.dataset.tab);
-                targetTab.classList.add('tab-content-active');
-            });
-        });
-    }
+    // if (tabButtons && tabContents) {
+    //
+    //     // Активируем первый таб при загрузке
+    //     tabButtons[0].classList.add('tab-btn-active');
+    //     tabContents[0].classList.add('tab-content-active');
+    //     // Добавляем обработчик событий для каждой кнопки
+    //     tabButtons.forEach(button => {
+    //
+    //         button.addEventListener('click', () => {
+    //             // Удаляем активный класс у всех кнопок и контента
+    //             tabButtons.forEach(btn => btn.classList.remove('tab-btn-active'));
+    //             tabContents.forEach(content => content.classList.remove('tab-content-active'));
+    //
+    //             // Добавляем активный класс к выбранной кнопке
+    //             button.classList.add('tab-btn-active');
+    //
+    //             // Показываем соответствующий контент
+    //             const targetTab = document.getElementById(button.dataset.tab);
+    //             targetTab.classList.add('tab-content-active');
+    //         });
+    //     });
+    // }
 
 
 })
