@@ -242,6 +242,11 @@
           //column-gap: 20px;
         }
 
+        @media (max-width: 767px) {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
         &-item {
           //padding: 8px 15px;
           width: 100%;
@@ -259,6 +264,7 @@
             position: absolute;
             pointer-events: none;
           }
+
           //проверка бордера конец
 
           @media (max-width: 1020px) {
