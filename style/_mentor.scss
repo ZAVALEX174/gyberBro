@@ -1,0 +1,114 @@
+.mentor {
+  //position: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 500;
+
+  &__container {
+
+  }
+
+  &-item01 {
+
+  }
+
+  &-item {
+
+
+    &__top {
+      display: flex;
+      align-items: center;
+
+      .card-item__top-images-box {
+        background-color: var(--color-3);
+        clip-path: url(#mentor-mask);
+        width: 460px;
+        height: 600px;
+        padding: 6px 6px 8px 6px;
+        margin-right: 42px;
+
+        @media (max-width: 1110px) {
+          margin-right: 20px;
+        }
+
+        @media (max-width: 1020px) {
+          grid-area: card-video-box;
+          margin-right: 0;
+        }
+
+        &-video {
+          clip-path: url(#mentor-mask-gif2);
+          width: 440px;
+          height: 536px;
+          margin-bottom: 5px;
+        }
+
+        .video-lvl {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        &-title {
+          padding-right: 80px;
+          display: flex;
+          text-align: right;
+          justify-content: flex-end;
+          align-items: flex-end;
+          font-family: 'JetBrainsMono-Bold', sans-serif;
+          font-weight: 700;
+          font-size: 22px;
+          color: var(--color-4);
+
+          @media (max-width: 1284px) {
+          }
+        }
+      }
+
+      &-description-box {
+        max-width: 630px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          font-family: 'AKONY', sans-serif;
+          font-weight: 700;
+          font-size: 48px;
+          text-transform: lowercase;
+          color: var(--color-1);
+          margin-bottom: 53px;
+
+          @media (max-width: 1284px) {
+
+          }
+
+          &-accent {
+            color: var(--color-3);
+          }
+        }
+
+        &-text {
+          font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+          font-weight: 200;
+          font-size: 17px;
+          line-height: 1.29412;
+          color: var(--text-color);
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        svg {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+
