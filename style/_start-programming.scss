@@ -1,13 +1,150 @@
 .start-programming {
   width: 100%;
-  height: 1200px;
+  //height: 1200px;
   position: relative;
   z-index: 1000;
+  padding-top: 240px;
+  padding-bottom: 110px;
 
   background: url("../images/tochki_fon.png") center center/cover no-repeat,
   url("../images/tochki_fon_2.png") center center/cover no-repeat,
-  url("../images/line_bg.png") center top/cover no-repeat,
+  url("../images/line_bg.png") center top -90px/cover no-repeat,
   linear-gradient(to right,
                   #101010,
                   #101010);
+
+  //background-color: #717171;
+
+  &__subtitle {
+    display: flex;
+    //width: 100%;
+    font-family: JetBrainsMono-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 26px;
+    justify-content: flex-end;
+    margin-right: 93px;
+
+    @media (max-width: 1284px) {
+      font-size: clamp(1.125rem, 1.0763rem + 0.2165vw, 1.25rem);
+    }
+  }
+
+  &__title {
+    font-family: 'AKONY', sans-serif;
+    max-width: 573px;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: lowercase;
+    color: var(--text-color);
+    margin-bottom: 130px;
+
+    @media (max-width: 1284px) {
+      font-size: clamp(1.25rem, 1.1282rem + 0.5411vw, 1.5625rem);
+    }
+
+    &_accent {
+      color: var(--color-1);
+    }
+  }
+
+  &__btn-box {
+    max-width: 638px;
+    width: 100%;
+    height: 130px;
+    background: url("../images/button_bg.png") top center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 50px;
+
+    @media (max-width: 1023px) {
+      background: transparent;
+    }
+  }
+
+  &__btn {
+
+    background-color: transparent;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text-color);
+
+    @media (max-width: 1023px) {
+      background-color: var(--color-3);
+    }
+  }
+
+  &__text {
+    max-width: 455px;
+    width: 100%;
+    font-family: 'AKONY', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: lowercase;
+    color: var(--text-color);
+    margin-left: auto;
+    margin-bottom: 130px;
+
+    @media (max-width: 1284px) {
+      font-size: clamp(1.25rem, 1.1282rem + 0.5411vw, 1.5625rem);
+    }
+
+    &_accent {
+      color: var(--color-3);
+    }
+  }
+
+  &__text-warning {
+    max-width: 555px;
+    width: 100%;
+    font-family: 'JetBrainsMono-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--text-color);
+    margin-left: auto;
+  }
+}
+
+.flex-container {
+  max-width: 1253px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    width: 700px;
+    height: 700px;
+    transform: translateY(-50%);
+    background: url("../images/start_red.png") center center/cover no-repeat,;
+    z-index: -1;
+    filter: blur(210px);
+    pointer-events: none;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 28%;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    transform: translateY(50%);
+    background: url("../images/start_blue.png") center center/cover no-repeat,;
+    z-index: -1;
+    filter: blur(90px);
+    pointer-events: none;
+  }
 }
