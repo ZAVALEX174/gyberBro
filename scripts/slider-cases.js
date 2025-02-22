@@ -8,14 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
         freeMode: true,
         watchSlidesProgress: true,
         direction: "vertical",
+        grabCursor: true,
         scrollbar: {
             el: ".swiper-scrollbar",
+            draggable: true,
         },
     });
 
     var swiper2 = new Swiper(".mySwiper2", {
         loop: true,
         spaceBetween: 10,
+        slidesPerView: 1,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
