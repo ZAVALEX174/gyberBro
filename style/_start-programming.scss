@@ -1,0 +1,13 @@
+.start-programming {
+  width: 100%;
+  height: 1200px;
+  position: relative;
+  z-index: 1000;
+
+  background: url("../images/tochki_fon.png") center center/cover no-repeat,
+  url("../images/tochki_fon_2.png") center center/cover no-repeat,
+  url("../images/line_bg.png") center top/cover no-repeat,
+  linear-gradient(to right,
+                  #101010,
+                  #101010);
+}

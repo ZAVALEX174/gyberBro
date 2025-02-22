@@ -794,132 +794,132 @@ h2 {
 }
 @keyframes glitch-before {
   0% {
-    clip: rect(69px, 350px, 144px, 30px);
+    clip: rect(105px, 350px, 114px, 30px);
   }
   5% {
-    clip: rect(13px, 350px, 34px, 30px);
+    clip: rect(30px, 350px, 26px, 30px);
   }
   10% {
-    clip: rect(125px, 350px, 26px, 30px);
+    clip: rect(112px, 350px, 103px, 30px);
   }
   15% {
-    clip: rect(150px, 350px, 136px, 30px);
+    clip: rect(4px, 350px, 26px, 30px);
   }
   20% {
-    clip: rect(52px, 350px, 39px, 30px);
+    clip: rect(41px, 350px, 45px, 30px);
   }
   25% {
-    clip: rect(135px, 350px, 123px, 30px);
+    clip: rect(99px, 350px, 10px, 30px);
   }
   30% {
-    clip: rect(117px, 350px, 4px, 30px);
+    clip: rect(95px, 350px, 74px, 30px);
   }
   35% {
-    clip: rect(52px, 350px, 34px, 30px);
+    clip: rect(91px, 350px, 20px, 30px);
   }
   40% {
-    clip: rect(15px, 350px, 52px, 30px);
+    clip: rect(66px, 350px, 17px, 30px);
   }
   45% {
-    clip: rect(131px, 350px, 31px, 30px);
+    clip: rect(93px, 350px, 39px, 30px);
   }
   50% {
-    clip: rect(68px, 350px, 120px, 30px);
+    clip: rect(23px, 350px, 46px, 30px);
   }
   55% {
-    clip: rect(28px, 350px, 107px, 30px);
+    clip: rect(130px, 350px, 149px, 30px);
   }
   60% {
-    clip: rect(105px, 350px, 147px, 30px);
+    clip: rect(19px, 350px, 142px, 30px);
   }
   65% {
-    clip: rect(62px, 350px, 38px, 30px);
+    clip: rect(143px, 350px, 148px, 30px);
   }
   70% {
-    clip: rect(132px, 350px, 7px, 30px);
+    clip: rect(57px, 350px, 118px, 30px);
   }
   75% {
-    clip: rect(121px, 350px, 16px, 30px);
+    clip: rect(55px, 350px, 76px, 30px);
   }
   80% {
-    clip: rect(37px, 350px, 73px, 30px);
+    clip: rect(74px, 350px, 44px, 30px);
   }
   85% {
-    clip: rect(38px, 350px, 58px, 30px);
+    clip: rect(121px, 350px, 99px, 30px);
   }
   90% {
-    clip: rect(129px, 350px, 52px, 30px);
+    clip: rect(132px, 350px, 140px, 30px);
   }
   95% {
-    clip: rect(21px, 350px, 85px, 30px);
+    clip: rect(105px, 350px, 106px, 30px);
   }
   100% {
-    clip: rect(139px, 350px, 131px, 30px);
+    clip: rect(122px, 350px, 128px, 30px);
   }
 }
 @keyframes glitch-after {
   0% {
-    clip: rect(136px, 350px, 59px, 30px);
+    clip: rect(70px, 350px, 41px, 30px);
   }
   5% {
-    clip: rect(60px, 350px, 101px, 30px);
+    clip: rect(81px, 350px, 96px, 30px);
   }
   10% {
-    clip: rect(116px, 350px, 88px, 30px);
+    clip: rect(11px, 350px, 58px, 30px);
   }
   15% {
-    clip: rect(95px, 350px, 3px, 30px);
+    clip: rect(44px, 350px, 14px, 30px);
   }
   20% {
-    clip: rect(150px, 350px, 132px, 30px);
+    clip: rect(11px, 350px, 104px, 30px);
   }
   25% {
-    clip: rect(130px, 350px, 146px, 30px);
+    clip: rect(63px, 350px, 74px, 30px);
   }
   30% {
-    clip: rect(148px, 350px, 88px, 30px);
+    clip: rect(88px, 350px, 29px, 30px);
   }
   35% {
-    clip: rect(118px, 350px, 79px, 30px);
+    clip: rect(79px, 350px, 113px, 30px);
   }
   40% {
-    clip: rect(114px, 350px, 40px, 30px);
+    clip: rect(96px, 350px, 3px, 30px);
   }
   45% {
-    clip: rect(38px, 350px, 118px, 30px);
+    clip: rect(147px, 350px, 26px, 30px);
   }
   50% {
-    clip: rect(136px, 350px, 2px, 30px);
+    clip: rect(49px, 350px, 58px, 30px);
   }
   55% {
-    clip: rect(82px, 350px, 127px, 30px);
+    clip: rect(17px, 350px, 52px, 30px);
   }
   60% {
-    clip: rect(23px, 350px, 116px, 30px);
+    clip: rect(49px, 350px, 85px, 30px);
   }
   65% {
-    clip: rect(116px, 350px, 7px, 30px);
+    clip: rect(90px, 350px, 126px, 30px);
   }
   70% {
-    clip: rect(25px, 350px, 30px, 30px);
+    clip: rect(106px, 350px, 88px, 30px);
   }
   75% {
-    clip: rect(94px, 350px, 57px, 30px);
+    clip: rect(64px, 350px, 103px, 30px);
   }
   80% {
-    clip: rect(89px, 350px, 42px, 30px);
+    clip: rect(24px, 350px, 101px, 30px);
   }
   85% {
-    clip: rect(60px, 350px, 26px, 30px);
+    clip: rect(49px, 350px, 72px, 30px);
   }
   90% {
-    clip: rect(134px, 350px, 37px, 30px);
+    clip: rect(52px, 350px, 80px, 30px);
   }
   95% {
-    clip: rect(43px, 350px, 78px, 30px);
+    clip: rect(41px, 350px, 105px, 30px);
   }
   100% {
-    clip: rect(77px, 350px, 68px, 30px);
+    clip: rect(133px, 350px, 125px, 30px);
   }
 }
 .hero__body-left-subtitle {
@@ -2455,6 +2455,7 @@ h2 {
   top: 0;
   left: 0;
   z-index: 500;
+  background-color: #101010;
 }
 .mentor-item__top {
   display: flex;
@@ -2531,6 +2532,295 @@ h2 {
 }
 .mentor-item__top-description-box svg {
   margin-bottom: 20px;
+}
+
+.start-programming {
+  width: 100%;
+  height: 1200px;
+  position: relative;
+  z-index: 1000;
+  background: url("../images/tochki_fon.png") center center/cover no-repeat, url("../images/tochki_fon_2.png") center center/cover no-repeat, url("../images/line_bg.png") center top/cover no-repeat, linear-gradient(to right, #101010, #101010);
+}
+
+.footer {
+  width: 100%;
+  padding: 60px 0;
+  background: url("../images/footer_decor.svg") center top repeat-x, #101010;
+}
+.footer__bottom-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #FA1B1B;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .footer__bottom-line {
+    margin-bottom: 40px;
+  }
+}
+.footer__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 110px;
+}
+@media (max-width: 767px) {
+  .footer__header {
+    margin-bottom: 41px;
+  }
+}
+.footer__header-nav {
+  width: 100%;
+}
+.footer__header-nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1023px) {
+  .footer__header-nav-list {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+.footer__header-nav-link {
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s linear;
+  column-gap: 16px;
+}
+@media (max-width: 1284px) {
+  .footer__header-nav-link {
+    font-size: clamp(1.0625rem, 0.9894rem + 0.3247vw, 1.25rem);
+  }
+}
+.footer__header-nav-link:hover {
+  color: var(--color-3);
+}
+@media (max-width: 767px) {
+  .footer__header-nav-link:hover {
+    color: var(--text-color);
+  }
+}
+.footer__header-nav-link:hover svg {
+  color: var(--color-3);
+}
+@media (max-width: 767px) {
+  .footer__header-nav-link:hover svg {
+    color: var(--text-color);
+  }
+}
+.footer__header-nav-link svg {
+  color: var(--text-color);
+  transition: color 0.2s linear;
+}
+.footer__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  margin-bottom: 44px;
+}
+@media (max-width: 767px) {
+  .footer__body {
+    row-gap: 41px;
+  }
+}
+.footer__body-image-box {
+  width: 140px;
+  height: 164px;
+}
+.footer__body-image-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer__body-image-box a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer__body-social-box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .footer__body-social-box {
+    flex-direction: column;
+  }
+}
+.footer__body-social-text {
+  font-family: "JetBrainsMono-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--text-color);
+}
+@media (max-width: 767px) {
+  .footer__body-social-text {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    order: 2;
+  }
+}
+.footer__body-social-link {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .footer__body-social-link {
+    width: 130px;
+    order: 1;
+  }
+}
+.footer__body-social-link a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s linear;
+}
+@media (max-width: 767px) {
+  .footer__body-social-link a {
+    width: 50px;
+    height: 50px;
+  }
+}
+.footer__body-social-link a:hover svg path {
+  fill: var(--color-3);
+}
+@media (max-width: 767px) {
+  .footer__body-social-link a:hover svg path {
+    fill: var(--text-color);
+  }
+}
+.footer__body-social-link a svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.2s linear;
+}
+.footer__footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 270px 1fr 370px;
+  grid-template-areas: "footer-desc footer-desc footer-desc" "footer-privacy-policy footer-terms-of-use footer-developer";
+  gap: 25px;
+}
+@media (max-width: 1023px) {
+  .footer__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__footer-desc {
+  grid-area: footer-desc;
+  max-width: 806px;
+  font-family: "JetBrainsMono-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-color);
+}
+@media (max-width: 767px) {
+  .footer__footer-desc {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 1.27;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+.footer__footer-privacy-policy {
+  grid-area: footer-privacy-policy;
+}
+.footer__footer-privacy-policy a {
+  font-family: "JetBrainsMono-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-color);
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .footer__footer-privacy-policy a {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 1.27;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+.footer__footer-terms-of-use {
+  grid-area: footer-terms-of-use;
+}
+.footer__footer-terms-of-use a {
+  font-family: "JetBrainsMono-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-color);
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .footer__footer-terms-of-use a {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 1.27;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+.footer__footer-developer {
+  grid-area: footer-developer;
+}
+@media (max-width: 767px) {
+  .footer__footer-developer {
+    text-align: center;
+  }
+}
+.footer__footer-developer a {
+  font-family: "JetBrainsMono-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-color);
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .footer__footer-developer a {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 1.27;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: underline;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
