@@ -4,6 +4,7 @@
   padding: 100px 0 350px;
   z-index: 50;
   height: 100%;
+  background-color: var(--page-bg);
 
   &__container {
     max-width: 1253px;
@@ -21,7 +22,6 @@
   .card-item {
     max-width: 1223px;
     width: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -624,6 +624,9 @@
 }
 
 .card-item01 {
+  //min-height: 100vh;
+  //margin-bottom: 10vh;
+
   position: sticky;
   top: 20px;
   left: 0;
@@ -635,6 +638,9 @@
 }
 
 .card-item02 {
+  //min-height: 100vh;
+  //margin-bottom: 10vh;
+
   position: sticky;
   top: 20px;
   left: 0;
@@ -646,6 +652,9 @@
 }
 
 .card-item03 {
+  //min-height: 100vh;
+  //margin-bottom: 10vh;
+
   position: sticky;
   top: 20px;
   left: 0;
@@ -657,6 +666,9 @@
 }
 
 .card-item04 {
+  //min-height: 100vh;
+  //margin-bottom: 10vh;
+
   position: sticky;
   top: 20px;
   left: 0;

@@ -79,6 +79,8 @@
   width: 100%;
   position: sticky;
   z-index: 50;
+  height: 100vh;
+  background-color: var(--page-bg);
 
   &__logo {
     max-width: 360px;

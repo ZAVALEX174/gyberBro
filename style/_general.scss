@@ -34,13 +34,18 @@ html {
   box-sizing: border-box;
   min-height: 100vh;
   scroll-behavior: smooth;
+
+  @media (prefers-reduced-motion: no-preference) {
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+  }
 }
 
 body {
   min-width: 320px;
   background-color: var(--page-bg);
   height: 100vh;
-  //font-family: 'TT Norms Pro Light', sans-serif;//
   font-family: JetBrainsMono-Regular, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;

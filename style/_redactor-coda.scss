@@ -1,8 +1,10 @@
 .redactor-coda {
   width: 100%;
   background-color: var(--page-bg);
-  position: relative;
+  position: sticky;
   z-index: 40;
+  top: 0;
+  left: 0;
 
   &__container {
     margin-left: auto;

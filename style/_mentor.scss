@@ -3,12 +3,14 @@
   position: relative;
   top: 0;
   left: 0;
-  z-index: 500;
+  z-index: 50;
   background-color: #101010;
+
+  //display: none;
 
   &__container {
     max-width: 1253px;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-right: 15px;
     width: 100%;
   }
