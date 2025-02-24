@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // изменение голубого подсвечивания
     const circleBlue = document.querySelector('.circle-blue');
     const circleLightBlue = document.querySelector('.circle-lightblue');
-    const mouseOwnerNumber = document.querySelector('.hero__body-right');
+    const mouseOwnerNumber = document.querySelector('.hero__header-text-box-description');
 
     if (circleBlue && circleLightBlue && mouseOwnerNumber) {
 

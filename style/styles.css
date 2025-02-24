@@ -253,6 +253,7 @@ h2 {
   }
 }
 .header__container {
+  max-width: 1251px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -321,6 +322,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 119px;
 }
 @media (max-width: 1024px) {
   .header__nav {
@@ -412,7 +414,7 @@ h2 {
 }
 
 .hero {
-  padding-top: 80px;
+  padding-top: 0;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -533,7 +535,7 @@ h2 {
 .hero__header-text-box {
   margin-top: 74px;
   margin-left: auto;
-  max-width: 770px;
+  max-width: 801px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -553,26 +555,24 @@ h2 {
   text-transform: lowercase;
   color: #fff;
   transition: 0.3s ease-in-out;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
 }
 .hero__header-text-box-title .gradient-text {
   font-size: clamp(1.4375rem, 0.9018rem + 2.381vw, 2.8125rem);
   font-weight: 700;
-  background: linear-gradient(90deg, #1fb6ea 59.95%, #e53a24 80.68%);
+  background: -webkit-linear-gradient(90deg, #1fb6ea, #e53a24, #1fb6ea); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(90deg, #1fb6ea, #e53a24, #1fb6ea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.3s ease-in-out;
+  background-size: 200% 100%;
+  transition: background-position 0.5s ease-in-out;
 }
 .hero__header-text-box-title:hover {
   transition: 0.3s ease-in-out;
 }
 .hero__header-text-box-title:hover .gradient-text {
-  background: linear-gradient(270deg, #1fb6ea 59.95%, #e53a24 80.68%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 0.3s ease-in-out;
+  background-position: 100%;
 }
 .hero__header-text-box-description {
   font-family: "JetBrainsMono-ExtraLight", sans-serif;
@@ -581,10 +581,10 @@ h2 {
   color: #fff;
   max-width: 450px;
   margin-left: auto;
-  margin-right: 100px;
+  margin-right: 122px;
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 20px;
 }
 @media screen and (max-width: 1024px) {
   .hero__header-text-box-description {
@@ -593,6 +593,7 @@ h2 {
   }
 }
 .hero__container_body {
+  max-width: 1232px;
   height: 412px;
   display: flex;
   align-items: center;
@@ -625,8 +626,8 @@ h2 {
 .hero__container_body .vertical-line::before {
   position: absolute;
   content: "";
-  top: 32px;
-  left: -200px;
+  top: 30px;
+  left: -171px;
   transform: translateX(-50%);
   width: 10px;
   height: 140px;
@@ -637,7 +638,8 @@ h2 {
   position: absolute;
   content: "";
   top: 30px;
-  left: -180px;
+  left: -147px;
+  bottom: 0;
   transform: translateX(-50%);
   width: 10px;
   height: 160px;
@@ -656,7 +658,7 @@ h2 {
   justify-content: space-between;
   mask-image: url("../images/111.png");
   mask-repeat: no-repeat;
-  mask-position: 49.1% 0;
+  mask-position: 48% 0;
 }
 @media screen and (max-width: 1024px) {
   .hero__body {
@@ -733,6 +735,8 @@ h2 {
   margin: 0;
   position: relative;
   z-index: 333;
+  margin-top: 46px;
+  margin-left: 34px;
 }
 @media (max-width: 1024px) {
   .hero__body-left {
@@ -756,6 +760,7 @@ h2 {
   display: flex;
   align-items: center;
   height: 100%;
+  margin-bottom: 5px;
 }
 .hero__body-left-title .glitch {
   width: 100%;
@@ -794,132 +799,132 @@ h2 {
 }
 @keyframes glitch-before {
   0% {
-    clip: rect(127px, 350px, 38px, 30px);
+    clip: rect(21px, 350px, 32px, 30px);
   }
   5% {
-    clip: rect(13px, 350px, 113px, 30px);
+    clip: rect(103px, 350px, 68px, 30px);
   }
   10% {
-    clip: rect(128px, 350px, 100px, 30px);
+    clip: rect(17px, 350px, 48px, 30px);
   }
   15% {
-    clip: rect(76px, 350px, 115px, 30px);
+    clip: rect(83px, 350px, 139px, 30px);
   }
   20% {
-    clip: rect(105px, 350px, 110px, 30px);
+    clip: rect(116px, 350px, 56px, 30px);
   }
   25% {
-    clip: rect(113px, 350px, 11px, 30px);
+    clip: rect(18px, 350px, 27px, 30px);
   }
   30% {
-    clip: rect(84px, 350px, 50px, 30px);
+    clip: rect(83px, 350px, 65px, 30px);
   }
   35% {
-    clip: rect(36px, 350px, 106px, 30px);
+    clip: rect(26px, 350px, 44px, 30px);
   }
   40% {
-    clip: rect(96px, 350px, 59px, 30px);
+    clip: rect(14px, 350px, 64px, 30px);
   }
   45% {
-    clip: rect(66px, 350px, 64px, 30px);
+    clip: rect(52px, 350px, 14px, 30px);
   }
   50% {
-    clip: rect(52px, 350px, 120px, 30px);
+    clip: rect(39px, 350px, 45px, 30px);
   }
   55% {
-    clip: rect(8px, 350px, 93px, 30px);
+    clip: rect(72px, 350px, 149px, 30px);
   }
   60% {
-    clip: rect(63px, 350px, 69px, 30px);
+    clip: rect(122px, 350px, 12px, 30px);
   }
   65% {
-    clip: rect(122px, 350px, 36px, 30px);
+    clip: rect(98px, 350px, 48px, 30px);
   }
   70% {
-    clip: rect(93px, 350px, 57px, 30px);
+    clip: rect(83px, 350px, 22px, 30px);
   }
   75% {
-    clip: rect(121px, 350px, 19px, 30px);
+    clip: rect(109px, 350px, 135px, 30px);
   }
   80% {
-    clip: rect(22px, 350px, 20px, 30px);
+    clip: rect(90px, 350px, 115px, 30px);
   }
   85% {
-    clip: rect(7px, 350px, 80px, 30px);
+    clip: rect(113px, 350px, 7px, 30px);
   }
   90% {
-    clip: rect(114px, 350px, 18px, 30px);
+    clip: rect(32px, 350px, 109px, 30px);
   }
   95% {
-    clip: rect(33px, 350px, 141px, 30px);
+    clip: rect(145px, 350px, 140px, 30px);
   }
   100% {
-    clip: rect(66px, 350px, 73px, 30px);
+    clip: rect(62px, 350px, 133px, 30px);
   }
 }
 @keyframes glitch-after {
   0% {
-    clip: rect(130px, 350px, 114px, 30px);
+    clip: rect(24px, 350px, 143px, 30px);
   }
   5% {
-    clip: rect(101px, 350px, 75px, 30px);
+    clip: rect(35px, 350px, 129px, 30px);
   }
   10% {
-    clip: rect(45px, 350px, 68px, 30px);
+    clip: rect(56px, 350px, 91px, 30px);
   }
   15% {
-    clip: rect(47px, 350px, 44px, 30px);
+    clip: rect(42px, 350px, 143px, 30px);
   }
   20% {
-    clip: rect(23px, 350px, 94px, 30px);
+    clip: rect(110px, 350px, 15px, 30px);
   }
   25% {
-    clip: rect(82px, 350px, 90px, 30px);
+    clip: rect(135px, 350px, 115px, 30px);
   }
   30% {
-    clip: rect(125px, 350px, 133px, 30px);
+    clip: rect(78px, 350px, 14px, 30px);
   }
   35% {
-    clip: rect(55px, 350px, 8px, 30px);
+    clip: rect(119px, 350px, 94px, 30px);
   }
   40% {
-    clip: rect(64px, 350px, 67px, 30px);
+    clip: rect(1px, 350px, 83px, 30px);
   }
   45% {
-    clip: rect(100px, 350px, 76px, 30px);
+    clip: rect(60px, 350px, 26px, 30px);
   }
   50% {
-    clip: rect(45px, 350px, 70px, 30px);
+    clip: rect(84px, 350px, 17px, 30px);
   }
   55% {
-    clip: rect(12px, 350px, 58px, 30px);
+    clip: rect(58px, 350px, 66px, 30px);
   }
   60% {
-    clip: rect(60px, 350px, 22px, 30px);
+    clip: rect(80px, 350px, 6px, 30px);
   }
   65% {
-    clip: rect(82px, 350px, 80px, 30px);
+    clip: rect(103px, 350px, 131px, 30px);
   }
   70% {
-    clip: rect(71px, 350px, 79px, 30px);
+    clip: rect(97px, 350px, 97px, 30px);
   }
   75% {
-    clip: rect(111px, 350px, 149px, 30px);
+    clip: rect(16px, 350px, 136px, 30px);
   }
   80% {
-    clip: rect(144px, 350px, 6px, 30px);
+    clip: rect(144px, 350px, 38px, 30px);
   }
   85% {
-    clip: rect(27px, 350px, 17px, 30px);
+    clip: rect(73px, 350px, 65px, 30px);
   }
   90% {
-    clip: rect(38px, 350px, 48px, 30px);
+    clip: rect(86px, 350px, 73px, 30px);
   }
   95% {
-    clip: rect(108px, 350px, 69px, 30px);
+    clip: rect(80px, 350px, 34px, 30px);
   }
   100% {
-    clip: rect(86px, 350px, 127px, 30px);
+    clip: rect(81px, 350px, 75px, 30px);
   }
 }
 .hero__body-left-subtitle {
@@ -941,7 +946,7 @@ h2 {
   max-width: 580px;
   width: 100%;
   height: 290px;
-  align-items: flex-end;
+  align-items: center;
   background-color: #111;
   mask-image: url("../images/kartoteka.svg");
   mask-size: cover;
@@ -949,6 +954,7 @@ h2 {
   mask-repeat: no-repeat;
   position: relative;
   column-gap: 20px;
+  margin-top: 24px;
 }
 @media (max-width: 1024px) {
   .hero__body-right {
@@ -1002,7 +1008,7 @@ h2 {
 .hero__body-right::after {
   position: absolute;
   content: "";
-  top: 20px;
+  top: 15px;
   right: 20px;
   bottom: 20px;
   width: 536px;
@@ -1049,6 +1055,7 @@ h2 {
   font-weight: 200;
   font-size: 17px;
   color: var(--text-color);
+  margin-top: 53px;
 }
 @media (max-width: 1284px) {
   .hero__body-right-text {
