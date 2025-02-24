@@ -32,4 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // console.log(btn);
     // btn.addEventListener('click', e => document.querySelector('.none').classList.toggle('active'));
 
+
 })

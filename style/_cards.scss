@@ -11,7 +11,7 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
-
+    min-height: 500vh;
 
     @media (max-width: 767px) {
       padding-left: 0;
@@ -626,7 +626,8 @@
 .card-item01 {
   //min-height: 100vh;
   //margin-bottom: 10vh;
-  margin-bottom: 100px;
+  //margin-bottom: 300px;
+ min-height: 100vh;
 
   position: sticky;
   top: 20px;
@@ -641,7 +642,9 @@
 .card-item02 {
   //min-height: 100vh;
   //margin-bottom: 10vh;
-  margin-bottom: 100px;
+  //margin-bottom: 300px;
+
+  min-height: 100vh;
 
   position: sticky;
   top: 20px;
@@ -656,7 +659,9 @@
 .card-item03 {
   //min-height: 100vh;
   //margin-bottom: 10vh;
-  margin-bottom: 100px;
+  //margin-bottom: 300px;
+
+  min-height: 100vh;
 
   position: sticky;
   top: 20px;
@@ -671,7 +676,9 @@
 .card-item04 {
   //min-height: 100vh;
   //margin-bottom: 10vh;\
-  margin-bottom: 100px;
+  //margin-bottom: 300px;
+
+  min-height: 100vh;
 
   position: sticky;
   top: 20px;

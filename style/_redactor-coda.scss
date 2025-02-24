@@ -11,7 +11,6 @@
     margin-right: auto;
     margin-top: -40px;
     max-width: 1284px;
-    padding-left: 0;
 
     @media (max-width: 1024px) {
       padding-left: 15px;
@@ -22,14 +21,14 @@
   &-bg {
     width: 100%;
     display: grid;
-    grid-template-columns: 367px 1fr;
+    grid-template-columns: 1fr 310px;
     grid-template-areas:
    'exercise exercise'
   'exercise-desc exercise-desc'
-   'images-box clue'
-  'images-box window-box';
+   'window-box images-box'
+  'window-box images-box';
     gap: 20px 24px;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
     padding: 134px 75px 62px 45px;
     background: url("../images/redactor_bg.svg") no-repeat center right/cover;
@@ -66,7 +65,7 @@
   &__exercise-desc {
     width: 100%;
     height: 150px;
-    overflow-x: auto;
+    overflow-y: auto;
     grid-area: exercise-desc;
     padding: 10px 20px 10px;
     margin: 0;
@@ -93,8 +92,8 @@
 
   &__images-box {
     grid-area: images-box;
-    width: 367px;
-    height: 414px;
+    width: 300px;
+    height: 310px;
 
     @media (max-width: 1024px) {
       margin-right: auto;
@@ -108,56 +107,55 @@
     }
   }
 
-  &__clue {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 10px 20px;
-    grid-area: clue;
-    font-family: 'JetBrainsMono-ExtraLight', sans-serif;
-    font-weight: 200;
-    font-size: 17px;
-    color: var(--text-color);
-    backdrop-filter: blur(140px);
-    background: rgba(208, 208, 208, 0.2);
-    height: auto;
-
-    @media (max-width: 1284px) {
-      font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
-    }
-
-    @media (max-width: 1024px) {
-      order: 4;
-    }
-
-    &-elem {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 10px;
-      border-radius: 6px;
-      padding: 0px 9px;
-      width: 62px;
-      height: 24px;
-      background: rgba(255, 255, 255, 0.3);
-      font-family: 'JetBrainsMono-ExtraLight', sans-serif;
-      font-weight: 200;
-      font-size: 17px;
-      text-transform: lowercase;
-      color: #000;
-
-      @media (max-width: 1284px) {
-        font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
-      }
-    }
-  }
+  //&__clue {
+  //  display: flex;
+  //  align-items: center;
+  //  margin: 0;
+  //  padding: 10px 20px;
+  //  grid-area: clue;
+  //  font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+  //  font-weight: 200;
+  //  font-size: 17px;
+  //  color: var(--text-color);
+  //  backdrop-filter: blur(140px);
+  //  background: rgba(208, 208, 208, 0.2);
+  //  height: auto;
+  //
+  //  @media (max-width: 1284px) {
+  //    font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
+  //  }
+  //
+  //  @media (max-width: 1024px) {
+  //    order: 4;
+  //  }
+  //
+  //  &-elem {
+  //    display: inline-flex;
+  //    align-items: center;
+  //    justify-content: center;
+  //    margin-left: 10px;
+  //    border-radius: 6px;
+  //    padding: 0px 9px;
+  //    width: 62px;
+  //    height: 24px;
+  //    background: rgba(255, 255, 255, 0.3);
+  //    font-family: 'JetBrainsMono-ExtraLight', sans-serif;
+  //    font-weight: 200;
+  //    font-size: 17px;
+  //    text-transform: lowercase;
+  //    color: #000;
+  //
+  //    @media (max-width: 1284px) {
+  //      font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
+  //    }
+  //  }
+  //}
 
   &__window-box {
-    margin-top: -10px;
     grid-area: window-box;
     max-width: 808px;
     width: 100%;
-    height: 360px;
+    height: 310px;
     overflow-y: auto;
     display: flex;
     padding: 10px 20px;
