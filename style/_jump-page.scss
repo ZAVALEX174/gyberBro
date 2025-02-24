@@ -81,6 +81,10 @@
 
 .jump-page-two {
   z-index: 40;
+
+  &__text-title {
+    font-size: clamp(1.8125rem, 0.9602rem + 3.7879vw, 4rem);
+  }
 }
 
 .jump-page-three {

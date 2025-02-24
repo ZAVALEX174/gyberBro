@@ -3,8 +3,9 @@
   background-color: var(--page-bg);
   position: sticky;
   z-index: 40;
-  top: 0;
+  top: 20px;
   left: 0;
+  padding: 30px 0;
 
   &__container {
     margin-left: auto;
@@ -30,8 +31,8 @@
     gap: 20px 24px;
     margin-left: auto;
     margin-right: auto;
-    padding: 134px 75px 62px 45px;
-    background: url("../images/redactor_bg.svg") no-repeat center right/cover;
+    padding: 55px 60px 84px 60px;
+    background: url("../images/redactor_bg.svg") no-repeat top right/cover;
 
     @media (max-width: 1024px) {
       background: transparent;
@@ -92,8 +93,8 @@
 
   &__images-box {
     grid-area: images-box;
-    width: 300px;
-    height: 310px;
+    width: 310px;
+    height: 300px;
 
     @media (max-width: 1024px) {
       margin-right: auto;
@@ -155,7 +156,7 @@
     grid-area: window-box;
     max-width: 808px;
     width: 100%;
-    height: 310px;
+    height: 300px;
     overflow-y: auto;
     display: flex;
     padding: 10px 20px;

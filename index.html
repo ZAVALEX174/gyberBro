@@ -262,7 +262,7 @@
                             class="jump-page__text-subtitle jump-page-one__text-subtitle">
                 Попробуй дописать код!
               </span>
-                    html Copy
+
                     <a href="#" class="jump-page__text-link jump-page-one__text-link">
                         <!--                        <svg width="32" height="105" viewBox="0 0 32 105" fill="none" xmlns="http://www.w3.org/2000/svg">-->
                         <!--                            &lt;!&ndash; Первый путь &ndash;&gt;-->
@@ -307,11 +307,11 @@
                                     alt="Картинка Человека с пальцем вверх"/>
                         </picture>
                     </div>
-<!--                    <div class="redactor-coda__clue">-->
-<!--                        Подсказка: используйте цикл<span class="redactor-coda__clue-elem">-->
-<!--                for.</span-->
-<!--                    >-->
-<!--                    </div>-->
+                    <!--                    <div class="redactor-coda__clue">-->
+                    <!--                        Подсказка: используйте цикл<span class="redactor-coda__clue-elem">-->
+                    <!--                for.</span-->
+                    <!--                    >-->
+                    <!--                    </div>-->
                     <div class="redactor-coda__window-box">
                         <div class="redactor-coda__window-box-text">
                             python [-bBdEhiIOPqRsSuvVWx?] [-c command | -m module-name |
@@ -389,7 +389,6 @@
                     <h2 class="jump-page__text-title jump-page-two__text-title">
                         Обучение
                     </h2>
-                    html Copy
                     <a href="#" class="jump-page__text-link jump-page-two__text-link">
                         <!--                        <svg width="32" height="105" viewBox="0 0 32 105" fill="none" xmlns="http://www.w3.org/2000/svg">-->
                         <!--                            &lt;!&ndash; Первый путь &ndash;&gt;-->
@@ -855,7 +854,7 @@
                                     </video>
                                 </div>
                                 <span class="card-item__top-images-box-title">
-                                Нейроадепт 1.0
+                                Кодоискатель 2.0
                             </span>
                             </div>
                             <div class="card-item__top-description-box">
@@ -871,6 +870,10 @@
                                     лабиринтах кода
                                 </div>
                                 <div class="card-item__top-description-box-duration-wrapper">
+                                    <span class="progress-span progress-span__lvl1"></span>
+                                    <span class="progress-span progress-span__lvl1"></span>
+                                    <span class="progress-span progress-span__lvl1"></span>
+                                    <span class="progress-span progress-span__lvl1"></span>
                                     <span class="progress-span progress-span__lvl1"></span>
                                     <span class="progress-span progress-span__lvl1"></span>
                                     <span class="progress-span progress-span__lvl1"></span>
@@ -1291,7 +1294,7 @@
                                     </video>
                                 </div>
                                 <span class="card-item__top-images-box-title">
-                                Нейроадепт 1.0
+                                Технотворец 3.0
                             </span>
                             </div>
                             <div class="card-item__top-description-box">
@@ -1308,6 +1311,14 @@
                                     к апгрейду сознания!
                                 </div>
                                 <div class="card-item__top-description-box-duration-wrapper">
+                                    <span class="progress-span progress-span__lvl3"></span>
+                                    <span class="progress-span progress-span__lvl3"></span>
+                                    <span class="progress-span progress-span__lvl3"></span>
+                                    <span class="progress-span progress-span__lvl3"></span>
+                                    <span class="progress-span progress-span__lvl3"></span>
+                                    <span class="progress-span progress-span__lvl3"></span>
+                                    <span class="progress-span progress-span__lvl3"></span>
+                                    <span class="progress-span progress-span__lvl3"></span>
                                     <span class="progress-span progress-span__lvl3"></span>
                                     <span class="progress-span progress-span__lvl3"></span>
                                     <span class="progress-span progress-span__lvl3"></span>
@@ -1726,7 +1737,7 @@
                                     </video>
                                 </div>
                                 <span class="card-item__top-images-box-title">
-                                Нейроадепт 1.0
+                              Кибермудрец 4.0
                             </span>
                             </div>
                             <div class="card-item__top-description-box">
@@ -2158,7 +2169,7 @@
                     <h2 class="jump-page__text-title jump-page-three__text-title">
                         Кейсы
                     </h2>
-                    html Copy
+
                     <a
                             href="#"
                             class="jump-page__text-link jump-page-three__text-link">
@@ -2462,11 +2473,20 @@
                         <div class="mentor-item__top">
                             <div class="card-item__top-images-box">
                                 <div class="card-item__top-images-box-video">
-                                    <video class="video-lvl" muted autoplay loop>
-                                        <source src="video/lvl_1_1.mp4" type="video/mp4">
-                                        <source src="video/lvl_1_1.webm" type="video/webm">
-                                        Ваш браузер не поддерживает видео.
-                                    </video>
+                                    <picture>
+                                        <!-- WebP как fallback -->
+                                        <source
+                                                srcset="images/mentor.webp"
+                                                type="image/webp">
+
+                                        <!-- Стандартный JPEG -->
+                                        <img
+                                                src="images/mentor.jpg"
+                                                srcset="images/mentor@2x.jpg 2x"
+                                                alt="Адаптивное изображение"
+                                                loading="lazy"
+                                                decoding="async">
+                                    </picture>
                                 </div>
                                 <span class="card-item__top-images-box-title mentor-item__top-images-box-title">
                                 Евгений Маслов

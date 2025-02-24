@@ -1,17 +1,3 @@
-<svg width="1280" height="838" viewBox="0 0 1280 838" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_319_4433)">
-<path d="M-4781 287.261V832H1251.5V158.281L1195.48 91.0771H838L762.703 38.0798H-4781V287.261Z" fill="#2B2A29"/>
-</g>
-<defs>
-<filter id="filter0_d_319_4433" x="-4792" y="0.0800781" width="6076.5" height="837.92" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="11" dy="-16"/>
-<feGaussianBlur stdDeviation="11"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.21 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_319_4433"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_319_4433" result="shape"/>
-</filter>
-</defs>
+<svg width="1223" height="650" viewBox="0 0 1223 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 250.143V650H1223V120.665L1166.98 53.202H809.5L734.203 0H0V250.143Z" fill="#2B2A29"/>
 </svg>
