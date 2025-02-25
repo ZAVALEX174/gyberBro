@@ -808,132 +808,132 @@ h2 {
 }
 @keyframes glitch-before {
   0% {
-    clip: rect(11px, 350px, 71px, 30px);
+    clip: rect(77px, 350px, 90px, 30px);
   }
   5% {
-    clip: rect(26px, 350px, 135px, 30px);
+    clip: rect(146px, 350px, 150px, 30px);
   }
   10% {
-    clip: rect(89px, 350px, 122px, 30px);
+    clip: rect(69px, 350px, 8px, 30px);
   }
   15% {
-    clip: rect(38px, 350px, 91px, 30px);
+    clip: rect(115px, 350px, 107px, 30px);
   }
   20% {
-    clip: rect(130px, 350px, 65px, 30px);
+    clip: rect(55px, 350px, 71px, 30px);
   }
   25% {
-    clip: rect(71px, 350px, 96px, 30px);
+    clip: rect(59px, 350px, 10px, 30px);
   }
   30% {
-    clip: rect(101px, 350px, 98px, 30px);
+    clip: rect(27px, 350px, 64px, 30px);
   }
   35% {
-    clip: rect(3px, 350px, 124px, 30px);
+    clip: rect(47px, 350px, 58px, 30px);
   }
   40% {
-    clip: rect(123px, 350px, 75px, 30px);
+    clip: rect(110px, 350px, 147px, 30px);
   }
   45% {
-    clip: rect(43px, 350px, 113px, 30px);
+    clip: rect(113px, 350px, 38px, 30px);
   }
   50% {
-    clip: rect(16px, 350px, 59px, 30px);
+    clip: rect(61px, 350px, 127px, 30px);
   }
   55% {
-    clip: rect(24px, 350px, 26px, 30px);
+    clip: rect(54px, 350px, 20px, 30px);
   }
   60% {
-    clip: rect(46px, 350px, 55px, 30px);
+    clip: rect(29px, 350px, 74px, 30px);
   }
   65% {
-    clip: rect(29px, 350px, 20px, 30px);
+    clip: rect(49px, 350px, 14px, 30px);
   }
   70% {
-    clip: rect(42px, 350px, 101px, 30px);
+    clip: rect(59px, 350px, 6px, 30px);
   }
   75% {
-    clip: rect(69px, 350px, 46px, 30px);
+    clip: rect(103px, 350px, 11px, 30px);
   }
   80% {
-    clip: rect(134px, 350px, 145px, 30px);
+    clip: rect(89px, 350px, 51px, 30px);
   }
   85% {
-    clip: rect(133px, 350px, 98px, 30px);
+    clip: rect(30px, 350px, 109px, 30px);
   }
   90% {
-    clip: rect(94px, 350px, 50px, 30px);
+    clip: rect(26px, 350px, 127px, 30px);
   }
   95% {
-    clip: rect(25px, 350px, 95px, 30px);
+    clip: rect(61px, 350px, 139px, 30px);
   }
   100% {
-    clip: rect(127px, 350px, 89px, 30px);
+    clip: rect(61px, 350px, 105px, 30px);
   }
 }
 @keyframes glitch-after {
   0% {
-    clip: rect(93px, 350px, 83px, 30px);
+    clip: rect(48px, 350px, 136px, 30px);
   }
   5% {
-    clip: rect(3px, 350px, 143px, 30px);
+    clip: rect(141px, 350px, 34px, 30px);
   }
   10% {
-    clip: rect(101px, 350px, 77px, 30px);
+    clip: rect(133px, 350px, 53px, 30px);
   }
   15% {
-    clip: rect(63px, 350px, 83px, 30px);
+    clip: rect(35px, 350px, 106px, 30px);
   }
   20% {
-    clip: rect(15px, 350px, 91px, 30px);
+    clip: rect(89px, 350px, 121px, 30px);
   }
   25% {
-    clip: rect(33px, 350px, 148px, 30px);
+    clip: rect(79px, 350px, 59px, 30px);
   }
   30% {
-    clip: rect(65px, 350px, 97px, 30px);
+    clip: rect(57px, 350px, 8px, 30px);
   }
   35% {
-    clip: rect(76px, 350px, 48px, 30px);
+    clip: rect(80px, 350px, 95px, 30px);
   }
   40% {
-    clip: rect(140px, 350px, 123px, 30px);
+    clip: rect(107px, 350px, 85px, 30px);
   }
   45% {
-    clip: rect(14px, 350px, 7px, 30px);
+    clip: rect(87px, 350px, 42px, 30px);
   }
   50% {
-    clip: rect(148px, 350px, 14px, 30px);
+    clip: rect(141px, 350px, 77px, 30px);
   }
   55% {
-    clip: rect(116px, 350px, 150px, 30px);
+    clip: rect(145px, 350px, 106px, 30px);
   }
   60% {
-    clip: rect(107px, 350px, 25px, 30px);
+    clip: rect(16px, 350px, 90px, 30px);
   }
   65% {
-    clip: rect(138px, 350px, 91px, 30px);
+    clip: rect(138px, 350px, 134px, 30px);
   }
   70% {
-    clip: rect(71px, 350px, 75px, 30px);
+    clip: rect(38px, 350px, 130px, 30px);
   }
   75% {
-    clip: rect(71px, 350px, 48px, 30px);
+    clip: rect(30px, 350px, 83px, 30px);
   }
   80% {
-    clip: rect(118px, 350px, 41px, 30px);
+    clip: rect(10px, 350px, 90px, 30px);
   }
   85% {
-    clip: rect(66px, 350px, 42px, 30px);
+    clip: rect(104px, 350px, 77px, 30px);
   }
   90% {
-    clip: rect(116px, 350px, 141px, 30px);
+    clip: rect(122px, 350px, 111px, 30px);
   }
   95% {
-    clip: rect(119px, 350px, 74px, 30px);
+    clip: rect(65px, 350px, 34px, 30px);
   }
   100% {
-    clip: rect(105px, 350px, 115px, 30px);
+    clip: rect(75px, 350px, 116px, 30px);
   }
 }
 .hero__body-left-subtitle {
@@ -1382,7 +1382,7 @@ h2 {
 }
 @media (max-width: 1284px) {
   .jump-page__text-title {
-    font-size: clamp(1.875rem, 1.388rem + 2.1645vw, 3.125rem);
+    font-size: clamp(1.8125rem, 1.3011rem + 2.2727vw, 3.125rem);
   }
 }
 .jump-page__text-subtitle {
@@ -1421,7 +1421,12 @@ h2 {
   z-index: 40;
 }
 .jump-page-two__text-title {
-  font-size: clamp(1.8125rem, 0.9602rem + 3.7879vw, 4rem);
+  font-size: 50px;
+}
+@media (max-width: 1284px) {
+  .jump-page-two__text-title {
+    font-size: clamp(1.8125rem, 1.3011rem + 2.2727vw, 3.125rem);
+  }
 }
 
 .jump-page-three {
@@ -1445,6 +1450,10 @@ h2 {
   left: 0;
   margin-bottom: 100vh;
   padding: 30px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .redactor-coda__container {
   margin-left: auto;
@@ -1722,6 +1731,9 @@ h2 {
   color: var(--color-2);
   padding-left: 19px;
 }
+.cards .card-item__top-images-box-title_black {
+  color: var(--color-4);
+}
 @media (max-width: 1284px) {
   .cards .card-item__top-images-box-title {
     font-size: clamp(0.75rem, 0.7256rem + 0.1082vw, 0.8125rem);
@@ -1997,7 +2009,10 @@ h2 {
   background-color: #D33CFF;
 }
 .cards .card-item__down-header-btn_lvl3 {
-  background-color: rgb(77, 226, 242);
+  background-color: #4de2f2;
+}
+.cards .card-item__down-header-btn_lvl4 {
+  background-color: #afdc9b;
 }
 .cards .card-item__down-body {
   width: 100%;
@@ -2084,10 +2099,10 @@ h2 {
   background: #f6f517;
 }
 .cards .card-item__down-body-item-top-progress-box .progress-span__lvl3 {
-  background: rgb(77, 226, 242);
+  background: #4de2f2;
 }
 .cards .card-item__down-body-item-top-progress-box .progress-span__lvl4 {
-  background: rgb(77, 226, 242);
+  background: #afdc9b;
 }
 .cards .card-item__down-body-item-down {
   font-family: "JetBrainsMono-Regular", sans-serif;
@@ -2352,6 +2367,9 @@ h2 {
   z-index: 50;
   height: 100vh;
   background-color: var(--page-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cases__logo {
   max-width: 360px;

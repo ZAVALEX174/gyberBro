@@ -81,6 +81,9 @@
   z-index: 50;
   height: 100vh;
   background-color: var(--page-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &__logo {
     max-width: 360px;

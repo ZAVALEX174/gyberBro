@@ -33,7 +33,7 @@
       color: var(--text-color);
 
       @media (max-width: 1284px) {
-        font-size: clamp(1.875rem, 1.388rem + 2.1645vw, 3.125rem);
+        font-size: clamp(1.8125rem, 1.3011rem + 2.2727vw, 3.125rem);
       }
     }
 
@@ -83,7 +83,11 @@
   z-index: 40;
 
   &__text-title {
-    font-size: clamp(1.8125rem, 0.9602rem + 3.7879vw, 4rem);
+    font-size: 50px;
+
+    @media (max-width: 1284px) {
+      font-size: clamp(1.8125rem, 1.3011rem + 2.2727vw, 3.125rem);
+    }
   }
 }
 
