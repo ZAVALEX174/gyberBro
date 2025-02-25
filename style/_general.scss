@@ -52,6 +52,10 @@ body {
   color: var(--text-color);
 }
 
+.wrapper-page {
+  scroll-behavior: smooth;
+}
+
 a {
   margin: 0;
   padding: 0;

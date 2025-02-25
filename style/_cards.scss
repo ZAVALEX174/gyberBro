@@ -5,13 +5,14 @@
   z-index: 50;
   height: 100%;
   background-color: var(--page-bg);
+  scroll-behavior: smooth;
 
   &__container {
     max-width: 1253px;
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
-    min-height: 450vh;
+    min-height: 850vh;
 
     @media (max-width: 767px) {
       padding-left: 0;
@@ -624,10 +625,12 @@
 }
 
 .card-item01 {
-  //min-height: 100vh;
-  //margin-bottom: 10vh;
-  //margin-bottom: 300px;
- min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background-color: #7b17f6;
+  margin-bottom: 100vh;
 
   position: sticky;
   top: 20px;
@@ -640,11 +643,12 @@
 }
 
 .card-item02 {
-  //min-height: 100vh;
-  //margin-bottom: 10vh;
-  //margin-bottom: 300px;
-
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background-color: #17cdf6;
+  margin-bottom: 100vh;
 
   position: sticky;
   top: 20px;
@@ -657,11 +661,12 @@
 }
 
 .card-item03 {
-  //min-height: 100vh;
-  //margin-bottom: 10vh;
-  //margin-bottom: 300px;
-
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background-color: #1ef617;
+  margin-bottom: 100vh;
 
   position: sticky;
   top: 20px;
@@ -674,11 +679,12 @@
 }
 
 .card-item04 {
-  //min-height: 100vh;
-  //margin-bottom: 10vh;\
-  //margin-bottom: 300px;
-
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background-color: #f6f517;
+  margin-bottom: 100vh;
 
   position: sticky;
   top: 20px;
@@ -721,3 +727,5 @@
 .m08 {
   grid-area: m08;
 }
+
+//проверка появления
