@@ -41,92 +41,61 @@ document.addEventListener('DOMContentLoaded', () => {
         mouseOwnerNumber.addEventListener('mouseout', mouseoutFank);
     }
 
-//     // Функция для проверки позиции элемента
-//     function checkElementPositionOneBox() {
-//         const section = document.querySelector('.redactor-coda');
-//         const sectionStickyOne = document.querySelector('.jump-page-one');
-//
-//         if (!section && !sectionStickyOne) return; // Проверка существования элемента
-//
-//         const rect = section.getBoundingClientRect();
-//         const isAtTop = rect.top <= 0;
-//
-//         if (isAtTop) {
-//             console.log('Элемент достиг верха окна!');
-//             // Здесь можно добавить свои действия
-//             sectionStickyOne.style.position = `relative`;
-//         } else {
-//             sectionStickyOne.style.position = `sticky`;
-//         }
-//     }
-//
-//     function checkElementPositionTwoBox() {
-//         const section = document.querySelector('.cards');
-//         let cardsHeight = section.offsetHeight;
-//         // console.log(cardsHeight);
-//         const sectionElems = document.querySelectorAll('.card-item');
-//         // console.log(sectionElems);
-//         const sectionStickyTwo = document.querySelector('.jump-page-two');
-//
-//         if (!section && !sectionStickyTwo) return; // Проверка существования элемента
-//
-//         const rect = section.getBoundingClientRect();
-//         const isAtTop = rect.top <= 0;
-//
-//         if (isAtTop) {
-//             console.log('Элемент достиг верха окна!');
-//             // Здесь можно добавить свои действия
-//             sectionStickyTwo.style.position = `relative`;
-//
-//             sectionElems.forEach((elem) => {
-//                 elem.style.position = `sticky`;
-//             })
-//             // sectionElem.style.position = `sticky`;
-//         } else {
-//             sectionStickyTwo.style.position = `sticky`;
-//             sectionElems.forEach((elem) => {
-//                 elem.style.position = `relative`;
-//             })
-//
-//         }
-//     }
-//
-// // Запуск проверки при скролле и загрузке страницы
-//     window.addEventListener('scroll', function () {
-//         requestAnimationFrame(checkElementPositionOneBox);
-//         requestAnimationFrame(checkElementPositionTwoBox);
-//     });
-//
-// // Первоначальная проверка при загрузке
-//     window.addEventListener('DOMContentLoaded', checkElementPositionOneBox, checkElementPositionTwoBox);
-//
-//     // табы
-//     // Получаем все элементы табов
-//     const tabButtons = document.querySelectorAll('.tab-btn');
-//     const tabContents = document.querySelectorAll('.tab-content');
-//
-//     if (tabButtons && tabContents) {
-//
-//         // Активируем первый таб при загрузке
-//         tabButtons[0].classList.add('tab-btn-active');
-//         tabContents[0].classList.add('tab-content-active');
-//         // Добавляем обработчик событий для каждой кнопки
-//         tabButtons.forEach(button => {
-//
-//             button.addEventListener('click', () => {
-//                 // Удаляем активный класс у всех кнопок и контента
-//                 tabButtons.forEach(btn => btn.classList.remove('tab-btn-active'));
-//                 tabContents.forEach(content => content.classList.remove('tab-content-active'));
-//
-//                 // Добавляем активный класс к выбранной кнопке
-//                 button.classList.add('tab-btn-active');
-//
-//                 // Показываем соответствующий контент
-//                 const targetTab = document.getElementById(button.dataset.tab);
-//                 targetTab.classList.add('tab-content-active');
-//             });
-//         });
-//     }
-//
+// Создаем элемент подсказки
+    const tip = document.createElement("div");
+    tip.className = "modal-hint";
+    tip.hidden = true;
+    document.body.appendChild(tip); // Лучше добавить в body
 
+// Инициализация содержимого один раз
+    tip.innerHTML = `
+    <div class="modal-hint-title">Модуль 1</div>
+    <div class="modal-hint-desc">
+        Создай свой кибер-терминал (VS Code) и загрузи протоколы Python. 
+        Освой командную строку – оружие хакера.
+    </div>
+    <button class="modal-hint-close">
+    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_359_1350)">
+    <path d="M19.2853 1.44824L0.713867 20.0197" stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0.713867 1.44824L19.2853 20.0197" stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <defs>
+    <clipPath id="clip0_359_1350">
+      <rect width="20" height="20" fill="white" transform="translate(0 0.734375)" />
+    </clipPath>
+  </defs>
+</svg>
+</button>
+`;
+
+// Обработчики событий
+    document.addEventListener("mouseover", showTip);
+    document.addEventListener("mouseout", hideTip);
+    tip.querySelector('.modal-hint-close').addEventListener('click', () => tip.hidden = true);
+
+    function showTip(event) {
+        const target = event.target.closest('[data-tooltip]');
+        if (!target) return;
+
+        let tarRect = target.getBoundingClientRect(); // координаты HTML-элемента
+        let x, y;                                  // координаты подсказки
+                                                   // подсказка по центру HTML-элемента
+        x = tarRect.x + target.offsetWidth / 2 - tip.offsetWidth / 2;
+        if (x < 0) x = 0;                          // корректируем, если вылезла слева
+
+        y = tarRect.y - tip.offsetHeight - 5;      // подсказка над HTML-элементом
+        if (y < 0) y = tarRect.y + target.offsetHeight + 5; // или под ним// HTML-элементом
+
+        tip.style.left = x + "px";                 // перемещаем подсказку
+        tip.style.top = y + "px";
+
+        tip.hidden = false;
+    }
+
+    function hideTip(event) {
+        if (!event.relatedTarget || !tip.contains(event.relatedTarget)) {
+            tip.hidden = true;
+        }
+    }
 })

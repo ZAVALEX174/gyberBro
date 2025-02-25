@@ -1,0 +1,52 @@
+.modal-hint {
+  max-width: 503px;
+  width: 100%;
+  height: 260px;
+  overflow-y: auto;
+  clip-path: url('#modal-mask');
+  position: fixed;
+  padding: 34px 31px;
+  background-color: var(--color-2);
+  //opacity: 0;
+  //transition: opacity 0.3s;
+  //pointer-events: none; /* Отключаем взаимодействие когда скрыто */
+  z-index: 99999999999999999;
+  //top: 0;
+
+  &-title {
+    width: 100%;
+    font-family: 'AKONY', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: lowercase;
+    color: var(--color-4);
+    margin-bottom: 15px;
+  }
+
+  &-desc {
+    font-family: 'JetBrainsMono-Light', sans-serif;
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--color-4);
+  }
+
+  &-close {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.modal-hint.active {
+  opacity: 1;
+  pointer-events: auto; /* Включаем взаимодействие */
+  display: block !important;
+}
