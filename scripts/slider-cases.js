@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
+        speed: 500,
         watchSlidesProgress: true,
         direction: "vertical",
         grabCursor: true,
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         spaceBetween: 10,
         slidesPerView: 1,
+        speed: 500,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
