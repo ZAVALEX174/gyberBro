@@ -35,6 +35,19 @@
     text-transform: lowercase;
     color: var(--text-color);
     margin-bottom: 50px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -85px;
+      left: 123px;
+      width: 55px;
+      height: 23px;
+      background: url("../images/four_line.svg") center/cover no-repeat;
+      pointer-events: none;
+    }
 
     @media (max-width: 1284px) {
       font-size: clamp(1.25rem, 1.1282rem + 0.5411vw, 1.5625rem);
@@ -96,6 +109,19 @@
     color: var(--text-color);
     margin-left: 45%;
     margin-bottom: 90px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -13px;
+      right: 9px;
+      width: 55px;
+      height: 23px;
+      background: url("../images/four_line.svg") center/cover no-repeat;
+      pointer-events: none;
+    }
 
     @media (max-width: 1284px) {
       font-size: clamp(1.25rem, 1.1282rem + 0.5411vw, 1.5625rem);
@@ -116,6 +142,19 @@
     color: var(--text-color);
     margin-left: 47%;
     margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 105px;
+      height: 72px;
+      top: 0;
+      right: -200px;
+      background: url("../images/vec_warning.svg") center/cover no-repeat;
+      pointer-events: none;
+    }
   }
 }
 
@@ -131,6 +170,7 @@
   flex-direction: column;
   position: relative;
   background: url("../images/tochki_fon.png") top center/auto no-repeat;
+  pointer-events: none;
   min-height: 1137px;
 
   &::before {
@@ -141,6 +181,18 @@
     width: 4300px;
     height: 1158px;
     background: url("../images/vec02.svg") top center/auto no-repeat;
+    pointer-events: none;
+  }
+
+  &::after {
+    filter: blur(50px);
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -570px;
+    width: 100%;
+    height: 661px;
+    background: url("../images/left_circle.png") top center/auto no-repeat;
     pointer-events: none;
   }
 }
