@@ -129,6 +129,16 @@
   padding-top: 280px;
   background: url("../images/tochki_fon.png") top center/auto no-repeat;
   min-height: 1137px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -560px;
+    left: 587px;
+    width: 4300px;
+    height: 1158px;
+    background: url("../images/vec02.svg") top center/auto no-repeat;
+  }
 }
 
 .bg-line {
