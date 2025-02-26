@@ -6,6 +6,10 @@
   z-index: 50;
   background-color: #101010;
 
+  //background: url("../images/section_line.svg") left 44.6% top 0/auto no-repeat,
+  //linear-gradient(to right,
+  //                #101010,
+  //                #101010);
   //display: none;
 
   &__container {
@@ -16,15 +20,26 @@
   }
 
   &-item01 {
-
+    position: relative;
   }
 
   &-item {
+    position: relative;
 
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -556px;
+      left: -4825px;
+      width: 5500px;
+      height: 556px;
+      background: url("../images/vec01.svg") top right/cover no-repeat;
+    }
 
     &__top {
       display: flex;
       align-items: center;
+      position: relative;
 
       .card-item__top-images-box {
         background-color: var(--color-3);
@@ -33,6 +48,8 @@
         height: 600px;
         padding: 6px 6px 8px 6px;
         margin-right: 42px;
+        position: relative;
+        flex-shrink: 0;
 
         @media (max-width: 1110px) {
           margin-right: 20px;
@@ -77,6 +94,17 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+          left: -60px;
+
+        }
 
         &-title {
           font-family: 'AKONY', sans-serif;
@@ -114,7 +142,6 @@
       }
     }
   }
-
 }
 
 
