@@ -69,33 +69,73 @@ document.addEventListener('DOMContentLoaded', () => {
 </button>
 `;
 
-// Обработчики событий
-    document.addEventListener("mouseover", showTip);
-    document.addEventListener("mouseout", hideTip);
+// // Обработчики событий
+//     document.addEventListener("mouseover", showTip);
+//     document.addEventListener("mouseout", hideTip);
+//     tip.querySelector('.modal-hint-close').addEventListener('click', () => tip.hidden = true);
+//
+//     function showTip(event) {
+//         const target = event.target.closest('[data-tooltip]');
+//         if (!target) return;
+//
+//         let tarRect = target.getBoundingClientRect(); // координаты HTML-элемента
+//         let x, y;                                  // координаты подсказки
+//                                                    // подсказка по центру HTML-элемента
+//         x = tarRect.x + target.offsetWidth / 2 - tip.offsetWidth / 2;
+//         if (x < 0) x = 0;                          // корректируем, если вылезла слева
+//
+//         y = tarRect.y - tip.offsetHeight - 5;      // подсказка над HTML-элементом
+//         if (y < 0) y = tarRect.y + target.offsetHeight + 5; // или под ним// HTML-элементом
+//
+//         tip.style.left = x + "px";                 // перемещаем подсказку
+//         tip.style.top = y + "px";
+//
+//         tip.hidden = false;
+//     }
+//
+//     function hideTip(event) {
+//         if (!event.relatedTarget || !tip.contains(event.relatedTarget)) {
+//             tip.hidden = true;
+//         }
+//     }
+
+    document.addEventListener("click", handleClick);
+    document.addEventListener("click", handleOutsideClick);
     tip.querySelector('.modal-hint-close').addEventListener('click', () => tip.hidden = true);
 
-    function showTip(event) {
+    function handleClick(event) {
         const target = event.target.closest('[data-tooltip]');
         if (!target) return;
 
-        let tarRect = target.getBoundingClientRect(); // координаты HTML-элемента
-        let x, y;                                  // координаты подсказки
-                                                   // подсказка по центру HTML-элемента
-        x = tarRect.x + target.offsetWidth / 2 - tip.offsetWidth / 2;
-        if (x < 0) x = 0;                          // корректируем, если вылезла слева
-
-        y = tarRect.y - tip.offsetHeight - 5;      // подсказка над HTML-элементом
-        if (y < 0) y = tarRect.y + target.offsetHeight + 5; // или под ним// HTML-элементом
-
-        tip.style.left = x + "px";                 // перемещаем подсказку
-        tip.style.top = y + "px";
-
+        // Позиционируем подсказку
+        positionTip(target);
+        // Показываем подсказку
         tip.hidden = false;
     }
 
-    function hideTip(event) {
-        if (!event.relatedTarget || !tip.contains(event.relatedTarget)) {
+    function handleOutsideClick(event) {
+        const isTooltip = event.target.closest('[data-tooltip]');
+        const isTip = event.target.closest('.tip'); // Замените '.tip' на класс вашей подсказки
+
+        // Скрываем подсказку, если клик вне элементов
+        if (!isTooltip && !isTip) {
             tip.hidden = true;
         }
+    }
+
+    function positionTip(target) {
+        const tarRect = target.getBoundingClientRect();
+
+        // Рассчитываем координаты
+        let x = tarRect.left + target.offsetWidth / 2 - tip.offsetWidth / 2;
+        let y = tarRect.top - (tip.offsetHeight * 2) - 5;
+
+        // Корректируем позицию, если выходит за границы
+        if (x < 0) x = 0;
+        if (y < 0) y = tarRect.bottom + 5;
+
+        // Применяем стили
+        tip.style.left = `${x}px`;
+        tip.style.top = `${y}px`;
     }
 })

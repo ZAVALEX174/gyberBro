@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
         thumbs: {
             swiper: swiper,
         },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
     });
     //
     // const btn = document.querySelector('.triger_active');
