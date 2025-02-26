@@ -35,6 +35,17 @@
       width: 5500px;
       height: 556px;
       background: url("../images/vec01.svg") top right/cover no-repeat;
+      pointer-events: none;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -620px;
+      left: -736px;
+      width: 5034px;
+      height: 209px;
+      background: url("../images/vec03.svg") top center/cover no-repeat;
     }
 
     &__top {
