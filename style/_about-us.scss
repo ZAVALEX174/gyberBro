@@ -76,7 +76,8 @@
         font-family: 'JetBrainsMono-ExtraLight', sans-serif;
         font-weight: 200;
         font-size: 17px;
-        color: #fff;
+        line-height: 1.29412;
+        color: var(--text-color);
 
         @media (max-width: 1284px) {
           font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
@@ -126,7 +127,8 @@
       font-family: 'JetBrainsMono-ExtraLight', sans-serif;
       font-weight: 200;
       font-size: 17px;
-      color: #fff;
+      color: var(--text-color);
+      line-height: 1.29412;
       margin-bottom: 300px;
 
       @media (max-width: 1284px) {
