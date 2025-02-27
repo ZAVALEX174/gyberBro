@@ -5,13 +5,17 @@
   overflow-y: auto;
   clip-path: url('#modal-mask');
   position: fixed;
+  top: 0;
+  left: 0;
   padding: 34px 31px;
+  margin: 5px;
   background-color: var(--color-2);
   //opacity: 0;
   //transition: opacity 0.3s;
   //pointer-events: none; /* Отключаем взаимодействие когда скрыто */
   z-index: 99999999999999999;
   //top: 0;
+  border: none;
 
   &-title {
     width: 100%;
@@ -45,8 +49,8 @@
   }
 }
 
-.modal-hint.active {
-  opacity: 1;
-  pointer-events: auto; /* Включаем взаимодействие */
-  display: block !important;
-}
+//.modal-hint.active {
+//  opacity: 1;
+//  pointer-events: auto; /* Включаем взаимодействие */
+//  display: block !important;
+//}

@@ -479,11 +479,16 @@
             grid-template-areas: 'hint-box title-mod progress-box-mod';
             column-gap: 10px;
             row-gap: 7px;
+            position: relative;
 
             &-hint-box {
               grid-area: hint-box;
               width: 20px;
               height: 20px;
+              background: transparent;
+              border: none;
+              outline: none;
+              cursor: pointer;
 
               svg {
                 width: 100%;
