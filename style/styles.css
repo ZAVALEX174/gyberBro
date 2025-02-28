@@ -808,132 +808,132 @@ h2 {
 }
 @keyframes glitch-before {
   0% {
-    clip: rect(115px, 350px, 98px, 30px);
+    clip: rect(57px, 350px, 10px, 30px);
   }
   5% {
-    clip: rect(77px, 350px, 150px, 30px);
+    clip: rect(68px, 350px, 36px, 30px);
   }
   10% {
-    clip: rect(139px, 350px, 116px, 30px);
+    clip: rect(34px, 350px, 87px, 30px);
   }
   15% {
-    clip: rect(60px, 350px, 120px, 30px);
+    clip: rect(102px, 350px, 82px, 30px);
   }
   20% {
-    clip: rect(32px, 350px, 5px, 30px);
+    clip: rect(14px, 350px, 44px, 30px);
   }
   25% {
-    clip: rect(116px, 350px, 40px, 30px);
+    clip: rect(75px, 350px, 108px, 30px);
   }
   30% {
-    clip: rect(95px, 350px, 71px, 30px);
+    clip: rect(23px, 350px, 40px, 30px);
   }
   35% {
-    clip: rect(111px, 350px, 57px, 30px);
+    clip: rect(24px, 350px, 131px, 30px);
   }
   40% {
-    clip: rect(19px, 350px, 43px, 30px);
+    clip: rect(132px, 350px, 150px, 30px);
   }
   45% {
-    clip: rect(132px, 350px, 128px, 30px);
+    clip: rect(11px, 350px, 71px, 30px);
   }
   50% {
-    clip: rect(12px, 350px, 69px, 30px);
+    clip: rect(99px, 350px, 75px, 30px);
   }
   55% {
-    clip: rect(109px, 350px, 61px, 30px);
+    clip: rect(43px, 350px, 41px, 30px);
   }
   60% {
-    clip: rect(43px, 350px, 67px, 30px);
+    clip: rect(52px, 350px, 150px, 30px);
   }
   65% {
-    clip: rect(28px, 350px, 75px, 30px);
+    clip: rect(5px, 350px, 3px, 30px);
   }
   70% {
-    clip: rect(123px, 350px, 20px, 30px);
+    clip: rect(55px, 350px, 6px, 30px);
   }
   75% {
-    clip: rect(16px, 350px, 3px, 30px);
+    clip: rect(90px, 350px, 36px, 30px);
   }
   80% {
-    clip: rect(144px, 350px, 58px, 30px);
+    clip: rect(52px, 350px, 115px, 30px);
   }
   85% {
-    clip: rect(140px, 350px, 102px, 30px);
+    clip: rect(59px, 350px, 119px, 30px);
   }
   90% {
-    clip: rect(68px, 350px, 146px, 30px);
+    clip: rect(18px, 350px, 88px, 30px);
   }
   95% {
-    clip: rect(142px, 350px, 115px, 30px);
+    clip: rect(16px, 350px, 81px, 30px);
   }
   100% {
-    clip: rect(110px, 350px, 129px, 30px);
+    clip: rect(74px, 350px, 53px, 30px);
   }
 }
 @keyframes glitch-after {
   0% {
-    clip: rect(121px, 350px, 71px, 30px);
+    clip: rect(13px, 350px, 15px, 30px);
   }
   5% {
-    clip: rect(141px, 350px, 78px, 30px);
+    clip: rect(50px, 350px, 60px, 30px);
   }
   10% {
-    clip: rect(41px, 350px, 106px, 30px);
+    clip: rect(93px, 350px, 110px, 30px);
   }
   15% {
-    clip: rect(106px, 350px, 17px, 30px);
+    clip: rect(28px, 350px, 34px, 30px);
   }
   20% {
-    clip: rect(63px, 350px, 43px, 30px);
+    clip: rect(17px, 350px, 14px, 30px);
   }
   25% {
-    clip: rect(2px, 350px, 105px, 30px);
+    clip: rect(114px, 350px, 47px, 30px);
   }
   30% {
-    clip: rect(111px, 350px, 42px, 30px);
+    clip: rect(6px, 350px, 102px, 30px);
   }
   35% {
-    clip: rect(64px, 350px, 136px, 30px);
+    clip: rect(132px, 350px, 124px, 30px);
   }
   40% {
-    clip: rect(89px, 350px, 124px, 30px);
+    clip: rect(71px, 350px, 42px, 30px);
   }
   45% {
-    clip: rect(57px, 350px, 106px, 30px);
+    clip: rect(116px, 350px, 106px, 30px);
   }
   50% {
-    clip: rect(95px, 350px, 40px, 30px);
+    clip: rect(118px, 350px, 148px, 30px);
   }
   55% {
-    clip: rect(10px, 350px, 120px, 30px);
+    clip: rect(21px, 350px, 29px, 30px);
   }
   60% {
-    clip: rect(63px, 350px, 8px, 30px);
+    clip: rect(81px, 350px, 108px, 30px);
   }
   65% {
-    clip: rect(133px, 350px, 89px, 30px);
+    clip: rect(146px, 350px, 86px, 30px);
   }
   70% {
-    clip: rect(83px, 350px, 123px, 30px);
+    clip: rect(71px, 350px, 74px, 30px);
   }
   75% {
-    clip: rect(18px, 350px, 33px, 30px);
+    clip: rect(48px, 350px, 117px, 30px);
   }
   80% {
-    clip: rect(71px, 350px, 142px, 30px);
+    clip: rect(136px, 350px, 9px, 30px);
   }
   85% {
-    clip: rect(143px, 350px, 146px, 30px);
+    clip: rect(29px, 350px, 21px, 30px);
   }
   90% {
-    clip: rect(11px, 350px, 44px, 30px);
+    clip: rect(77px, 350px, 18px, 30px);
   }
   95% {
-    clip: rect(136px, 350px, 123px, 30px);
+    clip: rect(60px, 350px, 125px, 30px);
   }
   100% {
-    clip: rect(94px, 350px, 103px, 30px);
+    clip: rect(133px, 350px, 36px, 30px);
   }
 }
 .hero__body-left-subtitle {
@@ -2371,9 +2371,22 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   max-width: 1224px;
+  width: 100%;
   position: relative;
   font-family: Arial, sans-serif;
   z-index: 100;
+}
+@media (max-width: 1230px) {
+  .tabs-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1023px) {
+  .tabs-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .tab-buttons {
@@ -2445,6 +2458,13 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1023px) {
+  .cases {
+    height: 100%;
+    position: relative;
+    padding-bottom: 40px;
+  }
+}
 .cases__logo {
   max-width: 218px;
   height: 32px;
@@ -2454,6 +2474,22 @@ h2 {
   z-index: 110;
   background-color: #101010;
 }
+@media (max-width: 1260px) {
+  .cases__logo {
+    right: auto;
+    left: 424px;
+  }
+}
+@media (max-width: 767px) {
+  .cases__logo {
+    max-width: 261px;
+    top: 0;
+    width: 100%;
+    height: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .cases__logo a {
   display: inline-flex;
   align-items: center;
@@ -2462,10 +2498,20 @@ h2 {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .cases__logo a {
+    padding: 0;
+  }
+}
 .cases__logo a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 767px) {
+  .cases__logo a img {
+    display: block;
+  }
 }
 
 .col {
@@ -2489,6 +2535,13 @@ h2 {
   bottom: -100px;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  .cases-slider-btns-box {
+    bottom: auto;
+    top: 155px;
+    z-index: 30;
+  }
 }
 .cases-slider-btns-box .cases-slider-btn-next, .cases-slider-btns-box .cases-slider-btn-prev {
   position: absolute;
@@ -2530,6 +2583,13 @@ h2 {
   width: 100%;
   position: relative;
 }
+@media (max-width: 1023px) {
+  .double-slider {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 60px;
+  }
+}
 
 .swiper-slide {
   text-align: center;
@@ -2564,10 +2624,22 @@ h2 {
   width: 100%;
   display: flex;
 }
+@media (max-width: 767px) {
+  .mySwiper2 {
+    height: 100%;
+    padding-top: 70px;
+  }
+}
 .mySwiper2 .swiper-slide {
   display: flex;
   column-gap: 25px;
   background-color: transparent;
+}
+@media (max-width: 767px) {
+  .mySwiper2 .swiper-slide {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 .mySwiper2 .swiper-slide .mySwiper2__images-box {
   max-width: 597px;
@@ -2575,11 +2647,36 @@ h2 {
   height: 100%;
   flex-shrink: 0;
 }
+@media (max-width: 1260px) {
+  .mySwiper2 .swiper-slide .mySwiper2__images-box {
+    max-width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .mySwiper2 .swiper-slide .mySwiper2__images-box {
+    flex-shrink: 0;
+    order: 2;
+    margin-bottom: 230px;
+    height: 207px;
+  }
+}
 .mySwiper2 .swiper-slide .mySwiper2__text-box {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  height: 400px;
+  padding-top: 52px;
+}
+@media (max-width: 1023px) {
+  .mySwiper2 .swiper-slide .mySwiper2__text-box {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .mySwiper2 .swiper-slide .mySwiper2__text-box {
+    display: contents;
+  }
 }
 .mySwiper2 .swiper-slide .mySwiper2__text-box .mySwiper2__text-title-wrapper {
   max-width: 391px;
@@ -2591,6 +2688,12 @@ h2 {
   justify-content: space-between;
   position: relative;
   margin-bottom: 29px;
+}
+@media (max-width: 767px) {
+  .mySwiper2 .swiper-slide .mySwiper2__text-box .mySwiper2__text-title-wrapper {
+    order: 1;
+    margin-bottom: 106px;
+  }
 }
 .mySwiper2 .swiper-slide .mySwiper2__text-box .mySwiper2__text-title-wrapper svg {
   width: 100%;
@@ -2640,6 +2743,13 @@ h2 {
     font-size: clamp(1.125rem, 1.1494rem - 0.1082vw, 1.0625rem);
   }
 }
+@media (max-width: 767px) {
+  .mySwiper2 .swiper-slide .mySwiper2__text-box .mySwiper2__text-subtitle {
+    order: 3;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .mySwiper2 .swiper-slide .mySwiper2__text-box .mySwiper2__text-desc {
   width: 100%;
   text-align: left;
@@ -2648,6 +2758,14 @@ h2 {
   font-size: 17px;
   line-height: 1.29412;
   color: #bababa;
+  overflow-y: auto;
+}
+@media (max-width: 767px) {
+  .mySwiper2 .swiper-slide .mySwiper2__text-box .mySwiper2__text-desc {
+    order: 4;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
 }
 
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -2661,6 +2779,18 @@ h2 {
   transform: translate(-50%, -50%);
   height: 10px;
   top: 119%;
+}
+@media (max-width: 1023px) {
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -86px;
+    top: auto;
+  }
+}
+@media (max-width: 767px) {
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 180px;
+    z-index: 30;
+  }
 }
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
   width: 10px;
@@ -2683,6 +2813,24 @@ h2 {
   flex-shrink: 0;
   background: url("../images/colonka_sl.png") top right 15px/171px 400px no-repeat;
 }
+@media (max-width: 1023px) {
+  .mySwiper {
+    width: 100%;
+    height: 141px;
+    background: rgba(229, 58, 36, 0.5);
+    border-top: 2px solid var(--color-1);
+    border-bottom: 2px solid var(--color-1);
+  }
+}
+@media (max-width: 767px) {
+  .mySwiper {
+    position: absolute;
+    top: 500px;
+  }
+}
+.mySwiper .swiper-wrapper {
+  align-items: center;
+}
 .mySwiper::before {
   content: "";
   position: absolute;
@@ -2692,6 +2840,11 @@ h2 {
   height: 1px;
   background: var(--color-1);
   z-index: 9;
+}
+@media (max-width: 1023px) {
+  .mySwiper::before {
+    content: none;
+  }
 }
 .mySwiper::after {
   content: "";
@@ -2703,6 +2856,11 @@ h2 {
   background: var(--color-1);
   z-index: 9;
 }
+@media (max-width: 1023px) {
+  .mySwiper::after {
+    content: none;
+  }
+}
 
 .mySwiper .swiper-slide {
   width: 129px;
@@ -2711,6 +2869,12 @@ h2 {
   background-color: var(--color-4);
   margin-left: auto;
   border: 1px solid var(--color-1);
+}
+@media (max-width: 1023px) {
+  .mySwiper .swiper-slide {
+    height: 90px !important;
+    width: 142px !important;
+  }
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -2766,8 +2930,19 @@ h2 {
 .swiper-scrollbar.swiper-scrollbar-vertical {
   top: 10px;
   right: 0;
+  left: 185px;
   z-index: 50;
   background-color: var(--color-4);
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  bottom: auto;
+  top: 470px;
+  background-color: rgba(31, 182, 234, 0.2);
+  border-radius: 0;
+}
+.swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
+  border-radius: 0;
 }
 
 .swiper-scrollbar-drag {
