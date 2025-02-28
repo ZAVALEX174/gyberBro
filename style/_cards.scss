@@ -41,6 +41,7 @@
         grid-template-areas: 'card-video-box card-tetx-box'
       'card-require-box card-require-box';
         gap: 20px;
+        padding-top: 90px;
       }
 
       @media (max-width: 767px) {
@@ -644,7 +645,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 100vh;
-
   position: sticky;
   top: 20px;
   left: 0;
@@ -652,6 +652,9 @@
 
   @media (max-width: 1020px) {
     position: relative;
+    margin-bottom: 0;
+    height: auto;
+    top: 0;
   }
 }
 
@@ -661,7 +664,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 100vh;
-
   position: sticky;
   top: 20px;
   left: 0;
@@ -669,6 +671,9 @@
 
   @media (max-width: 1020px) {
     position: relative;
+    margin-bottom: 0;
+    height: auto;
+    top: 0;
   }
 }
 
@@ -678,7 +683,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 100vh;
-
   position: sticky;
   top: 20px;
   left: 0;
@@ -686,6 +690,9 @@
 
   @media (max-width: 1020px) {
     position: relative;
+    margin-bottom: 0;
+    height: auto;
+    top: 0;
   }
 }
 
@@ -695,7 +702,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 100vh;
-
   position: sticky;
   top: 20px;
   left: 0;
@@ -703,6 +709,9 @@
 
   @media (max-width: 1020px) {
     position: relative;
+    margin-bottom: 0;
+    height: auto;
+    top: 0;
   }
 }
 
