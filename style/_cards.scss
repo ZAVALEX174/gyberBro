@@ -7,6 +7,10 @@
   background-color: var(--page-bg);
   scroll-behavior: smooth;
 
+  @media (max-width: 1020px) {
+    padding: 100px 0 100px;
+  }
+
   &__container {
     max-width: 1253px;
     padding-left: 15px;
@@ -15,9 +19,10 @@
     min-height: 850vh;
     position: relative;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1020px) {
       padding-left: 0;
       padding-right: 0;
+      min-height: auto;
     }
   }
 
@@ -41,13 +46,14 @@
         grid-template-areas: 'card-video-box card-tetx-box'
       'card-require-box card-require-box';
         gap: 20px;
-        padding-top: 90px;
+        padding-top: 0;
+        background: url("../images/setka_mob.svg") top center no-repeat;
       }
 
       @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
       }
 
       &-images-box {
@@ -66,11 +72,23 @@
           margin-right: 0;
         }
 
+        @media (max-width: 767px) {
+          width: 330px;
+          height: 429px;
+          clip-path: url(#card-img-clip-mob);
+        }
+
         &-video {
           clip-path: url(#card-gif-clip);
           width: 270px;
           height: 330px;
           margin-bottom: 5px;
+
+          @media (max-width: 767px) {
+            width: 317px;
+            height: 384px;
+            clip-path: url(#card-gif-clip-mob);
+          }
         }
 
         &-title {
@@ -122,6 +140,9 @@
 
         @media (max-width: 767px) {
           padding-top: 0;
+          width: 100%;
+          padding-left: 15px;
+          padding-right: 15px;
         }
 
         &-subtitle {
@@ -245,13 +266,14 @@
           grid-area: card-require-box;
           margin-right: 0;
           padding-top: 0;
-          //flex-direction: row;
-          //column-gap: 20px;
+          flex-direction: row;
+          column-gap: 20px;
+          padding-left: 10px;
+          padding-right: 10px;
         }
 
         @media (max-width: 767px) {
-          padding-left: 10px;
-          padding-right: 10px;
+          flex-direction: column;
         }
 
         &-item {
@@ -276,6 +298,10 @@
 
           @media (max-width: 1020px) {
             max-width: 500px;
+          }
+
+          @media (max-width: 767px) {
+            max-width: 100%;
           }
 
           &-title {
@@ -356,9 +382,15 @@
       padding-bottom: 50px;
       background: url("../images/down_bg_mask.svg") no-repeat center right/cover;
 
-      @media (max-width: 767px) {
-        align-items: center;
+      @media (max-width: 1020px) {
+        background: rgba(14, 14, 14, 1);
       }
+
+      @media (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
 
       &-header {
         width: 100%;
@@ -434,6 +466,7 @@
 
         @media (max-width: 767px) {
           order: 2;
+          padding: 0;
         }
 
         &-list {
@@ -470,7 +503,7 @@
           row-gap: 7px;
 
           @media (max-width: 600px) {
-            align-items: center;
+            align-items: flex-start;
           }
 
           &-top {
@@ -554,6 +587,7 @@
     }
   }
 
+
   .c01 {
     display: flex;
     align-items: center;
@@ -565,12 +599,13 @@
     width: 100%;
     clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
 
-    @media (max-width: 767px) {
+
+    @media (max-width: 1020px) {
       clip-path: none;
-      background-image: url('../images/card_bg_01_full_mob.png');
-      background-size: cover;
-      background-position: left top;
-      background-repeat: no-repeat;
+      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, #2D24B8 0%, #080808 100%);
+    }
+
+    @media (max-width: 767px) {
     }
 
     .card-item__top-images-box {
@@ -589,8 +624,12 @@
     width: 100%;
     clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
 
-    @media (max-width: 767px) {
+    @media (max-width: 1020px) {
       clip-path: none;
+      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(215, 115, 244, 0.3) 0%, #080808 100%);
+    }
+
+    @media (max-width: 767px) {
     }
 
     .card-item__top-images-box {
@@ -609,8 +648,12 @@
     width: 100%;
     clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
 
-    @media (max-width: 767px) {
+    @media (max-width: 1020px) {
       clip-path: none;
+      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(34, 59, 216, 0.3) 0%, #080808 100%);
+    }
+
+    @media (max-width: 767px) {
     }
 
     .card-item__top-images-box {
@@ -629,8 +672,12 @@
     width: 100%;
     clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
 
-    @media (max-width: 767px) {
+    @media (max-width: 1020px) {
       clip-path: none;
+      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(89, 203, 179, 0.3) 0%, #080808 100%);
+    }
+
+    @media (max-width: 767px) {
     }
 
     .card-item__top-images-box {
