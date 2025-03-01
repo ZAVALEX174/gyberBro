@@ -22,6 +22,13 @@
     @media (max-width: 1279px) {
       font-size: clamp(1.125rem, 1.1494rem + -0.1082vw, 1.0625rem);
     }
+
+    @media (max-width: 1023px) {
+      max-width: 215px;
+      margin-right: 0;
+      margin-left: auto;
+      word-wrap: break-word;
+    }
   }
 
   &__title {
@@ -33,6 +40,13 @@
     color: var(--text-color);
     margin-bottom: 50px;
     position: relative;
+
+    @media (max-width: 1023px) {
+      max-width: 306px;
+      margin-right: auto;
+      margin-left: 0;
+      word-wrap: break-word;
+    }
 
     &::after {
       content: '';
@@ -47,7 +61,7 @@
     }
 
     @media (max-width: 1284px) {
-      font-size: clamp(1.25rem, 1.1282rem + 0.5411vw, 1.5625rem);
+      font-size: clamp(1.125rem, 0.9545rem + 0.7576vw, 1.5625rem);
     }
 
     &_accent {
@@ -67,25 +81,34 @@
     margin-right: auto;
     position: relative;
     z-index: 99;
-    background: url("../images/vec_btn.png") top right/cover no-repeat;
+
 
     @media (max-width: 1023px) {
-      background: transparent;
+      margin-left: auto;
+      max-width: 282px;
+      //background: url("../images/vec_btn.png") top center/cover no-repeat;
     }
   }
 
   &__btn {
+    clip-path: none;
     width: 100%;
-    background-color: transparent;
     font-family: 'JetBrainsMono-Medium', sans-serif;
     font-weight: 500;
     font-size: 18px;
+    line-height: 20px;
     height: 100%;
     text-align: center;
     color: var(--color-2);
+    //background: url("../images/button_bg.png") top right/cover no-repeat;
+    background: url("../images/button_bg.png") center/100% no-repeat;
+    padding-left: 10px;
+    padding-right: 10px;
 
     @media (max-width: 1023px) {
-      background-color: var(--color-3);
+      white-space: wrap;
+      background: url("../images/button_bg_mob.png") top center/100% no-repeat;
+      height: 130px;
     }
   }
 
@@ -101,6 +124,10 @@
     margin-bottom: 90px;
     position: relative;
 
+    @media (max-width: 1023px) {
+      margin-left: 0;
+    }
+
     &::after {
       content: '';
       display: block;
@@ -114,7 +141,7 @@
     }
 
     @media (max-width: 1284px) {
-      font-size: clamp(1.25rem, 1.1282rem + 0.5411vw, 1.5625rem);
+      font-size: clamp(1.125rem, 0.9545rem + 0.7576vw, 1.5625rem);
     }
 
     &_accent {
@@ -133,6 +160,14 @@
     margin-left: 47%;
     margin-bottom: 20px;
     position: relative;
+
+    @media (max-width: 1284px) {
+      font-size: clamp(1.0625rem, 1.0381rem + 0.1082vw, 1.125rem);
+    }
+
+    @media (max-width: 1023px) {
+      margin-left: 0;
+    }
 
     &::after {
       content: '';
@@ -160,8 +195,15 @@
   flex-direction: column;
   position: relative;
   background: url("../images/tochki_fon.png") top center/auto no-repeat;
-  pointer-events: none;
   min-height: 1137px;
+
+  @media (max-width: 1023px) {
+    padding-top: 160px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    max-width: 100%;
+  }
 
   &::before {
     content: "";

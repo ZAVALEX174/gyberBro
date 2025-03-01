@@ -34,6 +34,7 @@
       height: 600px;
       z-index: 5;
       background: url('../images/orange.png') no-repeat bottom left/cover;
+      pointer-events: none;
 
       @media (max-width: 1024px) {
         position: absolute;
@@ -51,6 +52,7 @@
       transform: rotate(90deg);
       z-index: 5;
       background: url('../images/goluboy.png') no-repeat center/cover;
+      pointer-events: none;
 
       @media (max-width: 1024px) {
         content: '';
