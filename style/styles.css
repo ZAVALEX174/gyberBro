@@ -810,132 +810,132 @@ h2 {
 }
 @keyframes glitch-before {
   0% {
-    clip: rect(115px, 350px, 49px, 30px);
+    clip: rect(45px, 350px, 54px, 30px);
   }
   5% {
-    clip: rect(30px, 350px, 118px, 30px);
+    clip: rect(65px, 350px, 35px, 30px);
   }
   10% {
-    clip: rect(89px, 350px, 27px, 30px);
+    clip: rect(62px, 350px, 55px, 30px);
   }
   15% {
-    clip: rect(89px, 350px, 11px, 30px);
+    clip: rect(125px, 350px, 28px, 30px);
   }
   20% {
-    clip: rect(75px, 350px, 144px, 30px);
+    clip: rect(53px, 350px, 129px, 30px);
   }
   25% {
-    clip: rect(107px, 350px, 26px, 30px);
+    clip: rect(132px, 350px, 95px, 30px);
   }
   30% {
-    clip: rect(121px, 350px, 48px, 30px);
+    clip: rect(105px, 350px, 7px, 30px);
   }
   35% {
-    clip: rect(147px, 350px, 16px, 30px);
+    clip: rect(2px, 350px, 32px, 30px);
   }
   40% {
-    clip: rect(89px, 350px, 85px, 30px);
+    clip: rect(29px, 350px, 3px, 30px);
   }
   45% {
-    clip: rect(113px, 350px, 88px, 30px);
+    clip: rect(16px, 350px, 30px, 30px);
   }
   50% {
-    clip: rect(137px, 350px, 129px, 30px);
+    clip: rect(139px, 350px, 144px, 30px);
   }
   55% {
-    clip: rect(68px, 350px, 148px, 30px);
+    clip: rect(111px, 350px, 52px, 30px);
   }
   60% {
-    clip: rect(61px, 350px, 74px, 30px);
+    clip: rect(62px, 350px, 143px, 30px);
   }
   65% {
-    clip: rect(133px, 350px, 25px, 30px);
+    clip: rect(20px, 350px, 118px, 30px);
   }
   70% {
-    clip: rect(48px, 350px, 85px, 30px);
+    clip: rect(60px, 350px, 140px, 30px);
   }
   75% {
-    clip: rect(149px, 350px, 30px, 30px);
+    clip: rect(36px, 350px, 137px, 30px);
   }
   80% {
-    clip: rect(97px, 350px, 117px, 30px);
+    clip: rect(117px, 350px, 74px, 30px);
   }
   85% {
-    clip: rect(7px, 350px, 78px, 30px);
+    clip: rect(110px, 350px, 10px, 30px);
   }
   90% {
-    clip: rect(30px, 350px, 13px, 30px);
+    clip: rect(13px, 350px, 70px, 30px);
   }
   95% {
-    clip: rect(13px, 350px, 78px, 30px);
+    clip: rect(11px, 350px, 96px, 30px);
   }
   100% {
-    clip: rect(100px, 350px, 31px, 30px);
+    clip: rect(11px, 350px, 18px, 30px);
   }
 }
 @keyframes glitch-after {
   0% {
-    clip: rect(103px, 350px, 104px, 30px);
+    clip: rect(69px, 350px, 89px, 30px);
   }
   5% {
-    clip: rect(124px, 350px, 138px, 30px);
+    clip: rect(10px, 350px, 116px, 30px);
   }
   10% {
-    clip: rect(125px, 350px, 126px, 30px);
+    clip: rect(60px, 350px, 145px, 30px);
   }
   15% {
-    clip: rect(63px, 350px, 61px, 30px);
+    clip: rect(44px, 350px, 70px, 30px);
   }
   20% {
-    clip: rect(128px, 350px, 63px, 30px);
+    clip: rect(57px, 350px, 101px, 30px);
   }
   25% {
-    clip: rect(89px, 350px, 41px, 30px);
+    clip: rect(121px, 350px, 13px, 30px);
   }
   30% {
-    clip: rect(5px, 350px, 124px, 30px);
+    clip: rect(139px, 350px, 58px, 30px);
   }
   35% {
-    clip: rect(115px, 350px, 73px, 30px);
+    clip: rect(11px, 350px, 87px, 30px);
   }
   40% {
-    clip: rect(136px, 350px, 109px, 30px);
+    clip: rect(20px, 350px, 121px, 30px);
   }
   45% {
-    clip: rect(115px, 350px, 12px, 30px);
+    clip: rect(87px, 350px, 107px, 30px);
   }
   50% {
-    clip: rect(60px, 350px, 23px, 30px);
+    clip: rect(9px, 350px, 74px, 30px);
   }
   55% {
-    clip: rect(111px, 350px, 10px, 30px);
+    clip: rect(139px, 350px, 102px, 30px);
   }
   60% {
-    clip: rect(34px, 350px, 65px, 30px);
+    clip: rect(47px, 350px, 147px, 30px);
   }
   65% {
-    clip: rect(84px, 350px, 102px, 30px);
+    clip: rect(134px, 350px, 64px, 30px);
   }
   70% {
-    clip: rect(60px, 350px, 78px, 30px);
+    clip: rect(45px, 350px, 47px, 30px);
   }
   75% {
-    clip: rect(137px, 350px, 87px, 30px);
+    clip: rect(110px, 350px, 44px, 30px);
   }
   80% {
-    clip: rect(17px, 350px, 42px, 30px);
+    clip: rect(44px, 350px, 90px, 30px);
   }
   85% {
-    clip: rect(87px, 350px, 48px, 30px);
+    clip: rect(134px, 350px, 105px, 30px);
   }
   90% {
-    clip: rect(14px, 350px, 129px, 30px);
+    clip: rect(81px, 350px, 79px, 30px);
   }
   95% {
-    clip: rect(131px, 350px, 48px, 30px);
+    clip: rect(142px, 350px, 16px, 30px);
   }
   100% {
-    clip: rect(131px, 350px, 35px, 30px);
+    clip: rect(97px, 350px, 115px, 30px);
   }
 }
 .hero__body-left-subtitle {
@@ -2971,6 +2971,11 @@ h2 {
   padding-right: 15px;
   width: 100%;
 }
+@media (max-width: 1023px) {
+  .mentor__container {
+    padding-left: 15px;
+  }
+}
 .mentor-item01 {
   position: relative;
 }
@@ -2998,6 +3003,25 @@ h2 {
   background: url("../images/vec01.svg") top right/cover no-repeat;
   pointer-events: none;
 }
+@media (max-width: 1023px) {
+  .mentor-item:before {
+    bottom: -425px;
+    left: -4980px;
+    width: 5500px;
+    height: 1100px;
+    background: url("../images/vec01mob.svg") top right/cover no-repeat;
+  }
+}
+@media (max-width: 550px) {
+  .mentor-item:before {
+    left: -5164px;
+  }
+}
+@media (max-width: 425px) {
+  .mentor-item:before {
+    left: -5180px;
+  }
+}
 .mentor-item:after {
   content: "";
   position: absolute;
@@ -3008,6 +3032,11 @@ h2 {
   background: url("../images/vec03.svg") top center/cover no-repeat;
   pointer-events: none;
 }
+@media (max-width: 1023px) {
+  .mentor-item:after {
+    content: none;
+  }
+}
 .mentor-item__top {
   display: flex;
   align-items: center;
@@ -3017,6 +3046,7 @@ h2 {
   .mentor-item__top {
     flex-direction: column;
     row-gap: 50px;
+    align-items: flex-start;
   }
 }
 .mentor-item__top .card-item__top-images-box {
@@ -3035,10 +3065,22 @@ h2 {
     margin-right: 20px;
   }
 }
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .mentor-item__top .card-item__top-images-box {
-    grid-area: card-video-box;
+    max-width: 330px;
+    height: 430px;
     margin-right: 0;
+    margin-left: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .mentor-item__top .card-item__top-images-box {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .mentor-item__top .card-item__top-images-box {
+    margin-left: 0;
   }
 }
 .mentor-item__top .card-item__top-images-box-video {
@@ -3046,6 +3088,13 @@ h2 {
   width: 440px;
   height: 536px;
   margin-bottom: 5px;
+}
+@media (max-width: 1024px) {
+  .mentor-item__top .card-item__top-images-box-video {
+    max-width: 317px;
+    height: 384px;
+    margin-right: 0;
+  }
 }
 .mentor-item__top .card-item__top-images-box .video-lvl {
   width: 100%;
@@ -3074,6 +3123,16 @@ h2 {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+@media (max-width: 1023px) {
+  .mentor-item__top-description-box {
+    max-width: 515px;
+  }
+}
+@media (max-width: 550px) {
+  .mentor-item__top-description-box {
+    max-width: 324px;
+  }
 }
 .mentor-item__top-description-box::before {
   content: "";
@@ -3108,11 +3167,26 @@ h2 {
   color: var(--text-color);
   margin-bottom: 20px;
 }
+@media (max-width: 1023px) {
+  .mentor-item__top-description-box-text {
+    margin-bottom: 30px;
+  }
+}
 .mentor-item__top-description-box-text:last-child {
   margin-bottom: 0;
 }
 .mentor-item__top-description-box svg {
   margin-bottom: 20px;
+}
+@media (max-width: 1023px) {
+  .mentor-item__top-description-box svg {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .mentor-item__top-description-box svg {
+    width: 300px;
+  }
 }
 
 .start-programming {
@@ -3147,6 +3221,8 @@ h2 {
     margin-right: 0;
     margin-left: auto;
     word-wrap: break-word;
+    margin-bottom: 60px;
+    margin-right: 28px;
   }
 }
 .start-programming__title {
@@ -3161,10 +3237,17 @@ h2 {
 }
 @media (max-width: 1023px) {
   .start-programming__title {
-    max-width: 306px;
     margin-right: auto;
     margin-left: 0;
     word-wrap: break-word;
+    margin-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 41px;
+  }
+}
+@media (max-width: 550px) {
+  .start-programming__title {
+    max-width: 360px;
   }
 }
 .start-programming__title::after {
@@ -3177,6 +3260,11 @@ h2 {
   height: 23px;
   background: url("../images/four_line.svg") center/cover no-repeat;
   pointer-events: none;
+}
+@media (max-width: 767px) {
+  .start-programming__title::after {
+    content: none;
+  }
 }
 @media (max-width: 1284px) {
   .start-programming__title {
@@ -3201,8 +3289,20 @@ h2 {
 }
 @media (max-width: 1023px) {
   .start-programming__btn-box {
-    margin-left: auto;
+    margin-left: 235px;
     max-width: 282px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 550px) {
+  .start-programming__btn-box {
+    margin-left: 47px;
+  }
+}
+@media (max-width: 425px) {
+  .start-programming__btn-box {
+    margin-left: 30px;
+    margin-top: 3px;
   }
 }
 .start-programming__btn {
@@ -3241,6 +3341,14 @@ h2 {
 @media (max-width: 1023px) {
   .start-programming__text {
     margin-left: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .start-programming__text {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .start-programming__text::after {
@@ -3253,6 +3361,12 @@ h2 {
   height: 23px;
   background: url("../images/four_line.svg") center/cover no-repeat;
   pointer-events: none;
+}
+@media (max-width: 425px) {
+  .start-programming__text::after {
+    bottom: -38px;
+    right: 92px;
+  }
 }
 @media (max-width: 1284px) {
   .start-programming__text {
@@ -3279,9 +3393,26 @@ h2 {
     font-size: clamp(1.0625rem, 1.0381rem + 0.1082vw, 1.125rem);
   }
 }
+@media (max-width: 1240px) {
+  .start-programming__text-warning {
+    margin-left: auto;
+    margin-right: 200px;
+  }
+}
+@media (max-width: 1180px) {
+  .start-programming__text-warning {
+    margin-right: 50px;
+  }
+}
 @media (max-width: 1023px) {
   .start-programming__text-warning {
-    margin-left: 0;
+    margin-left: 48px;
+  }
+}
+@media (max-width: 550px) {
+  .start-programming__text-warning {
+    margin-right: 0;
+    padding-right: 30px;
   }
 }
 .start-programming__text-warning::after {
@@ -3294,6 +3425,19 @@ h2 {
   right: -200px;
   background: url("../images/vec_warning.svg") center/cover no-repeat;
   pointer-events: none;
+}
+@media (max-width: 1200px) {
+  .start-programming__text-warning::after {
+    top: 115px;
+    right: 0px;
+  }
+}
+@media (max-width: 425px) {
+  .start-programming__text-warning::after {
+    right: 41px;
+    width: 67px;
+    height: 45px;
+  }
 }
 
 .flex-container {
@@ -3328,6 +3472,18 @@ h2 {
   height: 1158px;
   background: url("../images/vec02.svg") top center/auto no-repeat;
   pointer-events: none;
+}
+@media (max-width: 1240px) {
+  .flex-container::before {
+    right: -3627px;
+  }
+}
+@media (max-width: 1023px) {
+  .flex-container::before {
+    right: auto;
+    left: 25px;
+    bottom: -420px;
+  }
 }
 .flex-container::after {
   filter: blur(50px);

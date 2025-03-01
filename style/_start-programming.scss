@@ -28,6 +28,8 @@
       margin-right: 0;
       margin-left: auto;
       word-wrap: break-word;
+      margin-bottom: 60px;
+      margin-right: 28px;
     }
   }
 
@@ -42,10 +44,17 @@
     position: relative;
 
     @media (max-width: 1023px) {
-      max-width: 306px;
+      //max-width: 385px;
       margin-right: auto;
       margin-left: 0;
       word-wrap: break-word;
+      margin-bottom: 80px;
+      padding-left: 15px;
+      padding-right: 41px;
+    }
+
+    @media (max-width: 550px) {
+      max-width: 360px;
     }
 
     &::after {
@@ -58,6 +67,10 @@
       height: 23px;
       background: url("../images/four_line.svg") center/cover no-repeat;
       pointer-events: none;
+
+      @media (max-width: 767px) {
+        content: none;
+      }
     }
 
     @media (max-width: 1284px) {
@@ -82,11 +95,20 @@
     position: relative;
     z-index: 99;
 
-
     @media (max-width: 1023px) {
-      margin-left: auto;
+      margin-left: 235px;
       max-width: 282px;
       //background: url("../images/vec_btn.png") top center/cover no-repeat;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 550px) {
+      margin-left: 47px;
+    }
+
+    @media (max-width: 425px) {
+      margin-left: 30px;
+      margin-top: 3px;
     }
   }
 
@@ -126,6 +148,13 @@
 
     @media (max-width: 1023px) {
       margin-left: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &::after {
@@ -138,6 +167,11 @@
       height: 23px;
       background: url("../images/four_line.svg") center/cover no-repeat;
       pointer-events: none;
+
+      @media (max-width: 425px) {
+        bottom: -38px;
+        right: 92px;
+      }
     }
 
     @media (max-width: 1284px) {
@@ -165,8 +199,22 @@
       font-size: clamp(1.0625rem, 1.0381rem + 0.1082vw, 1.125rem);
     }
 
+    @media (max-width: 1240px) {
+      margin-left: auto;
+      margin-right: 200px;
+    }
+
+    @media (max-width: 1180px) {
+      margin-right: 50px;
+    }
+
     @media (max-width: 1023px) {
-      margin-left: 0;
+      margin-left: 48px;
+    }
+
+    @media (max-width: 550px) {
+      margin-right: 0;
+      padding-right: 30px;
     }
 
     &::after {
@@ -179,6 +227,17 @@
       right: -200px;
       background: url("../images/vec_warning.svg") center/cover no-repeat;
       pointer-events: none;
+
+      @media (max-width: 1200px) {
+        top: 115px;
+        right: 0px;
+      }
+
+      @media (max-width: 425px) {
+        right: 41px;
+        width: 67px;
+        height: 45px;
+      }
     }
   }
 }
@@ -214,6 +273,16 @@
     height: 1158px;
     background: url("../images/vec02.svg") top center/auto no-repeat;
     pointer-events: none;
+
+    @media (max-width: 1240px) {
+      right: -3627px;
+    }
+
+    @media (max-width: 1023px) {
+      right: auto;
+      left: 25px;
+      bottom: -420px;
+    }
   }
 
   &::after {

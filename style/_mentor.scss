@@ -11,6 +11,10 @@
     padding-left: 30px;
     padding-right: 15px;
     width: 100%;
+
+    @media (max-width: 1023px) {
+      padding-left: 15px;
+    }
   }
 
   &-item01 {
@@ -41,6 +45,22 @@
       height: 556px;
       background: url("../images/vec01.svg") top right/cover no-repeat;
       pointer-events: none;
+
+      @media (max-width: 1023px) {
+        bottom: -425px;
+        left: -4980px;
+        width: 5500px;
+        height: 1100px;
+        background: url("../images/vec01mob.svg") top right/cover no-repeat;
+      }
+
+      @media (max-width: 550px) {
+        left: -5164px;
+      }
+
+      @media (max-width: 425px) {
+        left: -5180px;
+      }
     }
 
     &:after {
@@ -52,6 +72,10 @@
       height: 209px;
       background: url("../images/vec03.svg") top center/cover no-repeat;
       pointer-events: none;
+
+      @media (max-width: 1023px) {
+        content: none;
+      }
     }
 
     &__top {
@@ -62,6 +86,7 @@
       @media (max-width: 1023px) {
         flex-direction: column;
         row-gap: 50px;
+        align-items: flex-start;
       }
 
       .card-item__top-images-box {
@@ -80,9 +105,19 @@
           margin-right: 20px;
         }
 
-        @media (max-width: 1020px) {
-          grid-area: card-video-box;
+        @media (max-width: 1024px) {
+          max-width: 330px;
+          height: 430px;
           margin-right: 0;
+          margin-left: 200px;
+        }
+
+        @media (max-width: 550px) {
+          margin-left: 15px;
+        }
+
+        @media (max-width: 425px) {
+          margin-left: 0;
         }
 
         &-video {
@@ -91,6 +126,12 @@
           width: 440px;
           height: 536px;
           margin-bottom: 5px;
+
+          @media (max-width: 1024px) {
+            max-width: 317px;
+            height: 384px;
+            margin-right: 0;
+          }
         }
 
         .video-lvl {
@@ -122,6 +163,14 @@
         display: flex;
         flex-direction: column;
         position: relative;
+
+        @media (max-width: 1023px) {
+          max-width: 515px;
+        }
+
+        @media (max-width: 550px) {
+          max-width: 324px;
+        }
 
         &::before {
           content: "";
@@ -158,6 +207,10 @@
           color: var(--text-color);
           margin-bottom: 20px;
 
+          @media (max-width: 1023px) {
+            margin-bottom: 30px;
+          }
+
           &:last-child {
             margin-bottom: 0;
           }
@@ -165,6 +218,14 @@
 
         svg {
           margin-bottom: 20px;
+
+          @media (max-width: 1023px) {
+            margin-bottom: 30px;
+          }
+
+          @media (max-width: 550px) {
+            width: 300px;
+          }
         }
       }
     }
