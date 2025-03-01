@@ -10,11 +10,7 @@
   padding: 34px 31px;
   margin: 5px;
   background-color: var(--color-2);
-  //opacity: 0;
-  //transition: opacity 0.3s;
-  //pointer-events: none; /* Отключаем взаимодействие когда скрыто */
-  z-index: 99999999999999999;
-  //top: 0;
+  z-index: 999;
   border: none;
 
   &-title {
@@ -48,9 +44,3 @@
     cursor: pointer;
   }
 }
-
-//.modal-hint.active {
-//  opacity: 1;
-//  pointer-events: auto; /* Включаем взаимодействие */
-//  display: block !important;
-//}

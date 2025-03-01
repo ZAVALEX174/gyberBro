@@ -10,16 +10,14 @@
 
     <!-- Основной SVG-фавикон -->
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-
     <!-- Fallback-варианты -->
     <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes="16x16">
-
     <!-- Для iOS -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
 
     <link rel="stylesheet" href="style/normalize.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>-->
     <link rel="stylesheet" href="style/swiper-bundle.css"/>
     <link rel="stylesheet" href="style/styles.css"/>
 </head>
@@ -61,16 +59,16 @@
             <nav class="nav header__nav">
                 <ul class="list header__list">
                     <li class="item header__item">
-                        <a href="#" class="link header__link">[О CuberBro]</a>
+                        <a href="#about-us" class="link header__link">[О CuberBro]</a>
                     </li>
                     <li class="item header__item">
-                        <a href="#" class="link header__link">[LEVEL 1,2,3,4]</a>
+                        <a href="#cards-lvl" class="link header__link">[LEVEL 1,2,3,4]</a>
                     </li>
                     <li class="item header__item">
-                        <a href="#" class="link header__link">[Кейсы]</a>
+                        <a href="#cases-section" class="link header__link">[Кейсы]</a>
                     </li>
                     <li class="item header__item">
-                        <a href="#" class="link header__link">[Наставник]</a>
+                        <a href="#mentor-section" class="link header__link">[Наставник]</a>
                     </li>
                 </ul>
             </nav>
@@ -80,16 +78,16 @@
         <nav class="nav menu-mobile-box__nav">
             <ul class="list menu-mobile-box__list">
                 <li class="item menu-mobile-box__item">
-                    <a href="#" class="link menu-mobile-box__link">[О CuberBro]</a>
+                    <a href="#about-us" class="link menu-mobile-box__link">[О CuberBro]</a>
                 </li>
                 <li class="item menu-mobile-box__item">
-                    <a href="#" class="link menu-mobile-box__link">[LEVEL 1,2,3,4]</a>
+                    <a href="#cards-lvl" class="link menu-mobile-box__link">[LEVEL 1,2,3,4]</a>
                 </li>
                 <li class="item menu-mobile-box__item">
-                    <a href="#" class="link menu-mobile-box__link">[Кейсы]</a>
+                    <a href="#cases-section" class="link menu-mobile-box__link">[Кейсы]</a>
                 </li>
                 <li class="item menu-mobile-box__item">
-                    <a href="#" class="link menu-mobile-box__link">[Наставник]</a>
+                    <a href="#mentor-section" class="link menu-mobile-box__link">[Наставник]</a>
                 </li>
             </ul>
         </nav>
@@ -221,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="container about-us__container">
                 <div class="about-us-left">
                     <div class="runner"></div>
@@ -278,7 +276,7 @@
                 </div>
             </div>
         </section>
-        <section class="redactor-coda ">
+        <section class="redactor-coda" id="redactor-coda-section">
             <div class="container redactor-coda__container">
                 <div class="redactor-coda-bg">
                     <div class="redactor-coda__exercise">Задание - Привет, мир! 👋</div>
@@ -404,7 +402,7 @@
                 </div>
             </div>
         </section>
-        <section class="cards ">
+        <section class="cards" id="cards-lvl">
             <div class="container cards__container">
                 <div class="card-item01">
                     <div class="card-item c01">
@@ -3341,10 +3339,8 @@
                 </div>
             </div>
         </section>
-        <section class="cases">
-
+        <section class="cases" id="cases-section">
             <div class="tabs-container">
-
                 <div class="fl-cont">
                     <div class="double-slider">
                         <div thumbsSlider="" class="swiper mySwiper">
@@ -3680,7 +3676,7 @@
                 </div>
             </div>
         </section>
-        <section class="mentor">
+        <section class="mentor" id="mentor-section">
             <div class="container mentor__container">
                 <div class="mentor-item01">
                     <div class="mentor-item">
@@ -3814,7 +3810,7 @@
                 <nav class="footer__header-nav">
                     <ul class="footer__header-nav-list">
                         <li class="footer__header-nav-item">
-                            <a href="#" class="footer__header-nav-link">
+                            <a href="#about-us" class="footer__header-nav-link">
                                 О CyberBro
                                 <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -3824,7 +3820,7 @@
                             </a>
                         </li>
                         <li class="footer__header-nav-item">
-                            <a href="#" class="footer__header-nav-link">
+                            <a href="#redactor-coda-section" class="footer__header-nav-link">
                                 Кодить
                                 <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -3834,7 +3830,7 @@
                             </a>
                         </li>
                         <li class="footer__header-nav-item">
-                            <a href="#" class="footer__header-nav-link">
+                            <a href="#cards-lvl" class="footer__header-nav-link">
                                 LEVEL 1,2,3,4
                                 <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -3844,7 +3840,7 @@
                             </a>
                         </li>
                         <li class="footer__header-nav-item">
-                            <a href="#" class="footer__header-nav-link">
+                            <a href="#mentor-section" class="footer__header-nav-link">
                                 Наставник
                                 <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -3854,7 +3850,7 @@
                             </a>
                         </li>
                         <li class="footer__header-nav-item">
-                            <a href="#" class="footer__header-nav-link">
+                            <a href="#cases-section" class="footer__header-nav-link">
                                 Кейсы
                                 <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -3956,13 +3952,11 @@
             </defs>
         </clippath>
     </svg>
-
     <svg width="0" height="0" viewBox="0 0 330 429" fill="none" xmlns="http://www.w3.org/2000/svg">
         <clippath id="card-img-clip-mob">
             <path d="M0 0V408.913L15.4021 429H293.744V418.957H312.137V429H329.387V20.8043L312.442 0H0Z" fill="#493CA5"/>
         </clippath>
     </svg>
-
     <svg width="0" height="0" viewBox="0 0 317 384" fill="none" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
         <clippath id="card-gif-clip-mob">
@@ -3975,8 +3969,6 @@
             </defs>
         </clippath>
     </svg>
-
-
     <svg width="0" height="0">
         <clippath id="card-bg-clip">
             <path d="M1 251.409V651.266H1224V121.931L1167.98 54.4676H810.5L735.203 1.26562H1V251.409Z"

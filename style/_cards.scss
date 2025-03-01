@@ -154,9 +154,9 @@
           opacity: 0.8;
           margin-bottom: 10px;
 
-          @media (max-width: 1284px) {
-
-          }
+          //@media (max-width: 1284px) {
+          //
+          //}
         }
 
         &-title {
@@ -191,9 +191,9 @@
           color: var(--text-color);
           margin-bottom: 20px;
 
-          @media (max-width: 1284px) {
-
-          }
+          //@media (max-width: 1284px) {
+          //
+          //}
         }
 
         &-duration-wrapper {
@@ -218,8 +218,6 @@
             //&__lvl4 {
             //  background: #f6f517;
             //}
-
-
           }
 
           .duration-text {
@@ -231,9 +229,9 @@
             text-transform: lowercase;
             color: var(--text-color);
 
-            @media (max-width: 1284px) {
-
-            }
+            //@media (max-width: 1284px) {
+            //
+            //}
 
             .duration-data {
               font-family: 'JetBrainsMono-Regular', sans-serif;
@@ -243,9 +241,9 @@
               text-transform: lowercase;
               color: var(--text-color);
 
-              @media (max-width: 1284px) {
-
-              }
+              //@media (max-width: 1284px) {
+              //
+              //}
             }
           }
         }
@@ -277,7 +275,6 @@
         }
 
         &-item {
-          //padding: 8px 15px;
           width: 100%;
           min-height: 110px;
           position: relative;
@@ -314,9 +311,9 @@
             color: var(--text-color);
             opacity: 0.8;
 
-            @media (max-width: 1284px) {
-
-            }
+            //@media (max-width: 1284px) {
+            //
+            //}
 
             &_lvl1 {
               color: #f6f517;
@@ -341,9 +338,9 @@
             text-transform: lowercase;
             color: var(--text-color);
 
-            @media (max-width: 1284px) {
-
-            }
+            //@media (max-width: 1284px) {
+            //
+            //}
           }
         }
 
@@ -391,7 +388,6 @@
         padding-right: 15px;
       }
 
-
       &-header {
         width: 100%;
         display: flex;
@@ -430,9 +426,9 @@
           text-transform: capitalize;
           color: var(--color-4);
 
-          @media (max-width: 1284px) {
-
-          }
+          //@media (max-width: 1284px) {
+          //
+          //}
 
           @media (max-width: 767px) {
             order: 3;
@@ -539,9 +535,9 @@
               text-transform: lowercase;
               color: var(--text-color);
 
-              @media (max-width: 1284px) {
-
-              }
+              //@media (max-width: 1284px) {
+              //
+              //}
             }
 
             &-progress-box {
@@ -578,15 +574,14 @@
             text-transform: lowercase;
             color: rgba(255, 255, 255, 0.7);
 
-            @media (max-width: 1284px) {
-
-            }
+            //@media (max-width: 1284px) {
+            //
+            //}
           }
         }
       }
     }
   }
-
 
   .c01 {
     display: flex;
@@ -605,8 +600,8 @@
       background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, #2D24B8 0%, #080808 100%);
     }
 
-    @media (max-width: 767px) {
-    }
+    //@media (max-width: 767px) {
+    //}
 
     .card-item__top-images-box {
       background-color: #493ca5;
@@ -629,8 +624,8 @@
       background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(215, 115, 244, 0.3) 0%, #080808 100%);
     }
 
-    @media (max-width: 767px) {
-    }
+    //@media (max-width: 767px) {
+    //}
 
     .card-item__top-images-box {
       background-color: rgba(161, 32, 199, 1);
@@ -653,8 +648,8 @@
       background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(34, 59, 216, 0.3) 0%, #080808 100%);
     }
 
-    @media (max-width: 767px) {
-    }
+    //@media (max-width: 767px) {
+    //}
 
     .card-item__top-images-box {
       background-color: rgba(33, 47, 159, 1);
@@ -677,8 +672,8 @@
       background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(89, 203, 179, 0.3) 0%, #080808 100%);
     }
 
-    @media (max-width: 767px) {
-    }
+    //@media (max-width: 767px) {
+    //}
 
     .card-item__top-images-box {
       background-color: rgba(89, 203, 179, 1);
@@ -794,4 +789,3 @@
   grid-area: m08;
 }
 
-//проверка появления

@@ -1,14 +1,12 @@
 :root {
   --text-color: #ffffff;
   --page-bg: #101010;
-
   --color-1: #e53a24;
   --color-2: #fefefe;
   --color-3: #1fb6ea;
   --color-4: #2b2a29;
   --color-5: #eff338;
   --color-6: #956fa7;
-
   --font-family-lig: "JetBrainsMono-Light", sans-serif;
   $font-family-reg: "JetBrainsMono-Regular", sans-serif;
   --font-family-med: "JetBrainsMono-Medium", sans-serif;
@@ -139,7 +137,6 @@ h2 {
   white-space: nowrap;
   border: none;
   outline: none;
-  //border: 1px solid transparent;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

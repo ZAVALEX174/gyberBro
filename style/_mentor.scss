@@ -1,17 +1,10 @@
 .mentor {
-  //position: fixed;
   position: relative;
   top: 0;
   left: 0;
   z-index: 50;
   background-color: #101010;
   overflow: hidden;
-
-  //background: url("../images/section_line.svg") left 44.6% top 0/auto no-repeat,
-  //linear-gradient(to right,
-  //                #101010,
-  //                #101010);
-  //display: none;
 
   &__container {
     max-width: 1253px;
@@ -66,6 +59,11 @@
       align-items: center;
       position: relative;
 
+      @media (max-width: 1023px) {
+        flex-direction: column;
+        row-gap: 50px;
+      }
+
       .card-item__top-images-box {
         background-color: var(--color-3);
         clip-path: url(#mentor-mask);
@@ -110,6 +108,7 @@
           color: var(--color-4);
 
           @media (max-width: 1284px) {
+            font-size: clamp(0.9375rem, 0.767rem + 0.7576vw, 1.375rem);
           }
         }
       }
@@ -128,7 +127,7 @@
           height: 100%;
           bottom: 0;
           left: -60px;
-
+          pointer-events: none;
         }
 
         &-title {
@@ -140,7 +139,7 @@
           margin-bottom: 53px;
 
           @media (max-width: 1284px) {
-
+            font-size: clamp(1.875rem, 1.4367rem + 1.9481vw, 3rem);
           }
 
           &-accent {
