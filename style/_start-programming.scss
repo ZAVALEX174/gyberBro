@@ -170,7 +170,7 @@
 
       @media (max-width: 425px) {
         bottom: -38px;
-        right: 92px;
+        right: 30px;
       }
     }
 
@@ -264,6 +264,10 @@
     max-width: 100%;
   }
 
+  @media (max-width: 767px) {
+    background: url("../images/tochki_fon_mob.svg") top 77px left -586px/auto no-repeat;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -295,5 +299,11 @@
     height: 661px;
     background: url("../images/left_circle.png") top center/auto no-repeat;
     pointer-events: none;
+
+    @media (max-width: 767px) {
+      bottom: 40px;
+      left: -200px;
+      background: url("../images/right_circle.png") top center/auto no-repeat;
+    }
   }
 }
