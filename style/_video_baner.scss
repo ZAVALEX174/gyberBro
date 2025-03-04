@@ -68,7 +68,15 @@
   opacity: 0; /* Начальное состояние */
   transition: opacity 0.5s ease; /* Плавное появление */
   pointer-events: none;
+}
 
+.hack-button-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Эффект при наведении на кнопку */
+.hack-button:hover {
   /* Псевдоэлементы для глитч-эффекта текста */
   &::before,
   &::after {
@@ -95,16 +103,6 @@
     text-shadow: -2px 0 rgba(0, 255, 255, 0.7); /* Синий оттенок */
     animation: glitch-text-2 1s infinite linear alternate-reverse;
   }
-}
-
-.hack-button-visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Эффект при наведении на кнопку */
-.hack-button:hover {
-  //background-color: #e64a19; /* Темнее оранжевый */
 }
 
 /* Контент лендинга */
