@@ -22,7 +22,25 @@
     <link rel="stylesheet" href="style/styles.css"/>
 </head>
 <body>
-<div class="wrapper-page">
+
+<div class="video-container" id="video-container">
+    <video id="first-video" class="video-background" muted autoplay playsinline preload="metadata">
+        <source src="video/video_ban_25.mp4" type="video/mp4">
+        <!--                <source src="video/background.webm" type="video/webm">-->
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <!-- Второе видео (цифры) -->
+    <video id="second-video" class="video-background" muted preload="auto">
+        <source src="video/video_bg_25.mp4" type="video/mp4">
+        <!--            <source src="video/" type="video/webm">-->
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <button id="hack-button" class="hack-button">Начать взлом</button>
+</div>
+
+<div class="wrapper-page hidden" id="landing-content">
     <header class="header">
         <div class="container header__container">
             <div class="logo header__logo">
@@ -3889,7 +3907,7 @@
         </div>
     </footer>
 
-<!--    <div class="mmm"></div>-->
+    <!--    <div class="mmm"></div>-->
 
     <svg width="0" height="0" viewBox="0 0 284 370" fill="none" xmlns="http://www.w3.org/2000/svg">
         <clippath id="card-img-clip">

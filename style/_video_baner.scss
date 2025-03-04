@@ -1,0 +1,141 @@
+.video-section {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
+/* Контейнер для видео */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* На всю высоту экрана */
+  overflow: hidden;
+}
+
+
+/* Видео на заднем плане */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Видео заполняет весь контейнер */
+  z-index: 1; /* Видео под кнопкой */
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+/* Второе видео изначально скрыто */
+#second-video {
+  opacity: 0;
+  z-index: 2; /* Поверх первого видео */
+}
+
+/* Кнопка "Начать взлом" */
+.hack-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрирование */
+  width: 298px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  //filter: blur(1px);
+  cursor: pointer;
+  z-index: 3; /* Кнопка поверх видео */
+  //transition: background-color 0.3s ease;
+  border: 1px solid rgba(73, 123, 255, 0.7);
+
+  border-image-source: linear-gradient(180deg, rgba(39, 55, 207, 0.4) 17.19%, rgba(101, 98, 251, 0.77) 100%);
+  color: var(--text-color);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -40.91%, #1FB6EA 132.95%);
+  box-shadow: 0px 10px 30px 0px rgba(73, 123, 255, 0.7) inset;
+
+
+  opacity: 0; /* Начальное состояние */
+  transition: opacity 0.5s ease; /* Плавное появление */
+  pointer-events: none;
+}
+
+.hack-button-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Эффект при наведении на кнопку */
+.hack-button:hover {
+  //background-color: #e64a19; /* Темнее оранжевый */
+}
+
+/* Контент лендинга */
+.wrapper-page {
+  position: relative;
+  z-index: 0; /* Под видео */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.wrapper-page.hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.wrapper-page.show {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  overflow: auto;
+}
+
+//=============================
+
+//.video-background {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//  z-index: 1;
+//}
+//
+//.hack-button {
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  padding: 15px 30px;
+//  font-size: 20px;
+//  font-weight: bold;
+//  color: #fff;
+//  background-color: #ff5722;
+//  border: none;
+//  border-radius: 5px;
+//  cursor: pointer;
+//  z-index: 2;
+//  transition: background-color 0.3s ease;
+//  animation: pulse 2s infinite;
+//
+//  &:hover {
+//    background-color: #e64a19;
+//  }
+//}
+//
+//@keyframes pulse {
+//  0% {
+//    transform: translate(-50%, -50%) scale(1);
+//  }
+//  50% {
+//    transform: translate(-50%, -50%) scale(1.1);
+//  }
+//  100% {
+//    transform: translate(-50%, -50%) scale(1);
+//  }
+//}
