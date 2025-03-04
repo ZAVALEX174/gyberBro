@@ -146,12 +146,24 @@
       left: -4px; /* Смещение для эффекта */
       text-shadow: 4px 0 rgba(255, 0, 0, 0.7); /* Красный оттенок */
       animation: glitch-text-1 1s infinite linear alternate-reverse;
+
+      @media (max-width: 1023px) {
+        width: 95%;
+        top: 35%;
+        left: -2px;
+      }
     }
 
     &::after {
       left: 4px; /* Смещение для эффекта */
       text-shadow: -4px 0 rgba(0, 255, 255, 0.7); /* Синий оттенок */
       animation: glitch-text-2 1s infinite linear alternate-reverse;
+
+      @media (max-width: 1023px) {
+        width: 95%;
+        top: 35%;
+        left: 2px;
+      }
     }
 
     @media (max-width: 1023px) {
