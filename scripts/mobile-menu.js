@@ -125,8 +125,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+function updateVideoSources() {
+    const isMobile = window.innerWidth <= 768;
+
+    // Получаем ВСЕ source элементы внутри видео
+    const sources = document.querySelectorAll('#first-video source');
+    console.log(sources)
+
+    sources.forEach(source => {
+        const src = isMobile ?
+            source.dataset.srcMobile :
+            source.dataset.srcDesktop;
+
+        if (source.src !== src) {
+            // Меняем src у source элемента
+            source.src = src;
+            // Получаем родительский video элемент и перезагружаем его
+            const video = source.parentElement;
+            video.load();
+        }
+    });
+}
+
+// Инициализация
+window.addEventListener('load', updateVideoSources);
+window.addEventListener('resize', updateVideoSources);
+
 // запуск видео
 document.addEventListener('DOMContentLoaded', () => {
+
+
     const firstVideo = document.getElementById('first-video');
     const secondVideo = document.getElementById('second-video');
     const hackButton = document.getElementById('hack-button');
