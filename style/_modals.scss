@@ -4,6 +4,7 @@
   min-height: 260px;
   overflow-y: auto;
   //clip-path: url('#modal-mask');
+  -webkit-clip-path: polygon(100% 5%, 98.5% 5%, 98.5% 10%, 100% 10%, 100% 95%, 97% 100%, 0 100%, 0 5%, 3% 0, 100% 0);
   clip-path: polygon(100% 5%, 98.5% 5%, 98.5% 10%, 100% 10%, 100% 95%, 97% 100%, 0 100%, 0 5%, 3% 0, 100% 0);
   position: fixed;
   top: 0;
@@ -44,4 +45,19 @@
     background-color: transparent;
     cursor: pointer;
   }
+}
+
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
 }

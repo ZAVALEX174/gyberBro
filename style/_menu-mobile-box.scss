@@ -1,11 +1,18 @@
 .menu-mobile-box {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: -100%;
   width: 100%;
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 46px 27px 60px;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
   transition: 0.3s linear;
   row-gap: 60px;
   background-color: #111111;
@@ -17,8 +24,14 @@
 
   &__item {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
@@ -29,12 +42,21 @@
   }
 
   &__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 26px;
 
     &-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-column-gap: 20px;
+      -moz-column-gap: 20px;
       column-gap: 20px;
     }
 
@@ -56,13 +78,19 @@
     &-btn {
       max-width: 303px;
       width: 100%;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       background-color: #E53A24;
       font-weight: 700;
       font-size: 20px;
       text-transform: capitalize;
       color: #2b2a29;
+      -webkit-transition: 0.2s linear;
+      -o-transition: 0.2s linear;
       transition: 0.2s linear;
     }
   }
@@ -73,9 +101,18 @@
 }
 
 .list.menu-mobile-box__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   gap: 53px;
 }

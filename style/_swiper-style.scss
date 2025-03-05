@@ -1,19 +1,33 @@
+
 .fl-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   max-width: 1224px;
   width: 100%;
 }
 
 .double-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 25px;
+  -moz-column-gap: 25px;
   column-gap: 25px;
   max-width: 1224px;
   width: 100%;
   position: relative;
 
   @media (max-width: 1023px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
     column-gap: 0;
     row-gap: 60px;
   }
@@ -22,8 +36,14 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -31,6 +51,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -50,6 +71,8 @@
   height: 400px;
   max-width: 1014px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   @media (max-width: 767px) {
@@ -58,12 +81,21 @@
   }
 
   .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
     column-gap: 25px;
     background-color: transparent;
 
     @media (max-width: 767px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
       justify-content: flex-start;
     }
 
@@ -71,6 +103,7 @@
       max-width: 597px;
       width: 100%;
       height: 100%;
+      -ms-flex-negative: 0;
       flex-shrink: 0;
 
       @media (max-width: 1260px) {
@@ -78,7 +111,10 @@
       }
 
       @media (max-width: 767px) {
+        -ms-flex-negative: 0;
         flex-shrink: 0;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
         margin-bottom: 230px;
         height: 207px;
@@ -87,8 +123,15 @@
 
     .mySwiper2__text-box {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
       align-items: flex-start;
       height: 400px;
       padding-top: 52px;
@@ -106,13 +149,21 @@
         min-height: 60px;
         width: 100%;
         text-align: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         position: relative;
         margin-bottom: 29px;
 
         @media (max-width: 767px) {
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
           order: 1;
           margin-bottom: 106px;
         }
@@ -142,8 +193,14 @@
             color: var(--color-3);
             opacity: 0.8;
             border: 2.65px solid var(--color-3);
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
             width: 47px;
             height: 56px;
@@ -168,6 +225,8 @@
         }
 
         @media (max-width: 767px) {
+          -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
           order: 3;
           padding-left: 15px;
           padding-right: 15px;
@@ -185,6 +244,8 @@
         overflow-y: auto;
 
         @media (max-width: 767px) {
+          -webkit-box-ordinal-group: 5;
+          -ms-flex-order: 4;
           order: 4;
           padding-left: 15px;
           padding-right: 5px;
@@ -198,10 +259,18 @@
   padding: 0;
   margin: 0;
   max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   height: 10px;
   top: 119%;
@@ -234,8 +303,10 @@
   z-index: 40000;
   width: 186px;
   height: 400px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px 25px 10px 10px;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   background: url("../images/colonka_sl.png") top right 15px/171px 400px no-repeat;
 
@@ -253,6 +324,8 @@
   }
 
   .swiper-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -310,10 +383,12 @@
   display: block;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .mySwiper .swiper-slide img {
+  -webkit-filter: grayscale(50);
   filter: grayscale(50);
 }
 
@@ -335,11 +410,13 @@
 }
 
 .mySwiper .swiper-slide-thumb-active img {
+  -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
 
 .mySwiper .swiper-slide-thumb-active .red-wrapper {
   border: 1px solid var(--color-3);
+  -webkit-filter: grayscale(0);
   filter: grayscale(0);
 
   &::before {

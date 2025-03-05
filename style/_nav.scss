@@ -1,9 +1,16 @@
+
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     .item {
@@ -12,9 +19,17 @@
         font-family: 'JetBrainsMono-ExtraLight', sans-serif;
         font-weight: 200;
         font-size: 17px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
         transition: 0.2s linear all;
 
         &::after {
@@ -25,6 +40,8 @@
           bottom: 0;
           left: 0;
           background-color: transparent;
+          -webkit-transition: 0.2s linear all;
+          -o-transition: 0.2s linear all;
           transition: 0.2s linear all;
         }
 
@@ -39,6 +56,8 @@
             bottom: -2px;
             left: 0;
             background-color: var(--color-3);
+            -webkit-transition: 0.2s linear all;
+            -o-transition: 0.2s linear all;
             transition: 0.2s linear all;
           }
         }
