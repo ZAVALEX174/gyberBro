@@ -25,66 +25,61 @@ window.addEventListener('load', updateVideoSources);
 window.addEventListener('resize', updateVideoSources);
 
 // запуск видео
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
+    const firstVideo = document.getElementById('first-video');
+    const secondVideo = document.getElementById('second-video');
+    const hackButton = document.getElementById('hack-button');
+    const landingContent = document.getElementById('landing-content');
+    const videoContent = document.getElementById('video-container');
 
-
-const firstVideo = document.getElementById('first-video');
-const secondVideo = document.getElementById('second-video');
-const hackButton = document.getElementById('hack-button');
-const landingContent = document.getElementById('landing-content');
-const videoContent = document.getElementById('video-container');
-
-// // Проверяем, была ли анимация уже воспроизведена
-// if (localStorage.getItem('animationPlayed')) {
-//     // Если анимация уже воспроизведена, сразу показываем лендинг
-//     firstVideo.style.display = 'none';
-//     secondVideo.style.display = 'none';
-//     videoContent.style.display = 'none';
-//     landingContent.style.display = 'block';
-//     landingContent.classList.add('show'); // Плавное появление
-//     return; // Прерываем выполнение
-// }
-
-firstVideo.addEventListener('play', () => {
-    setTimeout(() => {
-
-        setTimeout(() => {
-            hackButton.classList.add('hack-button-visible'); // Плавное появление
-        }, 50);
-    }, 5000);
-});
-
-// Обработчик нажатия на кнопку
-hackButton.addEventListener('click', () => {
-    // Скрываем кнопку
-    hackButton.style.display = 'none';
-    firstVideo.style.display = 'none';
-    // Запускаем второе видео
-    secondVideo.play();
-    secondVideo.style.opacity = '1'; // Показываем второе видео
-
-    // Плавное изменение прозрачности второго видео
-    setTimeout(() => {
-        secondVideo.style.opacity = '0'; // Плавно скрываем второе видео
-    }, 6000); // 6 секунд
-
-    // После завершения второго видео и задержки показываем лендинг
-    setTimeout(() => {
-        // Скрываем видео
-
+    // Проверяем, была ли анимация уже воспроизведена
+    if (localStorage.getItem('animationPlayed')) {
+        // Если анимация уже воспроизведена, сразу показываем лендинг
+        firstVideo.style.display = 'none';
         secondVideo.style.display = 'none';
         videoContent.style.display = 'none';
-
-        // Показываем контент лендинга
         landingContent.style.display = 'block';
         landingContent.classList.add('show'); // Плавное появление
+        return; // Прерываем выполнение
+    }
 
-        // // Сохраняем состояние в localStorage
-        // localStorage.setItem('animationPlayed', 'true');
-    }, 6500); // 6 секунд + 3 секунды задержки
+    firstVideo.addEventListener('play', () => {
+        setTimeout(() => {
+            setTimeout(() => {
+                hackButton.classList.add('hack-button-visible'); // Плавное появление
+            }, 50);
+        }, 5000);
+    });
+
+    // Обработчик нажатия на кнопку
+    hackButton.addEventListener('click', () => {
+        // Скрываем кнопку
+        hackButton.style.display = 'none';
+        firstVideo.style.display = 'none';
+        // Запускаем второе видео
+        secondVideo.play();
+        secondVideo.style.opacity = '1'; // Показываем второе видео
+
+        // Плавное изменение прозрачности второго видео
+        setTimeout(() => {
+            secondVideo.style.opacity = '0'; // Плавно скрываем второе видео
+        }, 6000); // 6 секунд
+
+        // После завершения второго видео и задержки показываем лендинг
+        setTimeout(() => {
+            // Скрываем видео
+            secondVideo.style.display = 'none';
+            videoContent.style.display = 'none';
+
+            // Показываем контент лендинга
+            landingContent.style.display = 'block';
+            landingContent.classList.add('show'); // Плавное появление
+
+            // Сохраняем состояние в localStorage
+            localStorage.setItem('animationPlayed', 'true');
+        }, 6500); // 6 секунд + 3 секунды задержки
+    });
 });
-// });
-
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -134,6 +129,15 @@ document.addEventListener('DOMContentLoaded', () => {
         mouseOwnerNumber.addEventListener('mouseover', mouseoverFank);
         mouseOwnerNumber.addEventListener('mouseout', mouseoutFank);
     }
+
+    // cookies-box
+    const cookiesBox = document.querySelector('.cookies-box');
+    const cookiesBoxBtn = document.querySelector('.cookies-content__btn');
+    console.log(cookiesBoxBtn);
+    cookiesBoxBtn.addEventListener('click', e => {
+        e.preventDefault();
+        cookiesBox.style.display = 'none';
+    })
 })
 
 // открытие popover
