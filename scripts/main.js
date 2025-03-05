@@ -133,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // cookies-box
     const cookiesBox = document.querySelector('.cookies-box');
     const cookiesBoxBtn = document.querySelector('.cookies-content__btn');
-    console.log(cookiesBoxBtn);
     cookiesBoxBtn.addEventListener('click', e => {
         e.preventDefault();
         cookiesBox.style.display = 'none';

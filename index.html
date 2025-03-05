@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="style/styles.css"/>
 </head>
 <body>
-
 <div class="video-container" id="video-container">
     <video id="first-video" class="video-background" muted autoplay playsinline preload="auto">
         <source data-src-desktop="video/video_ban_25.mp4"
@@ -45,6 +44,19 @@
 </div>
 
 <div class="wrapper-page hidden" id="landing-content">
+    <div class="cookies-box">
+        <div class="cookies-content">
+            <div class="cookies-content__text">
+                Этот веб-сайт использует файлы cookie для улучшения работы пользователей.
+                Используя наш веб-сайт, вы даете согласие на использование всех файлов cookie в
+                соответствии с нашей политикой использования файлов cookie.
+                <a class="cookies-content__text-link" href="#">
+                    Подробнее
+                </a>
+            </div>
+            <button type="submit" class="btn cookies-content__btn" data-text="Окей">Окей</button>
+        </div>
+    </div>
     <header class="header">
         <div class="container header__container">
             <div class="logo header__logo">
@@ -3992,7 +4004,7 @@
 <!--    AOS.init();-->
 <!--</script>-->
 <script src="scripts/swiper-bundle.js"></script>
-<script src="scripts/mobile-menu.js"></script>
+<script src="scripts/main.js"></script>
 <script src="scripts/slider-cases.js"></script>
 </body>
 </html>

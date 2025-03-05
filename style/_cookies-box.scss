@@ -1,0 +1,93 @@
+.cookies-box {
+  padding: 15px 40px;
+  max-width: 1034px;
+  width: 100%;
+  background-color: var(--color-4);
+  border-radius: 13px;
+  position: fixed;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  @media (max-width: 767px) {
+    padding: 30px 20px;
+  }
+
+  .cookies-content {
+    width: 100%;
+    display: flex;
+    column-gap: 34px;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      row-gap: 34px;
+    }
+
+    &__text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.4375;
+      color: var(--color-2);
+
+      @media (max-width: 1284px) {
+        font-size: clamp(1rem, 0.976rem + 0.11vw, 1.063rem);
+      }
+
+      &-link {
+        color: var(--color-3);
+        text-decoration: underline;
+      }
+    }
+
+    &__btn {
+      max-width: 130px;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      background-color: var(--color-3);
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: var(--color-4);
+      transition: all 0.3s linear;
+      z-index: 3;
+      position: relative;
+
+      @media (max-width: 767px) {
+        max-width: 235px;
+      }
+
+      &:hover {
+        /* Псевдоэлементы для глитч-эффекта текста */
+        &::before,
+        &::after {
+          content: attr(data-text); /* Используем текст кнопки */
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 100%;
+          height: 100%;
+          color: var(--color-2);
+          background: transparent;
+          overflow: hidden;
+          z-index: 0;
+        }
+
+        &::before {
+          left: -2px; /* Смещение для эффекта */
+          text-shadow: 2px 0 rgba(255, 0, 0, 0.7); /* Красный оттенок */
+          animation: glitch-text-1 1s infinite linear alternate-reverse;
+        }
+
+        &::after {
+          left: 2px; /* Смещение для эффекта */
+          text-shadow: -2px 0 rgba(0, 255, 255, 0.7); /* Синий оттенок */
+          animation: glitch-text-2 1s infinite linear alternate-reverse;
+        }
+      }
+    }
+  }
+}
