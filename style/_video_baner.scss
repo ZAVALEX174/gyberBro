@@ -24,7 +24,7 @@
   object-fit: cover; /* Видео заполняет весь контейнер */
   z-index: 1; /* Видео под кнопкой */
   opacity: 1;
-  transition: opacity 1s ease;
+  transition: opacity 0.1s ease;
 
   video {
     width: 100%;
@@ -110,7 +110,7 @@
   position: relative;
   z-index: 0; /* Под видео */
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 0.3s ease;
 }
 
 .wrapper-page.hidden {
