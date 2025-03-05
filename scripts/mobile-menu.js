@@ -1,22 +1,22 @@
 function updateVideoSources() {
     const isMobile = window.innerWidth <= 768;
 
-    // Получаем ВСЕ source элементы внутри видео
-    const sources = document.querySelectorAll('#first-video source');
-    console.log(sources)
+    const videos = document.querySelectorAll('.video-background');
 
-    sources.forEach(source => {
-        const src = isMobile ?
-            source.dataset.srcMobile :
-            source.dataset.srcDesktop;
+    videos.forEach(video => {
+        const sources = video.querySelectorAll('source');
+        sources.forEach(source => {
+            if (!source.dataset.srcDesktop || !source.dataset.srcMobile) return;
 
-        if (source.src !== src) {
-            // Меняем src у source элемента
-            source.src = src;
-            // Получаем родительский video элемент и перезагружаем его
-            const video = source.parentElement;
-            video.load();
-        }
+            const src = isMobile ?
+                source.dataset.srcMobile :
+                source.dataset.srcDesktop;
+
+            if (source.src !== src) {
+                source.src = src;
+                video.load();
+            }
+        });
     });
 }
 
@@ -28,61 +28,61 @@ window.addEventListener('resize', updateVideoSources);
 // document.addEventListener('DOMContentLoaded', () => {
 
 
-    const firstVideo = document.getElementById('first-video');
-    const secondVideo = document.getElementById('second-video');
-    const hackButton = document.getElementById('hack-button');
-    const landingContent = document.getElementById('landing-content');
-    const videoContent = document.getElementById('video-container');
+const firstVideo = document.getElementById('first-video');
+const secondVideo = document.getElementById('second-video');
+const hackButton = document.getElementById('hack-button');
+const landingContent = document.getElementById('landing-content');
+const videoContent = document.getElementById('video-container');
 
-    // // Проверяем, была ли анимация уже воспроизведена
-    // if (localStorage.getItem('animationPlayed')) {
-    //     // Если анимация уже воспроизведена, сразу показываем лендинг
-    //     firstVideo.style.display = 'none';
-    //     secondVideo.style.display = 'none';
-    //     videoContent.style.display = 'none';
-    //     landingContent.style.display = 'block';
-    //     landingContent.classList.add('show'); // Плавное появление
-    //     return; // Прерываем выполнение
-    // }
+// // Проверяем, была ли анимация уже воспроизведена
+// if (localStorage.getItem('animationPlayed')) {
+//     // Если анимация уже воспроизведена, сразу показываем лендинг
+//     firstVideo.style.display = 'none';
+//     secondVideo.style.display = 'none';
+//     videoContent.style.display = 'none';
+//     landingContent.style.display = 'block';
+//     landingContent.classList.add('show'); // Плавное появление
+//     return; // Прерываем выполнение
+// }
 
-    firstVideo.addEventListener('play', () => {
+firstVideo.addEventListener('play', () => {
+    setTimeout(() => {
+
         setTimeout(() => {
+            hackButton.classList.add('hack-button-visible'); // Плавное появление
+        }, 50);
+    }, 5000);
+});
 
-            setTimeout(() => {
-                hackButton.classList.add('hack-button-visible'); // Плавное появление
-            }, 50);
-        }, 5000);
-    });
+// Обработчик нажатия на кнопку
+hackButton.addEventListener('click', () => {
+    // Скрываем кнопку
+    hackButton.style.display = 'none';
+    firstVideo.style.display = 'none';
+    // Запускаем второе видео
+    secondVideo.play();
+    secondVideo.style.opacity = '1'; // Показываем второе видео
 
-    // Обработчик нажатия на кнопку
-    hackButton.addEventListener('click', () => {
-        // Скрываем кнопку
-        hackButton.style.display = 'none';
-        firstVideo.style.display = 'none';
-        // Запускаем второе видео
-        secondVideo.play();
-        secondVideo.style.opacity = '1'; // Показываем второе видео
+    // Плавное изменение прозрачности второго видео
+    setTimeout(() => {
+        secondVideo.style.opacity = '0'; // Плавно скрываем второе видео
+    }, 6000); // 6 секунд
 
-        // Плавное изменение прозрачности второго видео
-        setTimeout(() => {
-            secondVideo.style.opacity = '0'; // Плавно скрываем второе видео
-        }, 5000); // 6 секунд
+    // После завершения второго видео и задержки показываем лендинг
+    setTimeout(() => {
+        // Скрываем видео
 
-        // После завершения второго видео и задержки показываем лендинг
-        setTimeout(() => {
-            // Скрываем видео
+        secondVideo.style.display = 'none';
+        videoContent.style.display = 'none';
 
-            secondVideo.style.display = 'none';
-            videoContent.style.display = 'none';
+        // Показываем контент лендинга
+        landingContent.style.display = 'block';
+        landingContent.classList.add('show'); // Плавное появление
 
-            // Показываем контент лендинга
-            landingContent.style.display = 'block';
-            landingContent.classList.add('show'); // Плавное появление
-
-            // // Сохраняем состояние в localStorage
-            // localStorage.setItem('animationPlayed', 'true');
-        }, 5500); // 6 секунд + 3 секунды задержки
-    });
+        // // Сохраняем состояние в localStorage
+        // localStorage.setItem('animationPlayed', 'true');
+    }, 6500); // 6 секунд + 3 секунды задержки
+});
 // });
 
 
