@@ -144,6 +144,10 @@
 .jump-page-three {
   margin-top: -50vh;
   z-index: 50;
+
+  @media (max-width: 999px) {
+    margin-top: 0;
+  }
 }
 
 .jump-page-four {
