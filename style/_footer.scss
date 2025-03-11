@@ -1,14 +1,13 @@
-
 .footer {
   width: 100%;
   padding: 60px 0 30px;
-  background: url("../images/footer_decor.svg") center top repeat-x, #101010;
+  background: url('../images/footer_decor.svg') center top repeat-x, #101010;
 
   &__bottom-line {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #FA1B1B;
+    background-color: #fa1b1b;
     margin-bottom: 24px;
 
     @media (max-width: 767px) {
@@ -256,11 +255,12 @@
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 270px 25px 1fr 25px 370px;
-    grid-template-columns:270px 1fr 370px;
+    -ms-grid-columns: 270px 25px 1fr 25px 1fr 25px 370px;
+    grid-template-columns: 270px 1fr 1fr 370px;
     -ms-grid-rows: auto 25px auto;
-    grid-template-areas: 'footer-desc footer-desc footer-desc'
-  'footer-privacy-policy footer-terms-of-use footer-developer';
+    grid-template-areas:
+      'footer-desc footer-desc footer-desc footer-desc'
+      'footer-privacy-policy footer-terms-of-use footer-requis footer-developer';
     gap: 25px;
 
     @media (max-width: 1023px) {
@@ -325,6 +325,30 @@
       -ms-grid-row: 3;
       -ms-grid-column: 3;
       grid-area: footer-terms-of-use;
+
+      a {
+        font-family: 'JetBrainsMono-Light', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--text-color);
+        text-decoration: none;
+
+        @media (max-width: 767px) {
+          font-family: 'JetBrainsMono-Regular', sans-serif;
+          font-weight: 400;
+          line-height: 1.27;
+          letter-spacing: 0.05em;
+          text-align: center;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-requisites {
+      -ms-grid-row: 3;
+      -ms-grid-column: 3;
+      grid-area: footer-requis;
 
       a {
         font-family: 'JetBrainsMono-Light', sans-serif;
