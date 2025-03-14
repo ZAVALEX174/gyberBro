@@ -152,13 +152,17 @@
 
 .jump-page-four {
   z-index: 51;
-  margin-top: -5vh;
+  //margin-top: -5vh;
 
   @media (max-width: 999px) {
-    margin-top: 0;
+    //margin-top: 5vh;
   }
 }
 
 .jump-page {
   height: 100vh;
+
+  @media (max-width: 768px) {
+    max-height: 600px;
+  }
 }
