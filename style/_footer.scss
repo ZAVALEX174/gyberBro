@@ -70,6 +70,7 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        font-family: 'JetBrainsMono-Medium', sans-serif;
         font-weight: 500;
         font-size: 17px;
         color: var(--text-color);
@@ -276,6 +277,10 @@
       align-items: center;
     }
 
+    @media (max-width: 425px) {
+      gap: 15px;
+    }
+
     &-desc {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
@@ -288,12 +293,19 @@
       line-height: 1.25;
       color: var(--text-color);
 
+      @media (max-width: 1023px) {
+        text-align: center;
+      }
+
       @media (max-width: 767px) {
-        font-family: 'JetBrainsMono-Regular', sans-serif;
-        font-weight: 400;
+        //font-family: 'JetBrainsMono-Regular', sans-serif;
+        //font-weight: 400;
         line-height: 1.27;
         letter-spacing: 0.05em;
-        text-align: center;
+      }
+
+      @media (max-width: 425px) {
+        margin-bottom: 45px;
       }
     }
 
@@ -311,8 +323,8 @@
         text-decoration: none;
 
         @media (max-width: 767px) {
-          font-family: 'JetBrainsMono-Regular', sans-serif;
-          font-weight: 400;
+          //font-family: 'JetBrainsMono-Regular', sans-serif;
+          //font-weight: 400;
           line-height: 1.27;
           letter-spacing: 0.05em;
           text-align: center;
@@ -335,8 +347,8 @@
         text-decoration: none;
 
         @media (max-width: 767px) {
-          font-family: 'JetBrainsMono-Regular', sans-serif;
-          font-weight: 400;
+          //font-family: 'JetBrainsMono-Regular', sans-serif;
+          //font-weight: 400;
           line-height: 1.27;
           letter-spacing: 0.05em;
           text-align: center;
@@ -350,6 +362,10 @@
       -ms-grid-column: 3;
       grid-area: footer-requis;
 
+      @media (max-width: 425px) {
+        margin-bottom: 45px;
+      }
+
       a {
         font-family: 'JetBrainsMono-Light', sans-serif;
         font-weight: 300;
@@ -359,8 +375,8 @@
         text-decoration: none;
 
         @media (max-width: 767px) {
-          font-family: 'JetBrainsMono-Regular', sans-serif;
-          font-weight: 400;
+          //font-family: 'JetBrainsMono-Regular', sans-serif;
+          //font-weight: 400;
           line-height: 1.27;
           letter-spacing: 0.05em;
           text-align: center;
@@ -378,6 +394,19 @@
         text-align: center;
       }
 
+      @media (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      span {
+        font-family: 'JetBrainsMono-Light', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--text-color);
+      }
+
       a {
         font-family: 'JetBrainsMono-Light', sans-serif;
         font-weight: 300;
@@ -387,8 +416,8 @@
         text-decoration: none;
 
         @media (max-width: 767px) {
-          font-family: 'JetBrainsMono-Regular', sans-serif;
-          font-weight: 400;
+          //font-family: 'JetBrainsMono-Regular', sans-serif;
+          //font-weight: 400;
           line-height: 1.27;
           letter-spacing: 0.05em;
           text-align: center;

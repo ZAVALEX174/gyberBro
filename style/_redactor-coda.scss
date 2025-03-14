@@ -116,6 +116,7 @@
     -webkit-backdrop-filter: blur(140px);
     backdrop-filter: blur(140px);
     background: #252322;
+    line-height: 1.29412;
 
     @media (max-width: 1284px) {
       font-size: clamp(1rem, 0.9513rem + 0.2165vw, 1.125rem);
@@ -129,7 +130,7 @@
 
     @media (max-width: 424px) {
       margin-top: -10px;
-      height: 250px;
+      height: 280px;
     }
   }
 
@@ -209,6 +210,11 @@
       font-size: 17px;
       text-transform: lowercase;
       color: rgba(255, 255, 255, 0.8);
+      line-height: 1.29412;
+
+      @media (max-width: 1284px) {
+        font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);
+      }
 
       @media (max-width: 1284px) {
         font-size: clamp(1rem, 0.9756rem + 0.1082vw, 1.0625rem);

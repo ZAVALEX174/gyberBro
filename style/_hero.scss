@@ -197,6 +197,10 @@
       row-gap: 60px;
     }
 
+    @media (max-width: 768px) {
+      padding: 40px 0 90px;
+    }
+
     .vertical-line {
       position: absolute;
       width: 10px;
@@ -213,6 +217,10 @@
         top: 132px;
         left: 650px;
         z-index: 350;
+      }
+
+      @media (max-width: 768px) {
+        top: 52px;
       }
 
       @media (max-width: 550px) {
@@ -303,6 +311,10 @@
         height: 600px;
         z-index: 0;
         background: url('../images/orange.png') center/contain no-repeat;
+
+        @media (max-width: 768px) {
+          top: -75px;
+        }
       }
     }
 
@@ -617,6 +629,10 @@
     left: 100%;
     transform: translateX(-50%) rotate(90deg);
     top: 60%;
+  }
+
+  @media (max-width: 768px) {
+    top: 62%;
   }
 }
 
