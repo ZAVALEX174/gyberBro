@@ -497,10 +497,11 @@
         mask: none;
         justify-content: flex-end;
         align-items: flex-end;
-        clip-path: polygon(0.00% 10%, 70% 10%, 75% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
+        //clip-path: polygon(0.00% 10%, 70% 10%, 75% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
+        clip-path: polygon(0% 10%, 81% 10%, 86% 0%, 100% 0%, 100% 100%, 0% 100%);
 
         @media (max-width: 768px) {
-          clip-path: polygon(0.00% 10%, 55% 10%, 60% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
+          clip-path: polygon(0% 10%, 81% 10%, 86% 0%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         @media (max-width: 425px) {
@@ -519,10 +520,12 @@
         bottom: 10px;
         z-index: -300;
         background-color: var(--page-bg);
-        clip-path: polygon(0.00% 10%, 75% 10%, 80% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
+      clip-path: polygon(0% 10%, 83% 10%, 88% 0%, 100% 0%, 100% 100%, 0% 100%);
+        //clip-path: polygon(0.00% 10%, 75% 10%, 80% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
 
         @media (max-width: 768px) {
-          clip-path: polygon(0.00% 10%, 60% 10%, 65% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
+          //clip-path: polygon(0.00% 10%, 60% 10%, 65% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
+          clip-path: polygon(0% 10%, 83% 10%, 88% 0%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         @media (max-width: 425px) {
@@ -536,11 +539,11 @@
         position: absolute;
         content: '';
         top: 15px;
-        right: 20px;
+        right: 15px;
         bottom: 20px;
         width: 536px;
         height: 261px;
-        background: url('../images/kartoteka_line.svg') center center/cover no-repeat;
+        background: url('../images/kartoteka_line.svg') center right/cover no-repeat;
         z-index: 77;
         pointer-events: none;
 
@@ -548,11 +551,11 @@
           position: absolute;
           content: '';
           top: 20px;
-          right: 20px;
+          right: 10px;
           bottom: 20px;
           width: 347px;
           height: 245px;
-          background: url('../images/kartoteka_mob.svg') center right/cover no-repeat;
+          background: url('../images/kartoteka_mob.svg') center right 10px/cover no-repeat;
           z-index: 77;
           pointer-events: none;
 

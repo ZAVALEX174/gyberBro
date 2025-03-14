@@ -61,6 +61,10 @@
 
     @media (max-width: 1024px) {
       background: var(--color-4);
+    }
+
+    @media (max-width: 768px) {
+      background: var(--color-4);
       padding: 0;
       margin-left: auto;
       display: -webkit-box;
@@ -142,12 +146,19 @@
     width: 310px;
     height: 300px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
       margin-right: auto;
       margin-left: auto;
       -webkit-box-ordinal-group: 6;
       -ms-flex-order: 5;
       order: 5;
+      //max-width: 450px;
+      width: 100%;
+      //height: 450px;
+      height: 517px;
+    }
+
+    @media (max-width: 500px) {
       max-width: 450px;
       width: 100%;
       height: 450px;
