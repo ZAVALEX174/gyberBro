@@ -39,8 +39,8 @@
       @media (max-width: 1024px) {
         position: absolute;
         bottom: 194px;
-        left: auto;
-        right: -400px;
+        bottom: 249px;
+        left: -375px;
         z-index: -25;
       }
     }
@@ -58,8 +58,8 @@
         content: '';
         position: absolute;
         bottom: 194px;
-        left: -400px;
-        z-index: 0;
+        right: -400px;
+        z-index: -1;
       }
     }
   }
@@ -115,7 +115,7 @@
   &-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &__header-text-box {
@@ -215,6 +215,18 @@
         z-index: 350;
       }
 
+      @media (max-width: 550px) {
+        left: 535px;
+      }
+
+      @media (max-width: 425px) {
+        left: 500px;
+      }
+
+      @media (max-width: 375px) {
+        left: 465px;
+      }
+
       &::before {
         position: absolute;
         content: '';
@@ -228,6 +240,11 @@
 
         @media (max-width: 1024px) {
           top: 31px;
+        }
+
+        @media (max-width: 768px) {
+          height: 100px;
+          top: 33px;
         }
       }
 
@@ -245,6 +262,12 @@
 
         @media (max-width: 1024px) {
           top: 32px;
+        }
+
+        @media (max-width: 768px) {
+          height: 110px;
+          top: 34px;
+          left: -156px;
         }
       }
     }
@@ -461,6 +484,7 @@
         margin-right: auto;
         mask: none;
         justify-content: flex-end;
+        align-items: flex-end;
         clip-path: polygon(0.00% 10%, 70% 10%, 75% 0.00%, 100.00% 0.00%, 100.00% 100.00%, 0.00% 100.00%);
 
         @media (max-width: 768px) {
@@ -537,6 +561,15 @@
 
         @media (max-width: 1284px) {
           font-size: clamp(10.6875rem, 10.5901rem + 0.4329vw, 10.9375rem);
+          padding-bottom: 20px;
+        }
+
+        @media (max-width: 1024px) {
+          padding-bottom: 20px;
+        }
+
+        @media (max-width: 425px) {
+          //padding-bottom: 20px;
         }
       }
 
@@ -553,10 +586,15 @@
 
         @media (max-width: 1024px) {
           max-width: 35%;
+          padding-bottom: 20px;
         }
 
         @media (max-width: 768px) {
           max-width: 50%;
+        }
+
+        @media (max-width: 425px) {
+          //padding-bottom: 20px;
         }
       }
     }
