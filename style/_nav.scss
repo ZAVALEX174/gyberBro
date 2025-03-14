@@ -32,6 +32,10 @@
         -o-transition: 0.2s linear all;
         transition: 0.2s linear all;
 
+        @media (max-width: 1024px) {
+          font-size: 18px;
+        }
+
         &::after {
           position: absolute;
           content: '';

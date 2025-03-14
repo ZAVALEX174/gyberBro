@@ -32,7 +32,7 @@
       left: -350px;
       width: 600px;
       height: 600px;
-      z-index: 5;
+      z-index: 0;
       background: url('../images/orange.png') no-repeat bottom left/cover;
       pointer-events: none;
 
@@ -208,7 +208,11 @@
       pointer-events: none;
 
       @media (max-width: 1024px) {
-        display: none;
+        width: 10px;
+        height: 170px;
+        top: 132px;
+        left: 650px;
+        z-index: 350;
       }
 
       &::before {
@@ -221,6 +225,10 @@
         height: 140px;
         z-index: 10;
         background: url('../images/line_circle1.svg') center/contain no-repeat;
+
+        @media (max-width: 1024px) {
+          top: 31px;
+        }
       }
 
       &::after {
@@ -234,6 +242,10 @@
         height: 160px;
         z-index: 10;
         background: url('../images/line_circle2.svg') center/contain no-repeat;
+
+        @media (max-width: 1024px) {
+          top: 32px;
+        }
       }
     }
   }

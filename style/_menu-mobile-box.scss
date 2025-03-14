@@ -10,15 +10,17 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 46px 27px 60px;
+  padding: 30px 27px 60px;
   -webkit-transition: 0.3s linear;
   -o-transition: 0.3s linear;
   transition: 0.3s linear;
-  row-gap: 60px;
+  row-gap: 40px;
   background-color: #111111;
   z-index: 555;
+  top: 0;
 
   &__nav {
+    padding-top: 20px;
     width: 100%;
   }
 
@@ -49,7 +51,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    row-gap: 26px;
+    row-gap: 20px;
 
     &-links {
       display: -webkit-box;
@@ -77,6 +79,8 @@
 
     &-btn {
       max-width: 303px;
+      height: 63px;
+      line-height: 63px;
       width: 100%;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -114,7 +118,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  gap: 53px;
+  gap: 40px;
 }
 
 .menu-mobile-box.menu-mobile-box-visible .link.menu-mobile-box__link::after {

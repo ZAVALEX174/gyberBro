@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const openBtnMobileMenu = document.getElementById('open-mobile-menu');
     const closeBtnMenu = document.getElementById('close-mobile-menu');
     const menuLinks = document.querySelectorAll('.menu-mobile-box__link');
+    const header = document.querySelector('.header');
 
     if (mobileMenu && openBtnMobileMenu && closeBtnMenu) {
         const openMenu = () => {
