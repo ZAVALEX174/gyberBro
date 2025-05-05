@@ -308,12 +308,12 @@
   padding: 10px 25px 10px 10px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  background: url("../images/colonka_sl.png") top right 15px/171px 400px no-repeat;
+  //background: url("../images/colonka_sl.png") top right 15px/171px 400px no-repeat;
 
   @media (max-width: 1023px) {
     width: 100%;
     height: 141px;
-    background: rgba(229, 58, 36, 0.5);
+    background: rgba(229, 58, 36, 0.5) !important;
     border-top: 2px solid var(--color-1);
     border-bottom: 2px solid var(--color-1);
   }

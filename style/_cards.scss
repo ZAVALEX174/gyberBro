@@ -368,10 +368,10 @@
       row-gap: 23px;
       padding-top: 21px;
       padding-bottom: 50px;
-      background: url("../images/down_bg_mask.svg") no-repeat center right/cover;
+      //background: url("../images/down_bg_mask.svg") no-repeat center right/cover;
 
       @media (max-width: 1020px) {
-        background: rgba(14, 14, 14, 1);
+        background: rgba(14, 14, 14, 1) !important;
       }
 
       @media (max-width: 767px) {
@@ -576,7 +576,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/card_bg_01_full.png');
+    //background-image: url('../images/card_bg_01_full.png');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -585,7 +585,7 @@
 
     @media (max-width: 1020px) {
       clip-path: none;
-      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, #2D24B8 0%, #080808 100%);
+      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, #2D24B8 0%, #080808 100%) !important;
     }
 
     .card-item__top-images-box {
@@ -597,7 +597,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/card_bg_02_full.png');
+    //background-image: url('../images/card_bg_02_full.png');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -606,7 +606,7 @@
 
     @media (max-width: 1020px) {
       clip-path: none;
-      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(215, 115, 244, 0.3) 0%, #080808 100%);
+      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(215, 115, 244, 0.3) 0%, #080808 100%) !important;
     }
 
     .card-item__top-images-box {
@@ -618,7 +618,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/card_bg_03_full.png');
+    //background-image: url('../images/card_bg_03_full.png');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -627,7 +627,7 @@
 
     @media (max-width: 1020px) {
       clip-path: none;
-      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(34, 59, 216, 0.3) 0%, #080808 100%);
+      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(34, 59, 216, 0.3) 0%, #080808 100%) !important;
     }
 
     .card-item__top-images-box {
@@ -639,7 +639,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/card_bg_04_full.png');
+    //background-image: url('../images/card_bg_04_full.png');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -648,7 +648,7 @@
 
     @media (max-width: 1020px) {
       clip-path: none;
-      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(89, 203, 179, 0.3) 0%, #080808 100%);
+      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(89, 203, 179, 0.3) 0%, #080808 100%) !important;
     }
 
     .card-item__down {
@@ -676,7 +676,7 @@
 
   @media (max-width: 1020px) {
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     height: auto;
     top: 0;
   }
@@ -695,7 +695,7 @@
 
   @media (max-width: 1020px) {
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     height: auto;
     top: 0;
   }
@@ -714,7 +714,7 @@
 
   @media (max-width: 1020px) {
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     height: auto;
     top: 0;
   }

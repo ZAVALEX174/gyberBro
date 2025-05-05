@@ -1,6 +1,6 @@
 .about-us {
   width: 100%;
-  background: url("../images/01101.png") center bottom/150% 30% no-repeat;
+  //background: url("../images/01101.png") center bottom/150% 30% no-repeat;
   height: auto;
   position: relative;
   z-index: 20;
@@ -11,17 +11,20 @@
   @media (max-width: 1024px) {
     margin-bottom: 0;
     padding-bottom: 130px;
-    background: url("../images/01101.png") center bottom/200% 15% no-repeat;
+    //background: url("../images/01101.png") center bottom/200% 15% no-repeat;
+    background-position:  center bottom;
+    background-size: 200% 15% !important;
   }
 
   @media (max-width: 768px) {
     padding-top: 0;
     padding-bottom: 0;
-    background: url("../images/01101.png") center bottom/200% 15% no-repeat;
+    //background: url("../images/01101.png") center bottom/200% 15% no-repeat;
   }
 
   @media (max-width: 425px) {
-    background: url("../images/01101.png") center bottom/200% 17% no-repeat;
+    //background: url("../images/01101.png") center bottom/200% 17% no-repeat;
+    background-size: 200% 17% !important;
   }
 
   &__container {
