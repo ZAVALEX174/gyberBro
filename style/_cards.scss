@@ -595,74 +595,74 @@
     }
   }
 
-  .c02 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    //background-image: url('../images/card_bg_02_full.png');
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-    width: 100%;
-    clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
+  //.c02 {
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  //background-image: url('../images/card_bg_02_full.png');
+  //  background-size: cover;
+  //  background-position: center right;
+  //  background-repeat: no-repeat;
+  //  width: 100%;
+  //  clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
+  //
+  //  @media (max-width: 1020px) {
+  //    clip-path: none;
+  //    background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(215, 115, 244, 0.3) 0%, #080808 100%) !important;
+  //  }
+  //
+  //  .card-item__top-images-box {
+  //    background-color: rgba(161, 32, 199, 1);
+  //  }
+  //}
 
-    @media (max-width: 1020px) {
-      clip-path: none;
-      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(215, 115, 244, 0.3) 0%, #080808 100%) !important;
-    }
+  //.c03 {
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  //background-image: url('../images/card_bg_03_full.png');
+  //  background-size: cover;
+  //  background-position: center right;
+  //  background-repeat: no-repeat;
+  //  width: 100%;
+  //  clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
+  //
+  //  @media (max-width: 1020px) {
+  //    clip-path: none;
+  //    background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(34, 59, 216, 0.3) 0%, #080808 100%) !important;
+  //  }
+  //
+  //  .card-item__top-images-box {
+  //    background-color: rgba(33, 47, 159, 1);
+  //  }
+  //}
 
-    .card-item__top-images-box {
-      background-color: rgba(161, 32, 199, 1);
-    }
-  }
-
-  .c03 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    //background-image: url('../images/card_bg_03_full.png');
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-    width: 100%;
-    clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
-
-    @media (max-width: 1020px) {
-      clip-path: none;
-      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(34, 59, 216, 0.3) 0%, #080808 100%) !important;
-    }
-
-    .card-item__top-images-box {
-      background-color: rgba(33, 47, 159, 1);
-    }
-  }
-
-  .c04 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    //background-image: url('../images/card_bg_04_full.png');
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-    width: 100%;
-    clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
-
-    @media (max-width: 1020px) {
-      clip-path: none;
-      background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(89, 203, 179, 0.3) 0%, #080808 100%) !important;
-    }
-
-    .card-item__down {
-      @media (max-width: 768px) {
-        padding-bottom: 50px;
-      }
-    }
-
-    .card-item__top-images-box {
-      background-color: rgba(89, 203, 179, 1);
-    }
-  }
+  //.c04 {
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  //background-image: url('../images/card_bg_04_full.png');
+  //  background-size: cover;
+  //  background-position: center right;
+  //  background-repeat: no-repeat;
+  //  width: 100%;
+  //  clip-path: polygon(66.5% 8.5%, 95% 8.5%, 100% 19%, 100% 100%, 0% 100%, 0 0, 60% 0);
+  //
+  //  @media (max-width: 1020px) {
+  //    clip-path: none;
+  //    background: radial-gradient(189.89% 65.73% at -53.53% 2.38%, rgba(89, 203, 179, 0.3) 0%, #080808 100%) !important;
+  //  }
+  //
+  //  .card-item__down {
+  //    @media (max-width: 768px) {
+  //      padding-bottom: 50px;
+  //    }
+  //  }
+  //
+  //  .card-item__top-images-box {
+  //    background-color: rgba(89, 203, 179, 1);
+  //  }
+  //}
 }
 
 .card-item01 {
