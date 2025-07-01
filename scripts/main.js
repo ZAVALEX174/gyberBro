@@ -106,7 +106,7 @@ firstVideo.addEventListener('timeupdate', () => {
 
 hackButton.addEventListener('click', () => {
   hackButton.style.display = 'none';
-  firstVideo.classList.add('.first-video-hidden');
+  firstVideo.classList.add('first-video-hidden');
   firstVideo.style.display = 'none';
   // Запускаем второе видео
   secondVideo.play();
