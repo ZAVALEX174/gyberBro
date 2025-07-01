@@ -63,48 +63,49 @@
   color: var(--text-color);
   backdrop-filter: blur(1px);
   background: -webkit-gradient(
-                  linear,
-                  left bottom, left top,
-                  from(rgba(31, 182, 234, 0.77)),
-                  to(rgba(101, 98, 251, 0.77))
+      linear,
+      left bottom, left top,
+      from(rgba(31, 182, 234, 0.77)),
+      to(rgba(101, 98, 251, 0.77))
   ),
   -webkit-gradient(
-                  linear,
-                  left top, left bottom,
-                  color-stop(-40.91%, rgba(0, 0, 0, 0)),
-                  color-stop(132.95%, #1FB6EA)
+      linear,
+      left top, left bottom,
+      color-stop(-40.91%, rgba(0, 0, 0, 0)),
+      color-stop(132.95%, #1FB6EA)
   );
   background: -o-linear-gradient(
-                  bottom,
-                  rgba(31, 182, 234, 0.77) 0%,
-                  rgba(101, 98, 251, 0.77) 100%
+      bottom,
+      rgba(31, 182, 234, 0.77) 0%,
+      rgba(101, 98, 251, 0.77) 100%
   ),
   -o-linear-gradient(
-                  top,
-                  rgba(0, 0, 0, 0) -40.91%,
-                  #1FB6EA 132.95%
+      top,
+      rgba(0, 0, 0, 0) -40.91%,
+      #1FB6EA 132.95%
   );
   background: linear-gradient(
-                  0deg,
-                  rgba(31, 182, 234, 0.77) 0%,
-                  rgba(101, 98, 251, 0.77) 100%
+      0deg,
+      rgba(31, 182, 234, 0.77) 0%,
+      rgba(101, 98, 251, 0.77) 100%
   ),
   linear-gradient(
-                  180deg,
-                  rgba(0, 0, 0, 0) -40.91%,
-                  #1FB6EA 132.95%
+      180deg,
+      rgba(0, 0, 0, 0) -40.91%,
+      #1FB6EA 132.95%
   );
   -webkit-box-shadow: 0px 10px 30px 0px rgba(31, 182, 234, 0.77) inset, 0px 10px 30px 0px rgba(31, 182, 234, 0.77);
   box-shadow: 0px 10px 30px 0px rgba(31, 182, 234, 0.77) inset, 0px 10px 30px 0px rgba(31, 182, 234, 0.77);
   opacity: 0; /* Начальное состояние */
-  -webkit-transition: opacity 0.5s ease;
-  -o-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease; /* Плавное появление */
+  -webkit-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease; /* Плавное появление */
   pointer-events: none;
 }
 
 .hack-button-visible {
   opacity: 1;
+  transition: opacity 0.1s ease;
   pointer-events: auto;
 }
 
@@ -165,3 +166,12 @@
   visibility: visible;
   overflow: auto;
 }
+
+.first-video-hidden {
+  opacity: 0 !important;
+}
+
+.second-video-visible {
+  opacity: 1 !important;
+}
+

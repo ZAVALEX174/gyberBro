@@ -1,32 +1,22 @@
-.modal-hints {
-  width: 503px;
-  height: 260px;
+.modal-hint {
+  max-width: 503px;
+  //width: 100%;
+  min-height: 260px;
   overflow-y: auto;
   //clip-path: url('#modal-mask');
   -webkit-clip-path: polygon(100% 5%, 98.5% 5%, 98.5% 10%, 100% 10%, 100% 95%, 97% 100%, 0 100%, 0 5%, 3% 0, 100% 0);
   clip-path: polygon(100% 5%, 98.5% 5%, 98.5% 10%, 100% 10%, 100% 95%, 97% 100%, 0 100%, 0 5%, 3% 0, 100% 0);
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 34px 31px;
   margin: 5px;
   background-color: var(--color-2);
   z-index: 999;
   border: none;
-  display: none;
-  box-sizing: border-box;
-
-  @media (max-width: 560px) {
-    width: 325px;
-    min-height: 280px;
-    //left: -10px;
-    right: 0;
-    padding: 30px 20px;
-  }
 
   &-title {
-    display: block;
-    max-width: 100%;
+    width: 100%;
     font-family: 'AKONY', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -36,8 +26,6 @@
   }
 
   &-desc {
-    max-width: 100%;
-    display: block;
     font-family: 'JetBrainsMono-Light', sans-serif;
     width: 100%;
     font-weight: 300;
@@ -56,11 +44,6 @@
     outline: none;
     background-color: transparent;
     cursor: pointer;
-    z-index: 999;
-
-    svg {
-      z-index: -1;
-    }
   }
 }
 
